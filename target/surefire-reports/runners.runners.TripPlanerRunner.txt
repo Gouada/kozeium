@@ -1,0 +1,61 @@
+-------------------------------------------------------------------------------
+Test set: runners.runners.TripPlanerRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.382 sec
+<<< FAILURE!
+Then I enter the start station Berlin(| Berlin | Hamburg |)  Time elapsed: 0.006 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 43 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'BK7N00066974', ip: '192.168.0.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=null, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=479020b1201a903c, platform=LINUX, deviceUDID=479020b1201a903c, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=120.0, platformVersion=4.1.2, browserName=Android, platformName=Android, udid=479020b1201a903c, deviceName=479020b1201a903c}, newCommandTimeout=120.0, platformVersion=4.1.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=GT-I8190, platformName=Android, udid=479020b1201a903c, deviceManufacturer=samsung}]
+Session ID: aab25a18-fb9e-47a0-8cf7-5e4deb72f002
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId("de.hafas.android.db:id/input_start")}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:169)
+	at api.apps.navigator.tripPlaner.TripPlaner.clickStartStion(TripPlaner.java:30)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:82)
+	at ?.Then I enter the start station Berlin(travelinformation.feature:26)
+| Berlin | Hamburg |  Time elapsed: 0.007 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 43 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'BK7N00066974', ip: '192.168.0.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=null, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=479020b1201a903c, platform=LINUX, deviceUDID=479020b1201a903c, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=120.0, platformVersion=4.1.2, browserName=Android, platformName=Android, udid=479020b1201a903c, deviceName=479020b1201a903c}, newCommandTimeout=120.0, platformVersion=4.1.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=GT-I8190, platformName=Android, udid=479020b1201a903c, deviceManufacturer=samsung}]
+Session ID: aab25a18-fb9e-47a0-8cf7-5e4deb72f002
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId("de.hafas.android.db:id/input_start")}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:169)
+	at api.apps.navigator.tripPlaner.TripPlaner.clickStartStion(TripPlaner.java:30)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:82)
+	at ?.Then I enter the start station Berlin(travelinformation.feature:26)

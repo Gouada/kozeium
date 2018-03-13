@@ -1,0 +1,6 @@
+#surefire
+#Tue Mar 06 00:31:51 CET 2018
+user.dir=D\:\\myApps\\myWorkspace\\kozeium
+localRepository=D\:\\Users\\GouadaDopavogui\\.m2\\repository
+basedir=D\:\\myApps\\myWorkspace\\kozeium
+test=TripPlanerRunner
