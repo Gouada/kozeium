@@ -12,6 +12,7 @@ import org.apache.bcel.verifier.exc.AssertionViolatedException;
 
 import core.ADB;
 import core.CapabilitiesDevice;
+import core.FreeDevicefinder;
 import core.JsonReadWriter;
 import core.MyLogger;
 import core.manager.ServerManager;
@@ -125,9 +126,7 @@ public class TestStarter {
 		String command;
 		String mvnBinFolder;
 		int i = 0;
-
 		getDeviceList();
-
 		// maven command for starting testClass. here we need to provide
 		// absolute-path to maven bin folder
 		mvnBinFolder = ServerManager.getMavenBinFolder();
@@ -136,14 +135,73 @@ public class TestStarter {
 		// TO DO UPDATE DEVICE LIST ONLY FROM
 		// FREEDEVICEFINDER SINGLETON-CLASS
 		ArrayList<Device> deviceList = jsonRW.readFromFile();
-		if (deviceList.size() > 0) {
-			for (Device device : deviceList) {
+		// Test suite to be executed exist and at least one device is connected
+		if (deviceList.size() > 0 && testClassNames.size() > 0) {
 
-				// incase there is more devices than testClasses re-iterate over
-				// testClasse
-				if (i == testClassNames.size()) {
-					i = 0;
+			// more device available then test suites to be run
+			if (deviceList.size() > testClassNames.size()) {
+				for (Device device : deviceList) {
+
+					// incase there is more devices than testClasses re-iterate
+					// over
+					// testClasse
+					if (i == testClassNames.size()) {
+						i = 0;
+					}
+					// maven command for starting cucumber test-class-runner
+					command = mvnBinFolder + "//mvn.bat -Dtest=" + testClassNames.get(i) + " test";
+					final String finalCommand;
+					finalCommand = command;
+
+					// check wether a test is already running on the device or
+					// is
+					// planned t be started
+					if (!device.isUsed() && device.getStatus() < 1L) {
+						MyLogger.logger.info("\n\nStarting Test cases from " + testClassNames.get(i) + " with \n"
+								+ finalCommand + " on \n" + device.getDeviceID() + "\n\n");
+						// start test in new thread
+						TestStarterThread testStarterThread = new TestStarterThread(finalCommand, device);
+						testStarterThread.setName(device.getDeviceID() + "-" + testClassNames.get(i));
+						testStarterThread.start();
+
+						// Thread thread = new Thread(new Runnable() {
+						// @Override
+						// public void run() {
+						// // process =
+						// try {
+						// // starting cucumber runner-class in a separate
+						// // thread
+						// Runtime.getRuntime().exec(finalCommand);
+						//
+						// // set device status to "test execution
+						// // starting"
+						// device.setStatus(1L);
+						// // TO DO UPDATE DEVICE LIST ONLY FROM
+						// // FREEDEVICEFINDER SINGLETON-CLASS
+						// FreeDevicefinder.getInstance().updateDeviceInDeviceListFile(device);
+						// // jsonRW.updateList(device);
+						// // update device status in device list
+						// } catch (IOException e) {
+						// e.printStackTrace();
+						// }
+						// // process.waitFor();
+						// }
+						// });
+						// thread.start();
+						MyLogger.logger.info("starting thread " + testStarterThread.getId() + " with device "
+								+ device.getDeviceID());
+					}
+					// else {
+					// continue;
+					// }
+					i++;
 				}
+			} else {
+				MyLogger.logger.debug("Device liste is empty");
+				throw new Exception("Device liste is empty");
+			}
+		} else if (deviceList.size() < testClassNames.size()) {
+			for (String testClassName : testClassNames) {
 				// maven command for starting cucumber test-class-runner
 				command = mvnBinFolder + "//mvn.bat -Dtest=" + testClassNames.get(i) + " test";
 				final String finalCommand;
@@ -151,34 +209,21 @@ public class TestStarter {
 
 				// check wether a test is already running on the device or is
 				// planned t be started
-				if (!device.isUsed() && device.getStatus() < 1L) {
-					MyLogger.logger.info("\n\nStarting Test cases from " + testClassNames.get(i) + " with \n"
-							+ finalCommand + " on \n" + device.getDeviceID() + "\n\n");
+				Device device = FreeDevicefinder.getInstance().findFreeDevice();
+				if (device == null) {
+					device = FreeDevicefinder.getInstance().waitForFreeDevice(300);
+					if (device == null) {
+						throw new Exception("Waited too long for Free device ");
+					}
+				}
+				if (device != null) {
+					MyLogger.logger.info("\n\nStarting Test cases from " + testClassName + " with \n" + finalCommand
+							+ " on \n" + device.getDeviceID() + "\n\n");
 					// start test in new thread
-					Thread thread = new Thread(new Runnable() {
-						@Override
-						public void run() {
-							// process =
-							try {
-								// starting cucumber runner-class in a separate
-								// thread
-								Runtime.getRuntime().exec(finalCommand);
-
-								// set device status to "test execution
-								// starting"
-								device.setStatus(1L);
-								// TO DO UPDATE DEVICE LIST ONLY FROM
-								// FREEDEVICEFINDER SINGLETON-CLASS
-								jsonRW.updateList(device);
-								// update device status in device list
-							} catch (IOException e) {
-								e.printStackTrace();
-							}
-							// process.waitFor();
-						}
-					});
-					thread.start();
-					MyLogger.logger.info("starting thread " + thread.getId() + " with device " + device.getDeviceID());
+					TestStarterThread testStarterThread = new TestStarterThread(finalCommand, device);
+					testStarterThread.start();
+					MyLogger.logger.info(
+							"starting thread " + testStarterThread.getId() + " with device " + device.getDeviceID());
 				}
 				// else {
 				// continue;

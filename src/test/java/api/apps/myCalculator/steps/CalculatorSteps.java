@@ -48,7 +48,7 @@ public class CalculatorSteps {
 
 	public Device getFreeDevice() {
 		freeDevicefinder = FreeDevicefinder.getInstance();
-		return freeDevicefinder.findFreeDevice();
+		return freeDevicefinder.findReadyDevice();
 	}
 
 	@Given("^I start the calculator$")

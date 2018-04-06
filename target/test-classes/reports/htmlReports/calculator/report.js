@@ -235,7 +235,7 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 29721525931,
+  "duration": 29275056356,
   "status": "passed"
 });
 formatter.match({
@@ -248,7 +248,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 224121545,
+  "duration": 220705884,
   "status": "passed"
 });
 formatter.match({
@@ -261,7 +261,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "duration": 770747574,
+  "duration": 823795825,
   "status": "passed"
 });
 formatter.match({
@@ -274,18 +274,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "duration": 716526832,
+  "duration": 743973226,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "duration": 751286107,
+  "duration": 739880592,
   "status": "passed"
 });
 formatter.after({
-  "duration": 4680065883,
+  "duration": 5314684181,
   "status": "passed"
 });
 formatter.scenario({
@@ -344,9 +344,8 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 6466116603,
-  "error_message": "java.lang.AssertionError: the app could not be started\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat api.apps.myCalculator.steps.CalculatorSteps.i_start_the_calculator(CalculatorSteps.java:86)\r\n\tat ✽.Given I start the calculator(calculator.feature:25)\r\n",
-  "status": "failed"
+  "duration": 23588898117,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -358,7 +357,8 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 228134946,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -370,7 +370,8 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 768687093,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -382,16 +383,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 651352984,
+  "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 775364464,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 5701937,
+  "duration": 4452946192,
   "status": "passed"
 });
 formatter.scenario({
@@ -435,8 +438,22 @@ formatter.step({
 });
 formatter.step({
   "line": 28,
-  "name":formatter.result({
-  "duration": 13825840296,
+  "name": "I click the second 3",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I click equal",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CalculatorSteps.i_start_the_calculator()"
+});
+formatter.result({
+  "duration": 25975100571,
   "status": "passed"
 });
 formatter.match({
@@ -449,7 +466,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 173926109,
+  "duration": 245587249,
   "status": "passed"
 });
 formatter.match({
@@ -462,7 +479,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "duration": 674109414,
+  "duration": 814465570,
   "status": "passed"
 });
 formatter.match({
@@ -475,18 +492,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "duration": 675030657,
+  "duration": 686833161,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "duration": 781362397,
+  "duration": 836800379,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2864325598,
+  "duration": 5459333314,
   "status": "passed"
 });
 formatter.scenario({
@@ -545,7 +562,7 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 14387146687,
+  "duration": 13225207823,
   "status": "passed"
 });
 formatter.match({
@@ -558,7 +575,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 232760458,
+  "duration": 161682278,
   "status": "passed"
 });
 formatter.match({
@@ -571,7 +588,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "duration": 665866258,
+  "duration": 650243715,
   "status": "passed"
 });
 formatter.match({
@@ -584,61 +601,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "duration": 700823823,
+  "duration": 715208600,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "duration": 766264520,
+  "duration": 783927016,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2374588796,
-  "status": "passed"
-});
-});  "val": "3",
-      "offset": 18
-    }
-  ],
-  "location": "CalculatorSteps.i_click_the_first(int)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "op_div",
-      "offset": 20
-    }
-  ],
-  "location": "CalculatorSteps.i_click_an_operator(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 19
-    }
-  ],
-  "location": "CalculatorSteps.i_click_the_second(int)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CalculatorSteps.i_click_equal()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 3711657,
+  "duration": 2377295461,
   "status": "passed"
 });
 });

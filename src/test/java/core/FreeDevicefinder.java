@@ -34,9 +34,10 @@ public class FreeDevicefinder {
 		}
 	}
 
-	// find a device in device-list and set its status to in-use. this device
+	// find a device ready for test in device-list and set its status to in-use.
+	// this device
 	// cannot be used then parallely for another test
-	public synchronized Device findFreeDevice() {
+	public synchronized Device findReadyDevice() {
 		setDeviceList();
 		Device foundDevice = null;
 		MyLogger.logger.info("finding free device ");
@@ -52,12 +53,37 @@ public class FreeDevicefinder {
 				foundDevice.setUsed(true);
 				foundDevice.setStatus(2L);
 
-				// tripPlaner = new TripPlaner(foundDevice.getDeviceName());
-				// tripInformation = new
-				// TripInformation(foundDevice.getDeviceID());
-				// tripConections = new
-				// TripConnections(foundDevice.getDeviceID());
-				// tripItinerary = new TripItinerary(foundDevice.getDeviceID());
+				jsonReadWriter.updateList(foundDevice);
+				MyLogger.logger.info("found free device " + foundDevice.getDeviceID());
+				// break;
+			}
+			i++;
+		}
+		if (foundDevice == null) {
+			MyLogger.logger.info("no free device found .... FreeDevicefinder");
+		}
+		return foundDevice;
+	}
+
+	// find a free device in device-list and set its status to in-use.
+	// this device
+	// cannot be used then parallely for another test
+	public synchronized Device findFreeDevice() {
+		setDeviceList();
+		Device foundDevice = null;
+		MyLogger.logger.info("finding free device ");
+		jsonReadWriter = new JsonReadWriter();
+
+		// for (Device device : this.deviceList) {
+		int i = 0;
+		while (foundDevice == null && this.deviceList.size() > i) {
+			Device device = this.deviceList.get(i);
+			// if free device is found go out of loop
+			if (!device.isUsed() && device.getStatus() == 0) {
+				foundDevice = device;
+				foundDevice.setUsed(true);
+				foundDevice.setStatus(2L);
+
 				jsonReadWriter.updateList(foundDevice);
 				MyLogger.logger.info("found free device " + foundDevice.getDeviceID());
 				// break;
@@ -72,6 +98,11 @@ public class FreeDevicefinder {
 
 	public synchronized void updateDeviceInDeviceListFile(Device device) {
 		jsonReadWriter.updateList(device);
+	}
+
+	public Device waitForFreeDevice(int i) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
