@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="40.279225">
+<testcase classname="travelinformation" name="travelInfo" time="40.279225">
+<system-out><![CDATA[Given navigator is started..................................................passed
+Then I enter the start station Berlin.......................................passed
+Then I enter the destination station Hamburg................................passed
+Then I click the day picker.................................................passed
+Then I select the travel date...............................................passed
+Then I click the done button................................................passed
+And I click the search button...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

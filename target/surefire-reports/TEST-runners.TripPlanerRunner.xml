@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="34" failures="2" name="runners.TripPlanerRunner" time="188.344" errors="4" skipped="27">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="test" value="TripPlanerRunner"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\myApps\myWorkspace\kozeium"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="D:\Users\GOUADA~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft Application Virtualization Client;C:\Program Files (x86)\IBM\Lotus\Notes\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\bin;D:\NonBKU\IEDriver\IEDriverServer.exe;D:\NonBKU\FFDriver\wires-0.6.2-win.exe;D:\jmeter;C:\Program Files\Git\cmd\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\bin;C:\Program Files\CenterTools\DriveLock\;C:\Python27;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files (x86)\Plantronics\Spokes3G\;D:\VuGen\strawberry-perl\perl\bin;D:\NonBKU\PuTTY\;D:\NonBKU\nodejs\;D:\NonBKU\Android-sdk-windows\platform-tools;D:\NonBKU\Android-sdk-windows\tools;D:\NonBKU\Android-sdk-windows\tools\bin;C:\Program Files (x86)\SDE\Putty\;D:\NonBKU\Docker Toolbox;D:\Users\GouadaDopavogui\AppData\Roaming\npm;D:\NonBKU\Fiddler;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="D:\Users\GouadaDopavogui"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="gouadadopavogui"/>
+    <property name="java.class.path" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=TripPlanerRunner test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="de"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Given navigator is started" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the start station Mainz Hbf" time="0.174">
+    <error message="A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 122.06 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]}" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 122.06 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:187)
+	at api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:145)
+	at ✽.Then I enter the start station Mainz Hbf(travelinformation.feature:26)
+</error>
+    <system-out>[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element {&quot;using&quot;:&quot;-android uiautomator&quot;,&quot;value&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;-android uiautomator&quot;,&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;be48fa63-1a12-49d8-a87e-f6f7fc3277f7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos; new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)&apos; using &apos;ANDROID_UIAUTOMATOR&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: &quot;de.hafas.android.db:id/input_start&quot;
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=de.hafas.android.db:id/input_start]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;1&quot;}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;1&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element 200 160 ms - 87 
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element/1/click {&quot;id&quot;:&quot;1&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;1&quot;,&quot;be48fa63-1a12-49d8-a87e-f6f7fc3277f7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;1&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;1&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element/1/click 200 165 ms - 76 
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element {&quot;using&quot;:&quot;-android uiautomator&quot;,&quot;value&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_location_name\&quot;)&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;-android uiautomator&quot;,&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_location_name\&quot;)&quot;,&quot;be48fa63-1a12-49d8-a87e-f6f7fc3277f7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_location_name\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_location_name\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos; new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_location_name&quot;)&apos; using &apos;ANDROID_UIAUTOMATOR&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_location_name&quot;)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: &quot;de.hafas.android.db:id/input_location_name&quot;
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=de.hafas.android.db:id/input_location_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;2&quot;}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;2&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element 200 758 ms - 87 
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element/2/value {&quot;id&quot;:&quot;2&quot;,&quot;value&quot;:[&quot;Mainz Hbf&quot;]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [[&quot;Mainz Hbf&quot;],&quot;2&quot;,&quot;be48fa63-1a12-49d8-a87e-f6f7fc3277f7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:setText&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;2&quot;,&quot;text&quot;:&quot;Mainz Hbf&quot;,&quot;replace&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:setText&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;2&quot;,&quot;text&quot;:&quot;Mainz Hbf&quot;,&quot;replace&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 2
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: Mainz Hbf
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element/2/value 200 4820 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+2018-04-06 08:49:17 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;be48fa63-1a12-49d8-a87e-f6f7fc3277f7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 100 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 659 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 1228 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 1791 ms so far
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 2364 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 2930 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 3509 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 4077 ms so far
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 4642 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5209 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5761 ms so far
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 6312 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 6876 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 7440 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8027 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8591 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 9161 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 9728 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 10337 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 10934 ms so far
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 11521 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 12126 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 12848 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 13432 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[Logcat] Logcat terminated with code 0, signal null
+[UiAutomator] UiAutomator exited unexpectedly with code 0, signal null
+[debug] [UiAutomator] Moving to state &apos;stopped&apos;
+[debug] [AndroidDriver] Shutting down Android driver
+[Appium] Closing session, cause was &apos;UiAUtomator shut down unexpectedly&apos;
+[Appium] Removing session be48fa63-1a12-49d8-a87e-f6f7fc3277f7 from our master session list
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
+Unhandled rejection Error: Error executing adbExec. Original error: &apos;Command &apos;D\:\\NonBKU\\Android-sdk-windows\\platform-tools\\adb.exe -P 5037 -s emulator-5556 shell am force-stop de.hafas.android.db&apos; exited with code 1&apos;; Stderr: &apos;error: device &apos;emulator-5556&apos; not found&apos;; Code: &apos;1&apos;
+    at ADB.execFunc$ (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:321:13)
+    at tryCatch (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element - - ms - - 
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/element 404 4 ms - 131 
+</system-out>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.175">
+    <error message="A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 122.06 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]}" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 122.06 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+*** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:187)
+	at api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:145)
+	at ✽.Then I enter the start station Mainz Hbf(travelinformation.feature:26)
+</error>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the destination station Leipzig Hbf" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the day picker" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select the travel date" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the done button" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click the search button" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I scroll down to later button" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll up to earlier button" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll back to later button" time="0.175">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click later button" time="0.176">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0.176">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click mfe button" time="0.176">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click operation days" time="0.176">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click back button" time="0.176">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.186">
+    <error message="A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:283)
+	at core.manager.DriverManager.killDriver(DriverManager.java:262)
+	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-out>2018-04-06 08:51:19 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/appium/app/close {}
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/appium/app/close 404 8 ms - 131 
+</system-out>
+  </testcase>
+  <testcase classname="Given navigator is started(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Given navigator is started" time="0.014">
+    <failure message="the app could not be started" type="java.lang.AssertionError">java.lang.AssertionError: the app could not be started
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:128)
+	at ✽.Given navigator is started(travelinformation.feature:25)
+</failure>
+    <system-out>&amp;#27;[31mFailure in after hook:&amp;#27;[0m&amp;#27;[31mTravelInformationSteps.finishTest()&amp;#27;[0m
+&amp;#27;[31mMessage: &amp;#27;[0m&amp;#27;[31morg.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:283)
+	at core.manager.DriverManager.killDriver(DriverManager.java:262)
+	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 24 milliseconds
+      Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+      System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+      Driver info: io.appium.java_client.android.AndroidDriver
+      Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+      Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+      	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+      	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
+      	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:283)
+      	at core.manager.DriverManager.killDriver(DriverManager.java:262)
+      	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:261)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+      	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+      	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+      &amp;#27;[0m
+
+  @tag @tripPlaner
+  Scenario Outline: travelInfo                       &amp;#27;[90m# travelinformation.feature:44&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mnavigator is started&amp;#27;[0m                       &amp;#27;[90m# TravelInformationSteps.navigator_app_is_startted()&amp;#27;[0m
+    &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mI enter the start station &amp;#27;[0m&amp;#27;[31m&amp;#27;[1mMainz Hbf&amp;#27;[0m         &amp;#27;[90m# TravelInformationSteps.i_enter_the_start_station(String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 122.06 seconds
+      Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+      System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+      Driver info: io.appium.java_client.android.AndroidDriver
+      Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+      Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+      *** Element info: {Using=xpath, value=//android.widget.LinearLayout[@content-desc=&apos;Mainz Hbf&apos;]}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+      	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+      	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+      	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+      	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+      	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+      	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+      	at core.UIObjectWrapper.tap(UIObjectWrapper.java:187)
+      	at api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)
+      	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:145)
+      	at ?.Then I enter the start station Mainz Hbf(travelinformation.feature:26)
+      &amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI enter the destination station &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mLeipzig Hbf&amp;#27;[0m &amp;#27;[90m# TravelInformationSteps.i_enter_the_destination_station(String)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI click the day picker&amp;#27;[0m                      &amp;#27;[90m# TravelInformationSteps.i_click_the_day_picker()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI select the travel date&amp;#27;[0m                    &amp;#27;[90m# TravelInformationSteps.i_select_the_travel_date()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI click the done button&amp;#27;[0m                     &amp;#27;[90m# TravelInformationSteps.i_click_the_done_button()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click the search button&amp;#27;[0m                    &amp;#27;[90m# TravelInformationSteps.i_click_the_search_button()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI scroll down to later button&amp;#27;[0m                &amp;#27;[90m# TravelInformationSteps.scrollToLaterButton()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI scroll up to earlier button&amp;#27;[0m               &amp;#27;[90m# TravelInformationSteps.scrollToEarlierButton()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI scroll back to later button&amp;#27;[0m               &amp;#27;[90m# TravelInformationSteps.scrollBackToLaterButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click later button&amp;#27;[0m                         &amp;#27;[90m# TravelInformationSteps.clickLaterButton()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI select a trip&amp;#27;[0m                             &amp;#27;[90m# TravelInformationSteps.selectAtrip()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI click mfe button&amp;#27;[0m                          &amp;#27;[90m# TravelInformationSteps.clickMfeButton()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI click operation days&amp;#27;[0m                      &amp;#27;[90m# TravelInformationSteps.clickOperationDays()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI click back button&amp;#27;[0m                         &amp;#27;[90m# TravelInformationSteps.clickBackButton()&amp;#27;[0m
+2018-04-06 08:51:20 INFO  MyLogger:29 - reading from connected device list 
+2018-04-06 08:51:20 INFO  MyLogger:42 - finding free device 
+2018-04-06 08:51:20 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+2018-04-06 08:51:20 INFO  MyLogger:62 - found free device emulator-5556
+2018-04-06 08:51:20 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-06 08:51:20 INFO  MyLogger:285 - checking port 4723 is free.
+2018-04-06 08:51:20 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
+[HTTP] --&gt; GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {&quot;build&quot;:{&quot;version&quot;:&quot;1.7.2&quot;,&quot;revision&quot;:null}}
+[HTTP] &lt;-- GET /wd/hub/status 200 675 ms - 83 
+2018-04-06 08:51:21 INFO  MyLogger:212 - creating driver for emulator-5556
+2018-04-06 08:51:21 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-06 08:51:21 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
+2018-04-06 08:51:21 INFO  MyLogger:103 - server output 
+2018-04-06 08:51:21 INFO  MyLogger:98 - getting device capabilities for emulator-5556
+2018-04-06 08:51:21 INFO  MyLogger:101 - got device capabilities for emulator-5556
+[HTTP] --&gt; POST /wd/hub/session {&quot;desiredCapabilities&quot;:{&quot;appPackage&quot;:&quot;de.hafas.android.db&quot;,&quot;appActivity&quot;:&quot;de.hafas.main.HafasApp&quot;,&quot;newCommandTimeout&quot;:60,&quot;platformVersion&quot;:&quot;&quot;,&quot;browserName&quot;:&quot;Android&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;udid&quot;:&quot;emulator-5556&quot;,&quot;deviceName&quot;:&quot;emulator-5556&quot;},&quot;requiredCapabilities&quot;:{},&quot;capabilities&quot;:{&quot;desiredCapabilities&quot;:{&quot;appPackage&quot;:&quot;de.hafas.android.db&quot;,&quot;appActivity&quot;:&quot;de.hafas.main.HafasApp&quot;,&quot;newCommandTimeout&quot;:60,&quot;platformVersion&quot;:&quot;&quot;,&quot;browserName&quot;:&quot;Android&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;udid&quot;:&quot;emulator-5556&quot;,&quot;deviceName&quot;:&quot;emulator-5556&quot;},&quot;requiredCapabilities&quot;:{},&quot;alwaysMatch&quot;:{&quot;browserName&quot;:&quot;Android&quot;,&quot;platformName&quot;:&quot;Android&quot;},&quot;firstMatch&quot;:[]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{&quot;appPackage&quot;:&quot;de.hafas.android.db&quot;,&quot;appActivity&quot;:&quot;de.hafas.main.HafasApp&quot;,&quot;newCommandTimeout&quot;:60,&quot;platformVersion&quot;:&quot;&quot;,&quot;browserName&quot;:&quot;Android&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;udid&quot;:&quot;emulator-5556&quot;,&quot;deviceName&quot;:&quot;emulator-5556&quot;},{},{&quot;desiredCapabilities&quot;:{&quot;appPackage&quot;:&quot;de.hafas.android.db&quot;,&quot;appActivity&quot;:&quot;de.hafas.main.HafasApp&quot;,&quot;newCommandTimeout&quot;:60,&quot;platformVersion&quot;:&quot;&quot;,&quot;browserName&quot;:&quot;Android&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;udid&quot;:&quot;emulator-5556&quot;,&quot;deviceName&quot;:&quot;emulator-5556&quot;},&quot;requiredCapabilities&quot;:{},&quot;alwaysMatch&quot;:{&quot;browserName&quot;:&quot;Android&quot;,&quot;platformName&quot;:&quot;Android&quot;},&quot;firstMatch&quot;:[]}]
+[debug] [BaseDriver] Event &apos;newSessionRequested&apos; logged at 1522997481520 (08:51:21 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
+[Appium] Merged W3C capabilities {&quot;desiredCapabilities&quot;:{&quot;appPackage&quot;:&quot;de.hafas.... into desiredCapabilities object {&quot;appPackage&quot;:&quot;de.hafas.android.db&quot;,&quot;appActivit...
+[Appium] Creating new AndroidDriver (v1.37.0) session
+[Appium] Capabilities:
+[Appium]   appPackage: de.hafas.android.db
+[Appium]   appActivity: de.hafas.main.HafasApp
+[Appium]   newCommandTimeout: 60
+[Appium]   platformVersion: 
+[Appium]   browserName: Android
+[Appium]   platformName: Android
+[Appium]   udid: emulator-5556
+[Appium]   deviceName: emulator-5556
+[BaseDriver] Session created with session id: c80dc286-5ff4-4514-bc35-56b8bbd1d782
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_144
+[ADB] Checking whether adb is present
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Getting connected devices...
+[ADB] Error: Error while getting connected devices. Original error: Command &apos;D\:\\NonBKU\\Android-sdk-windows\\platform-tools\\adb.exe -P 5037 devices&apos; exited with code 1
+    at Object.wrappedLogger.errorAndThrow (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:69:13)
+    at ADB.callee$0$0$ (D:\Users\GouadaDopavogui2\AppData\Local\Programs\[debug] [ADB] Could not find devicesappi, restartingum-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\sy adb server..stem-calls.js:174:9)
+    at tryCatch (D:\Users\GouadaDopavogui2\AppData\Local\Program.
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+s\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+ Error: Error while getting connected devices. Original error: Command &apos;D\:\\NonBKU\\Android-sdk-windows\\platform-tools\\adb.exe -P 5037 devices&apos; exited with code 1
+    at Object.wrappedLogger.errorAndThrow (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:69:13)
+    at ADB.callee$0$0$ (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:174:9)
+    at tryCatch (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Getting connected devices...
+[Appium] Welcome to Appium v1.7.2
+[Appium] Non-default server args:
+[Appium]   address: 127.0.0.1
+[HTTP] Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+uncaughtException: listen EADDRINUSE 127.0.0.1:4723
+	{&quot;date&quot;:&quot;Fri Apr 06 2018 08:51:39 GMT+0200 (MitteleuropÃ¤ische Sommerzeit)&quot;,&quot;process&quot;:{&quot;pid&quot;:8056,&quot;uid&quot;:null,&quot;gid&quot;:null,&quot;cwd&quot;:&quot;D:\\myApps\\myWorkspace\\kozeium&quot;,&quot;execPath&quot;:&quot;D:\\NonBKU\\nodejs\\node.exe&quot;,&quot;version&quot;:&quot;v8.9.4&quot;,&quot;argv&quot;:[&quot;D:\\NonBKU\\nodejs\\node.exe&quot;,&quot;D:\\Users\\GouadaDopavogui2\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\build\\lib\\main.js&quot;,&quot;--port&quot;,&quot;4723&quot;,&quot;--address&quot;,&quot;127.0.0.1&quot;,&quot;--bootstrap-port&quot;,&quot;4724&quot;],&quot;memoryUsage&quot;:{&quot;rss&quot;:149364736,&quot;heapTotal&quot;:123752448,&quot;heapUsed&quot;:99863840,&quot;external&quot;:650226}},&quot;os&quot;:{&quot;loadavg&quot;:[0,0,0],&quot;uptime&quot;:98843.4058507},&quot;trace&quot;:[{&quot;column&quot;:11,&quot;file&quot;:&quot;util.js&quot;,&quot;function&quot;:&quot;Object._errnoException&quot;,&quot;line&quot;:1022,&quot;method&quot;:&quot;_errnoException&quot;,&quot;native&quot;:false},{&quot;column&quot;:20,&quot;file&quot;:&quot;util.js&quot;,&quot;function&quot;:&quot;_exceptionWithHostPort&quot;,&quot;line&quot;:1044,&quot;method&quot;:null,&quot;native&quot;:false},{&quot;column&quot;:14,&quot;file&quot;:&quot;net.js&quot;,&quot;function&quot;:&quot;Server.setupListenHandle [as _listen2]&quot;,&quot;line&quot;:1351,&quot;method&quot;:&quot;setupListenHandle [as _listen2]&quot;,&quot;native&quot;:false},{&quot;column&quot;:12,&quot;file&quot;:&quot;net.js&quot;,&quot;function&quot;:&quot;listenInCluster&quot;,&quot;line&quot;:1392,&quot;method&quot;:null,&quot;native&quot;:false},{&quot;column&quot;:7,&quot;file&quot;:&quot;net.js&quot;,&quot;function&quot;:&quot;doListen&quot;,&quot;line&quot;:1501,&quot;method&quot;:null,&quot;native&quot;:false},{&quot;column&quot;:11,&quot;file&quot;:&quot;internal/process/next_tick.js&quot;,&quot;function&quot;:&quot;_combinedTickCallback&quot;,&quot;line&quot;:141,&quot;method&quot;:null,&quot;native&quot;:false},{&quot;column&quot;:9,&quot;file&quot;:&quot;internal/process/next_tick.js&quot;,&quot;function&quot;:&quot;process._tickCallback&quot;,&quot;line&quot;:180,&quot;method&quot;:&quot;_tickCallback&quot;,&quot;native&quot;:false}],&quot;stack&quot;:[&quot;Error: listen EADDRINUSE 127.0.0.1:4723&quot;,&quot;    at Object._errnoException (util.js:1022:11)&quot;,&quot;    at _exceptionWithHostPort (util.js:1044:20)&quot;,&quot;    at Server.setupListenHandle [as _listen2] (net.js:1351:14)&quot;,&quot;    at listenInCluster (net.js:1392:12)&quot;,&quot;    at doListen (net.js:1501:7)&quot;,&quot;    at _combinedTickCallback (internal/process/next_tick.js:141:11)&quot;,&quot;    at process._tickCallback (internal/process/next_tick.js:180:9)&quot;]}
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Called deleteSession but bootstrap wasn&apos;t active
+[MJSONWP] Encountered internal error running command: Error: Could not find a connected Android device.
+    at ADB.getDevices$ (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_module[HTTP] &lt;-- POST /wd/hub/session 500 32582 ms - 179 
+s\appium\node_modules\appium-adb\lib\tools\system-calls.js:191:13)
+    at tryCatch (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at invoke (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at enqueueResult (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:185:17)
+    at new Promise (&lt;anonymous&gt;)
+    at new F (D:\Users\GouadaDopavogui2\AppData\Loc2018-04-06 08:51:54 ERROR MyLogger:230 - Driver creation failled for emulator-5556 on port4723[Ljava.lang.StackTraceElement;@71a9b4c7 Message. An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.59 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: AndroidDriver Cause: null
+al\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\core-js\library\modules\$.export.js:30:36)
+    at AsyncIterator.enqueue (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:184:12)
+    at AsyncIterator.prototype.(anonymous function) [as next] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at Object.runtime.async (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:209:12)
+    at getDevices (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\build\lib\tools\system-calls.js:445:38)
+    at ADB.getDevices$ (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:208:20)
+    at tryCatch (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (D:\Users\GouadaDopavogui2\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+2018-04-06 08:51:54 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
+2018-04-06 08:51:54 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-06 08:51:54 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
+2018-04-06 08:51:58 INFO  MyLogger:103 - server output 
+2018-04-06 08:51:58 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
+2018-04-06 08:51:58 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
+2018-04-06 08:51:58 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-06 08:51:58 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
+2018-04-06 08:51:59 INFO  MyLogger:103 - server output 
+</system-out>
+    <system-err>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.59 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
+	at core.manager.DriverManager.createAndroidDriver(DriverManager.java:214)
+	at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</system-err>
+  </testcase>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.015">
+    <failure message="the app could not be started" type="java.lang.AssertionError">java.lang.AssertionError: the app could not be started
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:128)
+	at ✽.Given navigator is started(travelinformation.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the start station Frankfurt" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the destination station Frankfurt" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the day picker" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I select the travel date(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select the travel date" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click the done button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the done button" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="And I click the search button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click the search button" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="And I scroll down to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I scroll down to later button" time="0.016">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I scroll up to earlier button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll up to earlier button" time="0.017">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I scroll back to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll back to later button" time="0.019">
+    <skipped/>
+  </testcase>
+  <testcase classname="And I click later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click later button" time="0.021">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select a trip" time="0.022">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click mfe button" time="0.024">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click operation days" time="0.026">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button" time="0.028">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.059">
+    <error message="A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;BK7N00066974&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=de.hafas.main.HafasApp, desired={appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, newCommandTimeout=60.0, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=Android SDK built for x86, platformName=Android, udid=emulator-5556, deviceManufacturer=Google}]
+Session ID: be48fa63-1a12-49d8-a87e-f6f7fc3277f7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:283)
+	at core.manager.DriverManager.killDriver(DriverManager.java:262)
+	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-out>2018-04-06 08:51:59 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+[HTTP] --&gt; POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/appium/app/close {}
+[HTTP] &lt;-- POST /wd/hub/session/be48fa63-1a12-49d8-a87e-f6f7fc3277f7/appium/app/close 404 2 ms - 131 
+</system-out>
+  </testcase>
+</testsuite>

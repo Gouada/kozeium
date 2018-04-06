@@ -39,13 +39,16 @@ public class DriverManager {
 	private static AndroidDriver<WebElement> driver;
 	private WebDriver remoteDriver;
 
-	private static String node_js = "D:/NonBKU/nodejs/node.exe";
+	public final static String node_js = ServerManager.getNodeJSPath();// "D:/NonBKU/nodejs/node.exe";
 
 	// appium.js used to be appium-server starter this function is assumed in
 	// newer appium-versions with
 	// /resources/app/node_modules/appium/build/lib/main.js
 	// private static String appiumjs = "D:/NonBKU/node_modules/.bin/appium.js";
-	private static String appiumjs = "D:/Users/GouadaDopavogui2/AppData/Local/Programs/appium-desktop/resources/app/node_modules/appium/build/lib/main.js";
+	private static String appiumjs = ServerManager.getAppiumJSPath();
+
+	// "D:/Users/GouadaDopavogui2/AppData/Local/Programs/appium-desktop/resources/app/node_modules/appium/build/lib/main.js";
+	// D:\NonBKU\Appium\node_modules\appium\bin\appium.js
 	private static DriverService driverService;
 
 	public DriverManager() {
@@ -128,7 +131,7 @@ public class DriverManager {
 
 			for (String currentDeviceName : DriverManager.availableDevices) {
 				if (capas != null) {
-					if ((capas.getDEVICE_NAME() == "" || capas.getDEVICE_NAME() == null)) {
+					if ((capas.getDEVICEID() == "" || capas.getDEVICEID() == null)) {
 						capas.setDeviceName(currentDeviceName);
 					}
 				}
@@ -176,7 +179,7 @@ public class DriverManager {
 		// int j = 0;
 		String port = "";
 		String foundPort = "";
-		String currentDeviceName = deviveCapas.getDEVICE_NAME();
+		String currentDeviceName = deviveCapas.getDEVICEID();
 		String plattform = deviveCapas.getPLATFORM_VERSION();
 		AndroidDriver<WebElement> currentDriver;
 
@@ -212,7 +215,7 @@ public class DriverManager {
 						deviveCapas.getAPP_PACKAGE(), deviveCapas.getActivity(), null));
 				currentDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				// no sleep here, will lead to error
-				Thread.sleep(300);
+				Thread.sleep(500);
 				Android.adb = new ADB(currentDeviceName);
 				// Android.driver = driver;
 
@@ -235,16 +238,16 @@ public class DriverManager {
 	// multithreading to avoid simoultanious driver createion
 	public synchronized RemoteWebDriver createRemoteDriver() {
 		try {
-			MyLogger.logger.info("creating driver for " + capas.getDEVICE_NAME());
-			if (!adb.isAppInstalled(capas.getDEVICE_NAME(), capas.getAPP_PACKAGE())) {
+			MyLogger.logger.info("creating driver for " + capas.getDEVICEID());
+			if (!adb.isAppInstalled(capas.getDEVICEID(), capas.getAPP_PACKAGE())) {
 				// adb.installApp(capas.getDEVICE_NAME(), capas.getAppPath(),
 				// capas.getAppName());
 			}
 			remoteDriver = new RemoteWebDriver(new URL(urlString),
-					getCapabilities(capas.getDEVICE_NAME(), capas.getAPP_PACKAGE(), capas.getActivity(), null));
+					getCapabilities(capas.getDEVICEID(), capas.getAPP_PACKAGE(), capas.getActivity(), null));
 			remoteDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			System.out.println(capas.getDEVICE_NAME() + "..." + capas.getAPP_PACKAGE() + "..." + capas.getActivity());
-			MyLogger.logger.info("created driver for " + capas.getDEVICE_NAME());
+			System.out.println(capas.getDEVICEID() + "..." + capas.getAPP_PACKAGE() + "..." + capas.getActivity());
+			MyLogger.logger.info("created driver for " + capas.getDEVICEID());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,0 +1,6 @@
+#surefire
+#Fri Apr 06 08:48:41 CEST 2018
+exec.classpathScope=test
+user.dir=D\:\\myApps\\myWorkspace\\kozeium
+localRepository=D\:\\Users\\GouadaDopavogui\\.m2\\repository
+basedir=D\:\\myApps\\myWorkspace\\kozeium

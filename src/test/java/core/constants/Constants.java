@@ -11,6 +11,7 @@ public interface Constants {
 
 	public static final String NAVIGATOR_APK = "db-navigator-16-06-p09-00.apk";
 	public static final String PATH = "D:/myApps/apks";
+	public static final String PROPERTIES_FILE_FOLDER = "properties_files"; // src/main/resources/
 
 	// public static final Map<String[], String[]> APP_APK_PATH = new
 	// HashMap<String[], String[]>(){PATH,APP_NAME};

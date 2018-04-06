@@ -1,5 +1,8 @@
 package core;
 
+//this is an utility class for writing reading and updating a json-file
+// methods of this class are synchronised to avoid parallel access to file
+
 import static core.constants.Constants.PORTS;
 
 import java.io.FileNotFoundException;
@@ -8,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+// be sure to import the correct classes of json.simple and notgoogle gson i.e.
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -19,86 +23,92 @@ public class JsonReadWriter {
 
 	private final JSONParser parser = new JSONParser();
 	private final JSONObject deviceListJsonObject = new JSONObject();
-	private Device device;
-	private CapabilitiesDevice deviceCcapas;
-	private final ArrayList<Device> deviceList = new ArrayList<>();
+	// private final ServerManager serverManager = new ServerManager();
+	// private final String currentderstory =
+	// serverManager.getCurrentWorkingDirectory();
 
-	public static String deviceListFileName = "src/test/resources/devicesList.json";
-	// public static String deviceCapasFileName =
-	// "src/test/resources/deviceCapasList.json";
+	/* devicesList.json is in src\main\resources */
+	public String deviceListFileName = "/devicesList.json";
 
+	// this method save connected devices into a json-file
 	@SuppressWarnings("unchecked")
 	public synchronized void writeToFile(ArrayList<Device> newDeviceList) {
 		if (newDeviceList != null && newDeviceList.size() > 0) {
 			JSONArray devices = new JSONArray();
-			// JSONArray devicesCapabilities = new JSONArray();
 
 			int i = 0;
+			// iterate over a device-list and save each device with its
+			// properties
+			// into json-file see Device-Class for device-properties description
 			for (Device device : newDeviceList) {
 
 				JSONObject deviceProp = new JSONObject();
-				JSONObject currentDeviceCapabities = new JSONObject();
+				// JSONObject currentDeviceCapabities = new JSONObject();
 
-				deviceProp.put("deviceID", device.getDeviceName());
+				deviceProp.put("deviceID", device.getDeviceID());
 				deviceProp.put("palttfromVersion", device.getPlatformVersion());
 
 				deviceProp.put("inUse", device.isUsed());
+
+				// if a test was already started at this port with this device
+				// then nothing to change
 				if (!device.getPort().equals("") && device.getPort() != "") {
 					deviceProp.put("port", device.getPort());
-				} else {
+				} else { // starting test for first time at this port
 					deviceProp.put("port", PORTS[i]);
 				}
 				deviceProp.put("status", device.getStatus());
+				deviceProp.put("deviceLang", device.getDeviceLang());
 				devices.add(deviceProp);
 
-				// currentDeviceCapabities = deviceProp;
-				// currentDeviceCapabities.put("appPackage", Package);
-				// currentDeviceCapabities.put("appLuncherActivity", activity);
-				// currentDeviceCapabities.put("port", i);
-				// devicesCapabilities.add(currentDeviceCapabities.toJSONString());
 				i++;
 			}
 			deviceListJsonObject.put("deviceList", devices);
-			try (FileWriter file = new FileWriter(deviceListFileName)) {
+			// try (FileWriter file = new FileWriter(deviceListFileName)) {
 
+			// writing to json-file
+			try {
+				FileWriter file = new FileWriter(getClass().getResource(deviceListFileName).getPath());
 				file.write(deviceListJsonObject.toJSONString());
-				file.flush();
-
+				file.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
-			// System.out.print("JsonFile file output" + deviceListJsonObject);
 		}
 	}
 
+	// this method read and return a device-list out of a json-file
 	public synchronized ArrayList<Device> readFromFile() {
 		ArrayList<Device> readDeviceList = new ArrayList<>();
 		try {
-			Object obj = parser.parse(new FileReader(deviceListFileName));
+			// reading from file
+			Object obj = parser.parse(new FileReader(getClass().getResource(deviceListFileName).getPath()));
+
+			// saving into JSONOBJECT
 			JSONObject jsonObject = (JSONObject) obj;
 			JSONArray devicesJList = new JSONArray();
+
+			// get json-list
 			devicesJList = (JSONArray) jsonObject.get("deviceList");
 
+			// iterate over the json-list to create a device ArrayList
 			for (Object deviceObject : devicesJList) {
 				if (deviceObject != null) {
 					JSONObject deviceJsonObject = (JSONObject) deviceObject;
-					String device_name = (String) deviceJsonObject.get("deviceID");
+					String device_ID = (String) deviceJsonObject.get("deviceID");
 					String plattVersion = (String) deviceJsonObject.get("palttfromVersion");
 					boolean inUse = (boolean) deviceJsonObject.get("inUse");
 					String port = (String) deviceJsonObject.get("port");
 					Long status = (Long) deviceJsonObject.get("status");
+					String deviceLang = (String) deviceJsonObject.get("deviceLang");
 
-					Device device = new Device(device_name, inUse, plattVersion);
+					Device device = new Device(device_ID, inUse, plattVersion);
 					device.setPort(port);
 					device.setStatus(status);
+					device.setDeviceLang(deviceLang);
 					readDeviceList.add(device);
-
-					// System.out.println(device_name + " " + inUse + " .... " +
-					// plattVersion);
 				}
 			}
-
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -106,21 +116,26 @@ public class JsonReadWriter {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		// this.deviceList.sort(new Comparator<new >);
 		return readDeviceList;
 	}
 
+	// this method update an existing json-file
 	public synchronized void updateList(Device usedDevice) {
 		ArrayList<Device> currentList = readFromFile();
 		ArrayList<Device> updatedtList = new ArrayList<Device>();
-		for (Device device : currentList) {
-			if (device.getDeviceName().equals(usedDevice.getDeviceName())) {
+		try {
+			for (Device device : currentList) {
+				if (device.getDeviceID().equals(usedDevice.getDeviceID())) {
 
-				device = usedDevice;
-				MyLogger.logger.info("updating device prop/capas...");
+					device = usedDevice;
+					MyLogger.logger.info("updating device prop/capas..." + device.getDeviceID());
+				}
+				updatedtList.add(device);
 			}
-			updatedtList.add(device);
+			writeToFile(updatedtList);
+		} catch (Exception e) {
+			MyLogger.logger.error("unexpected error while updating device list");
 		}
-		writeToFile(updatedtList);
+		;
 	}
 }

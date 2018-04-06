@@ -69,15 +69,15 @@ public class CapabilitiesDevice {
 		desiredCapas.setCapability(MobileCapabilityType.PLATFORM_NAME, getPLATFORM_NAME());
 		desiredCapas.setCapability(MobileCapabilityType.PLATFORM_VERSION, getPLATFORM_VERSION());
 
-		desiredCapas.setCapability(MobileCapabilityType.DEVICE_NAME, getDEVICE_NAME());
-		desiredCapas.setCapability(MobileCapabilityType.UDID, getDEVICE_NAME());
+		desiredCapas.setCapability(MobileCapabilityType.DEVICE_NAME, getDEVICEID());
+		desiredCapas.setCapability(MobileCapabilityType.UDID, getDEVICEID());
 
 		desiredCapas.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getAPP_PACKAGE());
 		desiredCapas.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getActivity());
-		desiredCapas.setCapability("newCommandTimeout", 120);
-
+		desiredCapas.setCapability("newCommandTimeout", 60);
 		// desiredCapas.setCapability("automationName", "UiAutomator2");
-		// if(getAppApkPath().equal("") || getAppApkPath() == null)
+
+		// if(getAppApkPath() == null || getAppApkPath().equal("") )
 		// if (adb.isAppInstalled(getDEVICE_NAME(), getAPP_PACKAGE())) {
 		// desiredCapas.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,
 		// getAPP_PACKAGE());
@@ -126,7 +126,7 @@ public class CapabilitiesDevice {
 		return PLATFORM_NAME;
 	}
 
-	public String getDEVICE_NAME() {
+	public String getDEVICEID() {
 		return this.deviceName;
 	}
 

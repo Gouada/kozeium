@@ -1,0 +1,225 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 35,
+        "name": "travelInfo",
+        "description": "",
+        "id": "travelinformation;travelinfo;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3418817970,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TravelInformationSteps.finishTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15954199219,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "navigator is started",
+            "match": {
+              "location": "TravelInformationSteps.navigator_app_is_startted()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8188326676,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I enter the start station Berlin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Berlin",
+                  "offset": 26
+                }
+              ],
+              "location": "TravelInformationSteps.i_enter_the_start_station(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8144448049,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I enter the destination station Hamburg",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hamburg",
+                  "offset": 32
+                }
+              ],
+              "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1627262800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click the day picker",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_day_picker()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 651083623,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I select the travel date",
+            "match": {
+              "location": "TravelInformationSteps.i_select_the_travel_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1088131259,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click the done button",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_done_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1206954976,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click the search button",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_search_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@calculator"
+          },
+          {
+            "line": 19,
+            "name": "@tag"
+          }
+        ]
+      }
+    ],
+    "name": "travelinformation",
+    "description": "I want to use this template for my feature file",
+    "id": "travelinformation",
+    "keyword": "Feature",
+    "uri": "travelinformation.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]

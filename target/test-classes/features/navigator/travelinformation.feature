@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: gouada1@yahoo.fr
 #Keywords Summary :
 #Feature: List of scenarios.
 #Scenario: Business rule through list of steps with arguments.
@@ -20,7 +20,7 @@
 Feature: travelinformation
 I want to use this template for my feature file
 
-  @calculator
+  @tripPlaner
   Scenario Outline: travelInfo
     Given navigator is started
     Then I enter the start station <start_station>
@@ -29,10 +29,20 @@ I want to use this template for my feature file
     Then I select the travel date
     Then I click the done button
     And I click the search button
+    And I scroll down to later button
+    Then I scroll up to earlier button
+    Then I scroll back to later button
+    And I click later button
+    Then I select a trip
+    Then I click mfe button
+    Then I click operation days
+    Then I click back button
+    
 
 Examples:
 	|	      start_station | destination_station |
-    |                Berlin |		      Hamburg |
-#	|                 Mainz |              Bremen |
+	|                Mainz Hbf |		      Leipzig Hbf |
+	|                Frankfurt(Main)Hbf |		      Frankfurt(Main)Flugh |
+#	|                 Mainz Hbf|              Bremen |
 #    |             Magdeburg |             Leipzig |
 #    |               Dresden |           Stuttgart |    

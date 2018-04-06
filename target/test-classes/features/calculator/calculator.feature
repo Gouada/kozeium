@@ -30,10 +30,10 @@ Feature: calculator
 
 Examples:
 	|	operand1 | operand2 | operator |
-    |          7 |		  8 |   plus |
-    |          3 |        7 |   multiply |
-    |          3 |        3 |   minus |
-    |          3 |        3 |   divide |
+    |          7 |		  8 |   op_add |
+    |          3 |        7 |   op_mul |
+    |          3 |        3 |   op_sub |
+    |          3 |        3 |   op_div |
     
 
   @tag2

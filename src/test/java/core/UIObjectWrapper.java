@@ -1,5 +1,6 @@
 package core;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.apache.log4j.Level;
@@ -33,7 +34,7 @@ public class UIObjectWrapper {
 		// }
 		// Android.driverMap.
 		androidDriver = Android.driverMap.get(this.deviceId);
-		MyLogger.logger.info("LOGGED FROM UIObjectWrapper " + this.deviceId);
+		// MyLogger.logger.info("LOGGED FROM UIObjectWrapper " + this.deviceId);
 		// androidDriver = Android.driver;
 
 	}
@@ -47,7 +48,7 @@ public class UIObjectWrapper {
 		return !locator.contains("UiSelector");
 	}
 
-	public boolean isDisplayed() {
+	public boolean isVisible() {
 
 		try {
 			WebElement element;
@@ -113,7 +114,15 @@ public class UIObjectWrapper {
 		return element.getAttribute("clickable").equals(true);
 	}
 
-	public String getText(String locator) {
+	// public String getText(String locator) {
+	// if (isxPath()) {
+	// return androidDriver.findElementByXPath(locator).getText();
+	// } else {
+	// return androidDriver.findElementByAndroidUIAutomator(locator).getText();
+	// }
+	// }
+
+	public String getText() {
 		if (isxPath()) {
 			return androidDriver.findElementByXPath(locator).getText();
 		} else {
@@ -121,7 +130,7 @@ public class UIObjectWrapper {
 		}
 	}
 
-	public String getTagName(String locator) {
+	public String getTagName() { // String locator
 		if (isxPath()) {
 			return androidDriver.findElementByXPath(locator).getTagName();
 		} else {
@@ -129,7 +138,7 @@ public class UIObjectWrapper {
 		}
 	}
 
-	public String getClassName(String locator) {
+	public String getClassName() { // String locator
 		if (isxPath()) {
 			return androidDriver.findElementByXPath(locator).getAttribute("className");
 		} else {
@@ -146,7 +155,7 @@ public class UIObjectWrapper {
 		}
 	}
 
-	public String contentTDescription(String locator) {
+	public String contentTDescription() { // String locator
 		if (isxPath()) {
 			return androidDriver.findElementByXPath(locator).getAttribute("content-Desc");
 		} else {
@@ -154,11 +163,22 @@ public class UIObjectWrapper {
 		}
 	}
 
-	public Point getLoaction(String locator) {
+	public Point getLoaction() { // String locator
 		if (isxPath()) {
 			return androidDriver.findElementByXPath(locator).getLocation();
 		} else {
 			return androidDriver.findElementByAndroidUIAutomator(locator).getLocation();
+		}
+	}
+
+	// return a list of specific Webelement i.e.: a list of linear layout object
+	public List<WebElement> getElementsList() {
+		if (isxPath()) {
+			MyLogger.logger.info("FINDING ELEMENT BY XPATH:.......... " + locator);
+			return androidDriver.findElementsByXPath(locator);
+		} else {
+			MyLogger.logger.info("FINDING ELEMENT BY UIAutomator:.......... " + locator);
+			return androidDriver.findElementsByAndroidUIAutomator(locator);
 		}
 	}
 
@@ -167,6 +187,12 @@ public class UIObjectWrapper {
 			androidDriver.findElementByXPath(locator).click();
 		} else {
 			androidDriver.findElementByAndroidUIAutomator(locator).click();
+		}
+	}
+
+	public void tapListElement(int element_position) {
+		if (!getElementsList().isEmpty() && (getElementsList().size() - 1 > element_position)) {
+			getElementsList().get(element_position).click();
 		}
 	}
 
@@ -187,32 +213,45 @@ public class UIObjectWrapper {
 	}
 
 	public void scrollToElement() {
-		String text = "";
-		if (!locator.contains("text")) {
+		String text = ".";
+		if (!locator.contains("text") && !locator.contains("resourceId")) {
+			MyLogger.logger.error("locator " + locator + " does not contains text. Element is not identified by text.");
 			throw new AssertionError(
 					"locator " + locator + " does not contains text. Element is not identified by text.");
+		} else if (locator.contains("resourceId")) {
+			androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()."
+					+ "scrollable(true).instance(0)).scrollIntoView( " + locator + ".instance(0));");
 		} else {
 			if (locator.contains("textcontains")) {
 				text = locator.substring(locator.indexOf("[@textcontains=\""), locator.indexOf("\""))
 						.replace("[@textcontains=\"", "");
-			} else {
-				text = locator.substring(locator.indexOf("[@text=\""), locator.indexOf("\"")).replace("[@text=\"", "");
+			} else if (locator.contains("text")) {
+				text = locator.substring(locator.indexOf("[@text=\""), locator.indexOf("\"]"));
+				text = text.replace("[@text=\"", "");
+				text = text.replace("\"]", "");
+
+				System.out.println("scrolling to........... " + text);
+				MyLogger.logger.info("scrolling to " + text);
 			}
 			androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()."
-					+ "scrollable(true).instance(0)).scrollIntoView(new UiSelector.text\"" + text + "\").instance(0)");
+					+ "scrollable(true).instance(0)).scrollIntoView(new UiSelector.text(\"" + text
+					+ "\").instance(0));");
+			// androidDriver.findElementByAndroidUIAutomator("new
+			// UiScrollable(new UiSelector()."
+			// +"scrollable(true).instance(0)).scrollIntoView(new
+			// UiSelector().textMatches("" + selector + "").instance(0))"));
 		}
-
 	}
 
 	public void waitElementToappaer(int seconds) {
 		Timer timer = new Timer();
 		timer.start();
 		while (!timer.isExpired(seconds)) {
-			if (isDisplayed()) {
+			if (isVisible()) {
 				break;
 			}
 		}
-		if (timer.isExpired(seconds) && !isDisplayed()) {
+		if (timer.isExpired(seconds) && !isVisible()) {
 			throw new AssertionError("Element " + locator + " failed to appaer within " + seconds);
 		}
 	}
@@ -221,14 +260,25 @@ public class UIObjectWrapper {
 		Timer timer = new Timer();
 		timer.start();
 		while (!timer.isExpired(seconds)) {
-			if (!isDisplayed()) {
+			if (!isVisible()) {
 				break;
 			}
 		}
-		if (timer.isExpired(seconds) && isDisplayed()) {
+		if (timer.isExpired(seconds) && isVisible()) {
 			throw new AssertionError("Element " + locator + " failed to disappear within " + seconds);
 		}
 	}
+
+	// public void setFocus() {
+	// WebElement element;
+	// if (isxPath()) {
+	// element = androidDriver.findElementByXPath(locator);
+	// } else {
+	// element = androidDriver.findElementByAndroidUIAutomator(locator);
+	// }
+	// return element.getAttribute("focused").value;
+	// // return element.getAttribute("focused").equals(true);
+	// }
 
 	// public void scrollTo() {
 	// // ...

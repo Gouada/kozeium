@@ -1,5 +1,8 @@
 package core;
 
+//this class provide utilyties for ADB-Operations
+// i.e.: App-installation, providing device informations (plattform-version, device_id etc...)
+
 import static core.constants.Constants.PATH;
 
 import java.io.BufferedReader;
@@ -18,8 +21,10 @@ public class ADB {
 	private String adbCommandString;
 	private ArrayList<String> connectedDeviceIds = new ArrayList<>();
 	private String deviceID = "";
+	private static String SCREEENSHOTS_FOLDER = "/sdcard/screenshots/";
 
 	public ADB() {
+		// Setting logglevel
 		MyLogger.logger.setLevel(Level.DEBUG);
 	}
 
@@ -64,6 +69,10 @@ public class ADB {
 		return serverManager;
 	}
 
+	// this method execute first a cd-command to Android-Sdk-plattform-tools
+	// folder execute the provided "adbCommand" and return the server response
+	// as String
+
 	private String executeADBComannd(String adbCommand) {
 		Process process;
 		BufferedReader bufferedReader;
@@ -71,15 +80,18 @@ public class ADB {
 
 		String outPutString = "";
 
+		// test is executed on a windows machine
 		if (serverManager.isWindows()) {
-
 			try {
 
 				adbCommand = adbCommand.replace("adb", serverManager.getAndroidPath() + "\\platform-tools\\adb");
-				MyLogger.logger.info("executed command..." + adbCommand);
+				MyLogger.logger.info("executing command... " + adbCommand);
 				process = Runtime.getRuntime().exec(adbCommand);
 				process.waitFor();
 
+				// save server response in a string variable this string is
+				// parsed later on, i.e. to save connected devices-names in an
+				// array-string
 				bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 				BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
 				String s;
@@ -88,7 +100,7 @@ public class ADB {
 				}
 				// System.out.println("outPutString..." + outPutString);
 
-				MyLogger.logger.info("server output" + outPutString);
+				MyLogger.logger.info("server output " + outPutString);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e.getMessage());
@@ -155,6 +167,7 @@ public class ADB {
 		String outPut;
 		String[] spitedOput;
 
+		// paring server output to save only device-ids
 		try {
 			outPut = executeADBComannd(" adb devices");
 			int i = 0;
@@ -247,18 +260,29 @@ public class ADB {
 		MyLogger.logger.info("pushed from " + originPath + " to " + destinationPath);
 	}
 
-	public void pullFile(String deviceID, String originPath, String destinationPath) throws InterruptedException {
-		executeADBComannd(" adb -s " + deviceID + " pull " + originPath + " " + destinationPath);
-		MyLogger.logger.info("pulled from " + originPath + " to " + destinationPath);
+	public void pullFile(String deviceID, String filename, String destinationPath) throws InterruptedException {
+		executeADBComannd(" adb -s " + deviceID + " pull " + SCREEENSHOTS_FOLDER + filename + " " + destinationPath);
+		MyLogger.logger.info("pulled from " + SCREEENSHOTS_FOLDER + " to " + destinationPath);
 	}
 
-	public void takeScreenShot(String deviceID, String destinationPath, String filename) throws InterruptedException {
-		executeADBComannd("adb -s" + deviceID + " screencap " + destinationPath + "/" + filename);
-		MyLogger.logger.info("took screenshot " + filename);
+	public void takeScreenShot(String deviceID, String filename) throws InterruptedException {
+		executeADBComannd("adb -s " + deviceID + " shell screencap " + SCREEENSHOTS_FOLDER + filename);
+		MyLogger.logger.info("took screenshot and saved in " + SCREEENSHOTS_FOLDER + filename);
 	}
 
-	public void removeFile(String deviceID, String destinationPath, String filename) throws InterruptedException {
-		executeADBComannd("adb -s" + deviceID + " rm -f" + destinationPath + "/" + filename);
+	public void removeFile(String deviceID, String filename) throws InterruptedException {
+		executeADBComannd("adb  -s " + deviceID + " rm -f" + SCREEENSHOTS_FOLDER + filename);
+	}
+
+	public void saveScreeenShootOnServer(String deviceID, String filename, String server_path) {
+		try {
+			takeScreenShot(deviceID, filename);
+			pullFile(deviceID, filename, server_path);
+			removeFile(deviceID, filename);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void rebootDevice(String deviceID) {
@@ -292,5 +316,15 @@ public class ADB {
 
 	public void pressBackButton(String deviceID) {
 		executeADBComannd("adb -s " + deviceID + "shell keyevent 4");
+	}
+
+	public void startEmulator(String deviceName) // i.e.: Device_1
+	{
+		// cd back to android sdk/tools - tools foder and run
+		// emulator -avd deviceName
+	}
+
+	public String getDeviceLang(String deviceID) {
+		return executeADBComannd("adb -s " + deviceID + " shell getprop persist.sys.locale").replace("\n", "").trim();
 	}
 }

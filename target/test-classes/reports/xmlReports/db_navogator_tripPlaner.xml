@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="28.607535">
+<testcase classname="travelinformation" name="travelInfo" time="27.813038">
+<failure message="java.lang.AssertionError: the app could not be started&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:128)&#13;&#10;&#9;at ✽.Given navigator is started(travelinformation.feature:25)&#13;&#10;"><![CDATA[Given navigator is started..................................................failed
+Then I enter the start station Mainz Hbf....................................skipped
+Then I enter the destination station Leipzig Hbf............................skipped
+Then I click the day picker.................................................skipped
+Then I select the travel date...............................................skipped
+Then I click the done button................................................skipped
+And I click the search button...............................................skipped
+And I scroll down to later button...........................................skipped
+Then I scroll up to earlier button..........................................skipped
+Then I scroll back to later button..........................................skipped
+And I click later button....................................................skipped
+Then I select a trip........................................................skipped
+Then I click mfe button.....................................................skipped
+Then I click operation days.................................................skipped
+Then I click back button....................................................skipped
+
+StackTrace:
+java.lang.AssertionError: the app could not be started
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:128)
+	at ✽.Given navigator is started(travelinformation.feature:25)
+]]></failure>
+</testcase>
+<testcase classname="travelinformation" name="travelInfo_2" time="0.794497">
+<failure message="java.lang.AssertionError: the app could not be started&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:128)&#13;&#10;&#9;at ✽.Given navigator is started(travelinformation.feature:25)&#13;&#10;"><![CDATA[Given navigator is started..................................................failed
+Then I enter the start station Frankfurt(Main)Hbf...........................skipped
+Then I enter the destination station Frankfurt(Main)Flugh...................skipped
+Then I click the day picker.................................................skipped
+Then I select the travel date...............................................skipped
+Then I click the done button................................................skipped
+And I click the search button...............................................skipped
+And I scroll down to later button...........................................skipped
+Then I scroll up to earlier button..........................................skipped
+Then I scroll back to later button..........................................skipped
+And I click later button....................................................skipped
+Then I select a trip........................................................skipped
+Then I click mfe button.....................................................skipped
+Then I click operation days.................................................skipped
+Then I click back button....................................................skipped
+
+StackTrace:
+java.lang.AssertionError: the app could not be started
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.navigator_app_is_startted(TravelInformationSteps.java:128)
+	at ✽.Given navigator is started(travelinformation.feature:25)
+]]></failure>
+</testcase>
+</testsuite>
