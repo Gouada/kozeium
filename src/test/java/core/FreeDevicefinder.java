@@ -97,12 +97,21 @@ public class FreeDevicefinder {
 	}
 
 	public synchronized void updateDeviceInDeviceListFile(Device device) {
+		jsonReadWriter = new JsonReadWriter();
 		jsonReadWriter.updateList(device);
 	}
 
-	public Device waitForFreeDevice(int i) {
-		// TODO Auto-generated method stub
-		return null;
+	public Device waitForFreeDevice(int seconds) throws InterruptedException {
+		Device freeDevice = null;
+		Timer timer = new Timer();
+		timer.start();
+		while (!timer.isExpired(seconds) && freeDevice == null) {
+			freeDevice = findFreeDevice();
+			// if () {
+			// break;
+			Thread.sleep(20000);
+		}
+		return freeDevice;
 	}
 
 }
