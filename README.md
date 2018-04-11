@@ -11,7 +11,7 @@ tet scenario_2 parallely run on device_2 ... test scenario_n run on device_n).
 
 Jenkins integration: the project can be run and reported in jenkins as maven project. It create a json-report for use with cucumber-report-plugins in jenkins
  
-#Required tools and software
+# Required tools and software
 
 1. Eclipse IDE
 2. Java 1.8
