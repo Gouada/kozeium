@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="177.452197">
+<testcase classname="calculator" name="addition" time="47.742699">
+<system-out><![CDATA[Given I start the calculator................................................passed
+When I click the first 7....................................................passed
+Then I click an operator op_add.............................................passed
+And I click the second 8....................................................passed
+And I click equal...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="calculator" name="addition_2" time="47.853901">
+<system-out><![CDATA[Given I start the calculator................................................passed
+When I click the first 3....................................................passed
+Then I click an operator op_mul.............................................passed
+And I click the second 7....................................................passed
+And I click equal...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="calculator" name="addition_3" time="42.003563">
+<system-out><![CDATA[Given I start the calculator................................................passed
+When I click the first 3....................................................passed
+Then I click an operator op_sub.............................................passed
+And I click the second 3....................................................passed
+And I click equal...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="calculator" name="addition_4" time="39.852034">
+<system-out><![CDATA[Given I start the calculator................................................passed
+When I click the first 3....................................................passed
+Then I click an operator op_div.............................................passed
+And I click the second 3....................................................passed
+And I click equal...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

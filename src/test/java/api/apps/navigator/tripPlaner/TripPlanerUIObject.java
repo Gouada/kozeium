@@ -1,7 +1,5 @@
 package api.apps.navigator.tripPlaner;
 
-import static api.apps.navigator.tripPlaner.TriplannerIdentificators.activity_title_identificator;
-
 import org.apache.log4j.Level;
 
 import core.MyLogger;
@@ -113,9 +111,9 @@ public class TripPlanerUIObject {
 	 * ).makeIUObject(); return button_favorite; }
 	 */
 	// this method should be implemented only here and not in sub-classes
-	public UIObjectWrapper getActivityTitle() {
-		activity_title = new UISelectorWrapper(this.deviceId).resourceId(activity_title_identificator).makeIUObject();
-		return activity_title;
+	public void getActivityTitlehhh() {
+		// activity_title = new
+		// UISelectorWrapper(this.deviceId).xPath(activity_title_identificator).makeIUObject();
 	}
 
 }

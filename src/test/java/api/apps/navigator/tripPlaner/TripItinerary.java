@@ -23,17 +23,21 @@ public class TripItinerary implements Activity {
 	}
 
 	// provide xpath uiAut cannot find by resource id
-	public boolean iAmOnItineraryActivity() {
-		if (!tripItineraryUIObjects.getActivityTitle().isVisible()) {
-			tripItineraryUIObjects.getActivityTitle().waitElementToappaer(10);
-		}
+	public boolean iAmOnItineraryActivity() throws InterruptedException {
+		// Thread.sleep(1000);
+		tripItineraryUIObjects.getActivityTitle().waitElementToappaer(10);
+		return ((tripItineraryUIObjects.getActivityTitle().getText().contains("Itinerary"))
+				|| (tripItineraryUIObjects.getActivityTitle().getText().contains("Reiseplan")));
 
-		if ((tripItineraryUIObjects.getActivityTitle().getText().contains("Itinerary"))
-				|| (tripItineraryUIObjects.getActivityTitle().getText().contains("Reiseplan"))) {
-			return true;
-		} else {
-			return false;
-		}
+		/*
+		 * if (!tripItineraryUIObjects.getActivityTitle().isVisible()) {
+		 * tripItineraryUIObjects.getActivityTitle().waitElementToappaer(10); }
+		 *
+		 * if ((tripItineraryUIObjects.getActivityTitle().getText().contains(
+		 * "Itinerary")) ||
+		 * (tripItineraryUIObjects.getActivityTitle().getText().contains(
+		 * "Reiseplan"))) { return true; } else { return false; }
+		 */
 	}
 
 	public void clickMfeButton() {

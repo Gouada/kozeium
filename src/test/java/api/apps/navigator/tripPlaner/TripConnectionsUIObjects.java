@@ -80,4 +80,10 @@ public class TripConnectionsUIObjects extends TripPlanerUIObject {
 		single_connection = new UISelectorWrapper(this.deviceId).xPath(single_connection_identificator).makeIUObject(); // single_connection_identificator
 		return single_connection;
 	}
+
+	public UIObjectWrapper getActivityTitle() {
+		String activity_title_identificator = TriplannerIdentificators
+				.getConnetionActivityTitleIdentificator(this.deviceId);
+		return new UISelectorWrapper(this.deviceId).xPath(activity_title_identificator).makeIUObject();
+	}
 }

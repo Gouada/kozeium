@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="121.814917">
-<testcase classname="travelinformation" name="travelInfo" time="65.147741">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="129.926451">
+<testcase classname="travelinformation" name="travelInfo" time="73.278191">
 <system-out><![CDATA[Given navigator is started..................................................passed
 Then I enter the start station Mainz Hbf....................................passed
 Then I enter the destination station Leipzig Hbf............................passed
@@ -17,7 +17,7 @@ Then I click operation days.................................................pass
 Then I click back button....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="travelinformation" name="travelInfo_2" time="56.667176">
+<testcase classname="travelinformation" name="travelInfo_2" time="56.64826">
 <system-out><![CDATA[Given navigator is started..................................................passed
 Then I enter the start station Frankfurt(Main)Hbf...........................passed
 Then I enter the destination station Frankfurt(Main)Flugh...................passed

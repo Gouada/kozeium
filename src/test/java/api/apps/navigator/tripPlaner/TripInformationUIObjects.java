@@ -1,6 +1,5 @@
 package api.apps.navigator.tripPlaner;
 
-import static api.apps.navigator.tripPlaner.TriplannerIdentificators.activity_title_identificator;
 import static api.apps.navigator.tripPlaner.TriplannerIdentificators.date_seletion_done_button_identificator;
 import static api.apps.navigator.tripPlaner.TriplannerIdentificators.input_location_name_identificator;
 import static api.apps.navigator.tripPlaner.TriplannerIdentificators.search_button_identificator;
@@ -41,10 +40,10 @@ public class TripInformationUIObjects {
 			activity_title; // TO DO THIS SCHOULD BE DEFINED IN PARENT CLASS
 							// TRIPLANERUIOBJECT activity_title, draw_menu
 
-	// TO DO TRANSFER THIS IN PARENT CLASS
 	public UIObjectWrapper getActivityTitle() {
-		activity_title = new UISelectorWrapper(this.deviceId).resourceId(activity_title_identificator).makeIUObject();
-		return activity_title;
+		String activity_title_identificator = TriplannerIdentificators
+				.getTripInformationActivityTitleIdentificator(this.deviceId);
+		return new UISelectorWrapper(this.deviceId).xPath(activity_title_identificator).makeIUObject();
 	}
 
 	public UIObjectWrapper getdrawerMenu() {

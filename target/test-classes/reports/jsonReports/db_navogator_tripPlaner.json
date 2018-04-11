@@ -1,0 +1,526 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: gouada1@yahoo.fr"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 44,
+        "name": "travelInfo",
+        "description": "",
+        "id": "travelinformation;travelinfo;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 7763457273,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TravelInformationSteps.finishTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31958344538,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "navigator is started",
+            "match": {
+              "location": "TravelInformationSteps.navigator_app_is_startted()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36896992371,
+              "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.20 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027BK7N00066974\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage\u003dde.hafas.android.db, deviceScreenSize\u003d1080x1920, networkConnectionEnabled\u003dtrue, warnings\u003d{}, databaseEnabled\u003dfalse, deviceName\u003demulator-5554, platform\u003dLINUX, deviceUDID\u003demulator-5554, appActivity\u003dde.hafas.main.HafasApp, desired\u003d{appPackage\u003dde.hafas.android.db, appActivity\u003dde.hafas.main.HafasApp, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, browserName\u003dAndroid, platformName\u003dAndroid, udid\u003demulator-5554, deviceName\u003demulator-5554}, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, webStorageEnabled\u003dfalse, locationContextEnabled\u003dfalse, takesScreenshot\u003dtrue, browserName\u003dAndroid, javascriptEnabled\u003dtrue, deviceModel\u003dAndroid SDK built for x86, platformName\u003dAndroid, udid\u003demulator-5554, deviceManufacturer\u003dGoogle}]\nSession ID: d802d09d-2f11-4433-82ed-9c3e30fdfef2\n*** Element info: {Using\u003dxpath, value\u003d//android.widget.LinearLayout[@content-desc\u003d\u0027Mainz Hbf\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)\r\n\tat io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)\r\n\tat core.UIObjectWrapper.tap(UIObjectWrapper.java:189)\r\n\tat api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:89)\r\n\tat ✽.Then I enter the start station Mainz Hbf(travelinformation.feature:26)\r\n",
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "I enter the start station Mainz Hbf",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mainz Hbf",
+                  "offset": 26
+                }
+              ],
+              "location": "TravelInformationSteps.i_enter_the_start_station(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I enter the destination station Leipzig Hbf",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Leipzig Hbf",
+                  "offset": 32
+                }
+              ],
+              "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I click the day picker",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_day_picker()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I select the travel date",
+            "match": {
+              "location": "TravelInformationSteps.i_select_the_travel_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I click the done button",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_done_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I click the search button",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I scroll down to later button",
+            "match": {
+              "location": "TravelInformationSteps.scrollToLaterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I scroll up to earlier button",
+            "match": {
+              "location": "TravelInformationSteps.scrollToEarlierButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I scroll back to later button",
+            "match": {
+              "location": "TravelInformationSteps.scrollBackToLaterButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I click later button",
+            "match": {
+              "location": "TravelInformationSteps.clickLaterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I select a trip",
+            "match": {
+              "location": "TravelInformationSteps.selectAtrip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I click mfe button",
+            "match": {
+              "location": "TravelInformationSteps.clickMfeButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I click operation days",
+            "match": {
+              "location": "TravelInformationSteps.clickOperationDays()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I click back button",
+            "match": {
+              "location": "TravelInformationSteps.clickBackButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@tag"
+          },
+          {
+            "line": 23,
+            "name": "@tripPlaner"
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "travelInfo",
+        "description": "",
+        "id": "travelinformation;travelinfo;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 4796196711,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TravelInformationSteps.finishTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28189908282,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "navigator is started",
+            "match": {
+              "location": "TravelInformationSteps.navigator_app_is_startted()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37122726913,
+              "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.81 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027BK7N00066974\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage\u003dde.hafas.android.db, deviceScreenSize\u003d1080x1920, networkConnectionEnabled\u003dtrue, warnings\u003d{}, databaseEnabled\u003dfalse, deviceName\u003demulator-5554, platform\u003dLINUX, deviceUDID\u003demulator-5554, appActivity\u003dde.hafas.main.HafasApp, desired\u003d{appPackage\u003dde.hafas.android.db, appActivity\u003dde.hafas.main.HafasApp, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, browserName\u003dAndroid, platformName\u003dAndroid, udid\u003demulator-5554, deviceName\u003demulator-5554}, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, webStorageEnabled\u003dfalse, locationContextEnabled\u003dfalse, takesScreenshot\u003dtrue, browserName\u003dAndroid, javascriptEnabled\u003dtrue, deviceModel\u003dAndroid SDK built for x86, platformName\u003dAndroid, udid\u003demulator-5554, deviceManufacturer\u003dGoogle}]\nSession ID: 850e7f64-fe7e-4cd3-947f-b252d1be4472\n*** Element info: {Using\u003dxpath, value\u003d//android.widget.LinearLayout[@content-desc\u003d\u0027Frankfurt(Main)Hbf\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)\r\n\tat io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)\r\n\tat core.UIObjectWrapper.tap(UIObjectWrapper.java:189)\r\n\tat api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:89)\r\n\tat ✽.Then I enter the start station Frankfurt(Main)Hbf(travelinformation.feature:26)\r\n",
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "I enter the start station Frankfurt(Main)Hbf",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Frankfurt(Main)Hbf",
+                  "offset": 26
+                }
+              ],
+              "location": "TravelInformationSteps.i_enter_the_start_station(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I enter the destination station Frankfurt(Main)Flugh",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Frankfurt(Main)Flugh",
+                  "offset": 32
+                }
+              ],
+              "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I click the day picker",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_day_picker()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I select the travel date",
+            "match": {
+              "location": "TravelInformationSteps.i_select_the_travel_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I click the done button",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_done_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I click the search button",
+            "match": {
+              "location": "TravelInformationSteps.i_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I scroll down to later button",
+            "match": {
+              "location": "TravelInformationSteps.scrollToLaterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I scroll up to earlier button",
+            "match": {
+              "location": "TravelInformationSteps.scrollToEarlierButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I scroll back to later button",
+            "match": {
+              "location": "TravelInformationSteps.scrollBackToLaterButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I click later button",
+            "match": {
+              "location": "TravelInformationSteps.clickLaterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I select a trip",
+            "match": {
+              "location": "TravelInformationSteps.selectAtrip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I click mfe button",
+            "match": {
+              "location": "TravelInformationSteps.clickMfeButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I click operation days",
+            "match": {
+              "location": "TravelInformationSteps.clickOperationDays()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I click back button",
+            "match": {
+              "location": "TravelInformationSteps.clickBackButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@tag"
+          },
+          {
+            "line": 23,
+            "name": "@tripPlaner"
+          }
+        ]
+      }
+    ],
+    "name": "travelinformation",
+    "description": "I want to use this template for my feature file",
+    "id": "travelinformation",
+    "keyword": "Feature",
+    "uri": "travelinformation.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]

@@ -1,1033 +1,691 @@
-2018-04-07 12:24:44 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:24:44 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
-2018-04-07 12:24:45 INFO  MyLogger:103 - server output List of devices attached
+2018-04-10 12:18:46 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:46 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
+2018-04-10 12:18:46 INFO  MyLogger:106 - server output List of devices attached
 emulator-5556	device
 emulator-5554	device
 
 
-2018-04-07 12:24:45 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
-2018-04-07 12:24:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:24:45 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:24:45 INFO  MyLogger:103 - server output 7.0
+2018-04-10 12:18:46 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
+2018-04-10 12:18:46 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:46 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
+2018-04-10 12:18:46 INFO  MyLogger:106 - server output 7.0
 
-2018-04-07 12:24:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:24:45 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:24:45 INFO  MyLogger:103 - server output de
+2018-04-10 12:18:46 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:46 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:18:46 INFO  MyLogger:106 - server output en-US
 
-2018-04-07 12:24:45 INFO  MyLogger:56 - added emulator-5556 to device list
-2018-04-07 12:24:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:24:45 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:24:45 INFO  MyLogger:103 - server output 7.0
+2018-04-10 12:18:46 INFO  MyLogger:56 - added emulator-5556 to device list
+2018-04-10 12:18:46 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:46 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-04-10 12:18:46 INFO  MyLogger:106 - server output 7.0
 
-2018-04-07 12:24:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:24:45 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-07 12:24:45 INFO  MyLogger:103 - server output de
+2018-04-10 12:18:46 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:46 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-04-10 12:18:47 INFO  MyLogger:106 - server output de
 
-2018-04-07 12:24:45 INFO  MyLogger:56 - added emulator-5554 to device list
-2018-04-07 12:26:17 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:26:17 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
-2018-04-07 12:26:17 INFO  MyLogger:103 - server output List of devices attached
-emulator-5556	device
-emulator-5554	device
-
-
-2018-04-07 12:26:17 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
-2018-04-07 12:26:17 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:26:17 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:26:17 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:26:17 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:26:17 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:26:17 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:26:17 INFO  MyLogger:56 - added emulator-5556 to device list
-2018-04-07 12:26:17 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:26:17 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:26:17 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:26:17 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:26:17 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-07 12:26:17 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:26:17 INFO  MyLogger:56 - added emulator-5554 to device list
-2018-04-07 12:26:17 INFO  MyLogger:157 - 
+2018-04-10 12:18:47 INFO  MyLogger:56 - added emulator-5554 to device list
+2018-04-10 12:18:47 INFO  MyLogger:157 - 
 
 Starting Test cases from CalculatorRunner with 
 D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=CalculatorRunner test on 
 emulator-5556
 
 
-2018-04-07 12:26:17 INFO  MyLogger:164 - starting thread 50 with device emulator-5556
-2018-04-07 12:26:17 INFO  MyLogger:157 - 
+2018-04-10 12:18:47 INFO  MyLogger:164 - starting thread 56 with device emulator-5556
+2018-04-10 12:18:47 INFO  MyLogger:157 - 
 
 Starting Test cases from TripPlanerRunner with 
 D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=TripPlanerRunner test on 
 emulator-5554
 
 
-2018-04-07 12:26:17 INFO  MyLogger:164 - starting thread 51 with device emulator-5554
-2018-04-07 12:26:24 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:26:25 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:26:25 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
-2018-04-07 12:26:25 ERROR MyLogger:94 - no free device found
-2018-04-07 12:26:25 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:26:25 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:26:25 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
-2018-04-07 12:26:25 ERROR MyLogger:136 - no free device found
-2018-04-07 12:26:25 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:26:25 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:26:25 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
-2018-04-07 12:26:25 ERROR MyLogger:94 - no free device found
-2018-04-07 12:26:25 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:26:25 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:26:25 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
-2018-04-07 12:26:25 ERROR MyLogger:94 - no free device found
-2018-04-07 12:26:25 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:26:25 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:26:25 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
-2018-04-07 12:26:25 ERROR MyLogger:136 - no free device found
-2018-04-07 12:26:25 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:26:25 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:26:25 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
-2018-04-07 12:26:25 ERROR MyLogger:94 - no free device found
-2018-04-07 12:32:32 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:32 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
-2018-04-07 12:32:33 INFO  MyLogger:103 - server output List of devices attached
-emulator-5556	device
-emulator-5554	device
+2018-04-10 12:18:47 INFO  MyLogger:164 - starting thread 57 with device emulator-5554
+2018-04-10 12:18:47 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+2018-04-10 12:18:47 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:18:53 INFO  MyLogger:29 - reading from connected device list 
+2018-04-10 12:18:53 INFO  MyLogger:29 - reading from connected device list 
+2018-04-10 12:18:53 INFO  MyLogger:43 - finding free device 
+2018-04-10 12:18:53 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+2018-04-10 12:18:53 INFO  MyLogger:57 - found free device emulator-5556
+2018-04-10 12:18:53 INFO  MyLogger:43 - finding free device 
+2018-04-10 12:18:53 INFO  MyLogger:63 - no free device found .... FreeDevicefinder
+2018-04-10 12:18:53 ERROR MyLogger:94 - no free device found
+2018-04-10 12:18:53 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:53 INFO  MyLogger:285 - checking port 4723 is free.
+2018-04-10 12:18:53 INFO  MyLogger:29 - reading from connected device list 
+2018-04-10 12:18:53 INFO  MyLogger:43 - finding free device 
+2018-04-10 12:18:53 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:18:53 INFO  MyLogger:57 - found free device emulator-5554
+2018-04-10 12:18:53 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:18:53 INFO  MyLogger:285 - checking port 4726 is free.
+2018-04-10 12:18:53 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
+2018-04-10 12:18:53 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
+2018-04-10 12:19:16 INFO  MyLogger:212 - creating driver for emulator-5556
+2018-04-10 12:19:16 INFO  MyLogger:212 - creating driver for emulator-5554
+2018-04-10 12:19:16 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:16 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
+2018-04-10 12:19:16 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:16 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-04-10 12:19:16 INFO  MyLogger:106 - server output 7.0
 
+2018-04-10 12:19:16 INFO  MyLogger:98 - getting device capabilities for emulator-5556
+2018-04-10 12:19:16 INFO  MyLogger:101 - got device capabilities for emulator-5556
+2018-04-10 12:19:16 INFO  MyLogger:106 - server output 7.0
 
-2018-04-07 12:32:33 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
-2018-04-07 12:32:33 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:33 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:32:33 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:32:33 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:33 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:32:33 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:32:33 INFO  MyLogger:56 - added emulator-5556 to device list
-2018-04-07 12:32:33 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:33 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:32:33 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:32:33 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:33 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-07 12:32:33 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:32:33 INFO  MyLogger:56 - added emulator-5554 to device list
-2018-04-07 12:32:33 INFO  MyLogger:157 - 
-
-Starting Test cases from CalculatorRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=CalculatorRunner test on 
-emulator-5556
-
-
-2018-04-07 12:32:33 INFO  MyLogger:164 - starting thread 41 with device emulator-5556
-2018-04-07 12:32:33 INFO  MyLogger:157 - 
-
-Starting Test cases from TripPlanerRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=TripPlanerRunner test on 
-emulator-5554
-
-
-2018-04-07 12:32:33 INFO  MyLogger:164 - starting thread 42 with device emulator-5554
-2018-04-07 12:32:33 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:32:33 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:32:40 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:32:40 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:32:40 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:32:40 INFO  MyLogger:57 - found free device emulator-5556
-2018-04-07 12:32:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:40 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:32:40 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
-2018-04-07 12:32:40 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:32:40 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:32:40 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:32:40 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:32:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:32:40 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:32:40 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:33:01 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:33:01 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:01 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:33:01 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-07 12:33:01 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:01 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:33:01 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:33:01 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:33:01 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:33:01 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:33:01 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-07 12:33:01 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-07 12:33:12 INFO  MyLogger:226 - created driver for emulator-5554 
+2018-04-10 12:19:16 INFO  MyLogger:98 - getting device capabilities for emulator-5554
+2018-04-10 12:19:16 INFO  MyLogger:101 - got device capabilities for emulator-5554
+2018-04-10 12:19:28 INFO  MyLogger:226 - created driver for emulator-5554 
 com.android.calculator2com.android.calculator2.Calculator 
  http://127.0.0.1:4726/wd/hub
-2018-04-07 12:33:12 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:33:12 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:12 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:33:12 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
+2018-04-10 12:19:28 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
+2018-04-10 12:19:28 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:28 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
+2018-04-10 12:19:28 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
 
-2018-04-07 12:33:12 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:33:12 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:33:12 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:12 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:33:12 INFO  MyLogger:103 - server output   mCurrentFocus=Window{ee02811 u0 com.android.calculator2/com.android.calculator2.Calculator}
+2018-04-10 12:19:28 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-04-10 12:19:28 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
+2018-04-10 12:19:28 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:28 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-04-10 12:19:28 INFO  MyLogger:106 - server output   mCurrentFocus=Window{d1bd181 u0 com.android.calculator2/com.android.calculator2.Calculator}
 
-2018-04-07 12:33:13 INFO  MyLogger:226 - created driver for emulator-5556 
+2018-04-10 12:19:28 INFO  MyLogger:226 - created driver for emulator-5556 
 de.hafas.android.dbde.hafas.main.HafasApp 
  http://127.0.0.1:4723/wd/hub
-2018-04-07 12:33:13 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-07 12:33:13 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:13 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-07 12:33:13 INFO  MyLogger:103 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
+2018-04-10 12:19:28 INFO  MyLogger:62 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
+2018-04-10 12:19:28 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:28 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
+2018-04-10 12:19:29 INFO  MyLogger:106 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
 
-2018-04-07 12:33:13 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
-2018-04-07 12:33:13 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
-2018-04-07 12:33:13 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:13 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:33:13 INFO  MyLogger:103 - server output   mCurrentFocus=Window{be6561d u0 de.hafas.android.db/de.hafas.main.HafasApp}
+2018-04-10 12:19:29 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on emulator-5556
+2018-04-10 12:19:29 DEBUG MyLogger:69 - opening de.hafas.android.db on emulator-5556
+2018-04-10 12:19:29 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:29 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
+2018-04-10 12:19:29 INFO  MyLogger:106 - server output   mCurrentFocus=Window{3ba43b8 u0 de.hafas.android.db/de.hafas.main.HafasApp}
 
-2018-04-07 12:33:14 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:33:15 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:33:18 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:33:18 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:33:18 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:33:18 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:33:18 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:33:18 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:18 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:33:18 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:33:19 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Mainz Hbf']
-2018-04-07 12:33:22 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:33:22 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:22 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:33:22 INFO  MyLogger:103 - server output 7.0
+2018-04-10 12:19:30 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
+2018-04-10 12:19:31 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:19:33 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-04-10 12:19:33 INFO  MyLogger:29 - reading from connected device list 
+2018-04-10 12:19:33 INFO  MyLogger:43 - finding free device 
+2018-04-10 12:19:33 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:19:33 INFO  MyLogger:57 - found free device emulator-5554
+2018-04-10 12:19:33 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:33 INFO  MyLogger:285 - checking port 4726 is free.
+2018-04-10 12:19:33 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
+2018-04-10 12:19:35 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Mainz Hbf']
+2018-04-10 12:19:38 INFO  MyLogger:212 - creating driver for emulator-5554
+2018-04-10 12:19:38 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:38 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-04-10 12:19:38 INFO  MyLogger:106 - server output 7.0
 
-2018-04-07 12:33:22 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:33:22 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:33:27 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Leipzig Hbf']
-2018-04-07 12:33:31 INFO  MyLogger:226 - created driver for emulator-5554 
+2018-04-10 12:19:38 INFO  MyLogger:98 - getting device capabilities for emulator-5554
+2018-04-10 12:19:38 INFO  MyLogger:101 - got device capabilities for emulator-5554
+2018-04-10 12:19:43 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Leipzig Hbf']
+2018-04-10 12:19:46 INFO  MyLogger:226 - created driver for emulator-5554 
 com.android.calculator2com.android.calculator2.Calculator 
  http://127.0.0.1:4726/wd/hub
-2018-04-07 12:33:31 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:33:31 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:31 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:33:31 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
+2018-04-10 12:19:46 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
+2018-04-10 12:19:46 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:46 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
+2018-04-10 12:19:47 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
 
-2018-04-07 12:33:31 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:33:31 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:33:31 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:31 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:33:31 INFO  MyLogger:103 - server output   mCurrentFocus=Window{ec2499 u0 com.android.calculator2/com.android.calculator2.Calculator}
+2018-04-10 12:19:47 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-04-10 12:19:47 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
+2018-04-10 12:19:47 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:47 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-04-10 12:19:47 INFO  MyLogger:106 - server output   mCurrentFocus=Window{c78ad10 u0 com.android.calculator2/com.android.calculator2.Calculator}
 
-2018-04-07 12:33:33 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:33:34 ERROR MyLogger:189 - null[Ljava.lang.StackTraceElement;@579d011c
-2018-04-07 12:33:34 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:33:37 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:33:37 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:33:37 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:33:37 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:33:37 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:33:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:37 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:33:37 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:33:42 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:33:42 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:42 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:33:42 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:42 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:33:43 INFO  MyLogger:103 - server output 7.0
+2018-04-10 12:19:48 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
+2018-04-10 12:19:49 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:19:50 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:50 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:50 INFO  MyLogger:106 - server output en-US
 
-2018-04-07 12:33:43 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:33:43 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:33:43 INFO  MyLogger:103 - server output de
+2018-04-10 12:19:50 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:50 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:50 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:50 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Connections')]
+2018-04-10 12:19:51 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:51 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:51 INFO  MyLogger:106 - server output en-US
 
-2018-04-07 12:33:43 INFO  MyLogger:81 - Loading de properties file ...
-2018-04-07 12:33:43 INFO  MyLogger:54 - succes loading properties-file /properties_files/de-DE.properties
-2018-04-07 12:33:43 INFO  MyLogger:70 - getting property with following key...single_connection_identificatorkey
-2018-04-07 12:33:43 INFO  MyLogger:74 -  found corresponding property Fahrt mit Abfahrt um
-2018-04-07 12:33:43 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:33:43 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:33:44 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:33:44 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:33:45 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:33:46 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:33:46 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:33:50 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text,'ZURÜCK')]
-2018-04-07 12:33:51 INFO  MyLogger:226 - created driver for emulator-5554 
+2018-04-10 12:19:51 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:51 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:51 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:51 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:51 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Connections')]
+2018-04-10 12:19:52 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:52 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:52 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:19:52 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:52 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:52 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:52 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Travel with Departure at')]
+2018-04-10 12:19:52 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-04-10 12:19:52 INFO  MyLogger:29 - reading from connected device list 
+2018-04-10 12:19:52 INFO  MyLogger:43 - finding free device 
+2018-04-10 12:19:52 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:19:52 INFO  MyLogger:57 - found free device emulator-5554
+2018-04-10 12:19:52 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:52 INFO  MyLogger:285 - checking port 4726 is free.
+2018-04-10 12:19:52 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
+2018-04-10 12:19:54 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:54 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:54 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:19:54 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:54 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:54 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:54 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Itinerary')]
+2018-04-10 12:19:55 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:55 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:55 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:19:55 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:55 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:55 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:55 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:55 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Itinerary')]
+2018-04-10 12:19:56 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:56 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:56 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:19:56 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:56 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Days of operation')]
+2018-04-10 12:19:56 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:56 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:56 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:19:56 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:56 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:56 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:56 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:56 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Days of operation')]
+2018-04-10 12:19:57 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:57 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:19:57 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:19:57 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:19:57 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:19:57 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:19:57 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:19:57 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Days of operation')]
+2018-04-10 12:19:58 INFO  MyLogger:212 - creating driver for emulator-5554
+2018-04-10 12:19:58 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:19:58 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-04-10 12:19:58 INFO  MyLogger:106 - server output 7.0
+
+2018-04-10 12:19:58 INFO  MyLogger:98 - getting device capabilities for emulator-5554
+2018-04-10 12:19:58 INFO  MyLogger:101 - got device capabilities for emulator-5554
+2018-04-10 12:20:00 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:00 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:01 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:01 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:01 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:01 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:01 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:01 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text, 'BACK')]
+2018-04-10 12:20:04 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+2018-04-10 12:20:06 INFO  MyLogger:226 - created driver for emulator-5554 
 com.android.calculator2com.android.calculator2.Calculator 
  http://127.0.0.1:4726/wd/hub
-2018-04-07 12:33:51 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:33:51 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:51 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:33:51 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
+2018-04-10 12:20:06 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
+2018-04-10 12:20:06 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:06 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
+2018-04-10 12:20:06 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
 
-2018-04-07 12:33:51 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:33:51 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:33:51 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:51 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:33:51 INFO  MyLogger:103 - server output   mCurrentFocus=Window{c6349c u0 com.android.calculator2/com.android.calculator2.Calculator}
+2018-04-10 12:20:06 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-04-10 12:20:06 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
+2018-04-10 12:20:06 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:06 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-04-10 12:20:06 INFO  MyLogger:106 - server output   mCurrentFocus=Window{da610ff u0 com.android.calculator2/com.android.calculator2.Calculator}
 
-2018-04-07 12:33:53 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:33:53 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:33:54 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:33:56 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-07 12:33:56 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:33:56 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:33:56 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:33:56 INFO  MyLogger:57 - found free device emulator-5556
-2018-04-07 12:33:56 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:56 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:33:56 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
-2018-04-07 12:33:57 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:33:57 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:33:57 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:33:57 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:33:57 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:33:57 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:33:57 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:33:57 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:34:01 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-07 12:34:01 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:01 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:34:01 INFO  MyLogger:103 - server output 7.0
+2018-04-10 12:20:06 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
+2018-04-10 12:20:06 INFO  MyLogger:29 - reading from connected device list 
+2018-04-10 12:20:06 INFO  MyLogger:43 - finding free device 
+2018-04-10 12:20:06 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+2018-04-10 12:20:06 INFO  MyLogger:57 - found free device emulator-5556
+2018-04-10 12:20:06 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:06 INFO  MyLogger:285 - checking port 4723 is free.
+2018-04-10 12:20:07 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
+2018-04-10 12:20:08 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
+2018-04-10 12:20:09 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-04-10 12:20:11 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-04-10 12:20:12 INFO  MyLogger:212 - creating driver for emulator-5556
+2018-04-10 12:20:12 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:12 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
+2018-04-10 12:20:12 INFO  MyLogger:106 - server output 7.0
 
-2018-04-07 12:34:01 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-07 12:34:01 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-07 12:34:01 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:34:01 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:01 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:34:01 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:34:01 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:34:01 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:34:09 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:34:09 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:34:09 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:09 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:34:10 INFO  MyLogger:226 - created driver for emulator-5556 
+2018-04-10 12:20:12 INFO  MyLogger:98 - getting device capabilities for emulator-5556
+2018-04-10 12:20:12 INFO  MyLogger:101 - got device capabilities for emulator-5556
+2018-04-10 12:20:20 INFO  MyLogger:226 - created driver for emulator-5556 
 de.hafas.android.dbde.hafas.main.HafasApp 
  http://127.0.0.1:4723/wd/hub
-2018-04-07 12:34:10 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-07 12:34:10 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:10 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-07 12:34:10 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:34:10 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:34:10 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:34:10 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:10 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:34:10 INFO  MyLogger:103 - server output   mCurrentFocus=Window{6db5bfb u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:34:10 INFO  MyLogger:103 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-07 12:34:10 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
-2018-04-07 12:34:10 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
-2018-04-07 12:34:10 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:10 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:34:10 INFO  MyLogger:103 - server output   mCurrentFocus=Window{1eaa9e7 u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-07 12:34:12 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:34:12 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:34:15 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:34:16 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Hbf']
-2018-04-07 12:34:25 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Flugh']
-2018-04-07 12:34:31 ERROR MyLogger:189 - null[Ljava.lang.StackTraceElement;@345e5a17
-2018-04-07 12:34:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:34:40 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:34:40 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:34:40 INFO  MyLogger:81 - Loading de properties file ...
-2018-04-07 12:34:40 INFO  MyLogger:54 - succes loading properties-file /properties_files/de-DE.properties
-2018-04-07 12:34:40 INFO  MyLogger:70 - getting property with following key...single_connection_identificatorkey
-2018-04-07 12:34:40 INFO  MyLogger:74 -  found corresponding property Fahrt mit Abfahrt um
-2018-04-07 12:34:40 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:34:40 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:34:40 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:34:41 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:34:42 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:34:43 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:34:43 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:34:47 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text,'ZURÜCK')]
-2018-04-07 12:34:50 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:34:52 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-07 12:36:38 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:38 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
-2018-04-07 12:36:38 INFO  MyLogger:103 - server output List of devices attached
-emulator-5556	device
-emulator-5554	device
-
-
-2018-04-07 12:36:38 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
-2018-04-07 12:36:38 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:38 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:36:38 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:36:38 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:38 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:36:38 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:36:38 INFO  MyLogger:56 - added emulator-5556 to device list
-2018-04-07 12:36:38 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:38 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:36:38 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:36:38 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:38 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-07 12:36:39 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:36:39 INFO  MyLogger:56 - added emulator-5554 to device list
-2018-04-07 12:36:39 INFO  MyLogger:157 - 
-
-Starting Test cases from CalculatorRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=CalculatorRunner test on 
-emulator-5556
-
-
-2018-04-07 12:36:39 INFO  MyLogger:164 - starting thread 40 with device emulator-5556
-2018-04-07 12:36:39 INFO  MyLogger:157 - 
-
-Starting Test cases from TripPlanerRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=TripPlanerRunner test on 
-emulator-5554
-
-
-2018-04-07 12:36:39 INFO  MyLogger:164 - starting thread 41 with device emulator-5554
-2018-04-07 12:36:39 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:36:39 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:36:46 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:36:46 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:36:46 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:36:46 INFO  MyLogger:57 - found free device emulator-5556
-2018-04-07 12:36:46 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:46 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:36:46 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
-2018-04-07 12:36:46 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:36:46 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:36:46 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:36:46 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:36:46 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:46 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:36:46 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:36:51 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-07 12:36:51 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:51 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:36:51 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:36:51 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-07 12:36:51 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-07 12:36:51 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:36:51 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:36:51 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:36:51 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:36:51 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:36:51 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:37:01 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:37:01 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:37:01 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:01 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:37:02 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:37:02 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:37:02 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:37:02 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:02 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:37:02 INFO  MyLogger:103 - server output   mCurrentFocus=Window{51b2866 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:37:02 INFO  MyLogger:226 - created driver for emulator-5556 
-de.hafas.android.dbde.hafas.main.HafasApp 
- http://127.0.0.1:4723/wd/hub
-2018-04-07 12:37:02 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-07 12:37:02 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:02 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-07 12:37:03 INFO  MyLogger:103 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-07 12:37:03 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
-2018-04-07 12:37:03 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
-2018-04-07 12:37:03 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:03 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:37:03 INFO  MyLogger:103 - server output   mCurrentFocus=Window{f1f5140 u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-07 12:37:04 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:37:04 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:37:07 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:37:07 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:37:07 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:37:07 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:37:07 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:37:07 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:07 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:37:07 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:37:09 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Mainz Hbf']
-2018-04-07 12:37:13 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:37:13 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:13 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:37:13 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:37:13 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:37:13 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:37:17 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Leipzig Hbf']
-2018-04-07 12:37:21 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:37:21 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:37:21 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:21 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:37:22 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:37:22 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:37:22 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:37:22 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:22 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:37:22 INFO  MyLogger:103 - server output   mCurrentFocus=Window{55c6602 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:37:23 ERROR MyLogger:189 - null[Ljava.lang.StackTraceElement;@579d011c
-2018-04-07 12:37:24 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:37:24 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:37:28 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:37:28 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:37:28 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:37:28 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:37:28 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:37:28 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:28 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:37:28 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:37:34 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:37:34 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:34 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:37:34 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:37:34 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:37:34 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:37:34 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:34 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:37:34 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:37:34 INFO  MyLogger:81 - Loading de properties file ...
-2018-04-07 12:37:34 INFO  MyLogger:54 - succes loading properties-file /properties_files/de-DE.properties
-2018-04-07 12:37:34 INFO  MyLogger:70 - getting property with following key...single_connection_identificatorkey
-2018-04-07 12:37:34 INFO  MyLogger:74 -  found corresponding property Fahrt mit Abfahrt um
-2018-04-07 12:37:34 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:37:34 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:37:35 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:37:35 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:37:37 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:37:38 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:37:38 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:37:42 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text,'ZURÜCK')]
-2018-04-07 12:37:42 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:37:42 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:37:42 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:42 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:37:43 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:37:43 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:37:43 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:37:43 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:43 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:37:43 INFO  MyLogger:103 - server output   mCurrentFocus=Window{ee45b99 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:37:44 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:37:45 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:37:45 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:37:48 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-07 12:37:48 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:37:48 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:37:48 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:37:48 INFO  MyLogger:57 - found free device emulator-5556
-2018-04-07 12:37:48 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:48 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:37:48 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5556
-2018-04-07 12:37:48 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:37:48 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:37:48 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:37:48 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:37:48 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:37:48 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:48 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:37:48 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5554
-2018-04-07 12:37:53 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-07 12:37:53 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:53 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:37:53 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:37:53 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-07 12:37:53 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-07 12:37:53 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:37:53 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:37:53 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:37:53 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:37:53 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:37:53 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:38:01 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:38:01 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:38:01 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:38:01 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:38:02 INFO  MyLogger:226 - created driver for emulator-5556 
-de.hafas.android.dbde.hafas.main.HafasApp 
- http://127.0.0.1:4723/wd/hub
-2018-04-07 12:38:02 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-07 12:38:02 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:38:02 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-07 12:38:02 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:38:02 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:38:02 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:38:02 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:38:02 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:38:02 INFO  MyLogger:103 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-07 12:38:02 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
-2018-04-07 12:38:02 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
-2018-04-07 12:38:02 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:38:02 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:38:02 INFO  MyLogger:103 - server output   mCurrentFocus=Window{c35579c u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:38:02 INFO  MyLogger:103 - server output   mCurrentFocus=Window{1631586 u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-07 12:38:04 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:38:04 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:38:07 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:38:08 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Hbf']
-2018-04-07 12:38:16 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Flugh']
-2018-04-07 12:38:22 ERROR MyLogger:189 - null[Ljava.lang.StackTraceElement;@345e5a17
-2018-04-07 12:38:32 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:38:32 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:38:32 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:38:32 INFO  MyLogger:81 - Loading de properties file ...
-2018-04-07 12:38:32 INFO  MyLogger:54 - succes loading properties-file /properties_files/de-DE.properties
-2018-04-07 12:38:32 INFO  MyLogger:70 - getting property with following key...single_connection_identificatorkey
-2018-04-07 12:38:32 INFO  MyLogger:74 -  found corresponding property Fahrt mit Abfahrt um
-2018-04-07 12:38:32 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:38:32 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:38:33 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:38:33 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:38:34 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:38:35 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:38:35 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:38:39 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text,'ZURÜCK')]
-2018-04-07 12:38:42 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:38:44 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output List of devices attached
-RQ3006UBM6	device
-emulator-5556	device
-emulator-5554	device
-
-
-2018-04-07 12:40:30 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell getprop ro.build.version.release
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell getprop persist.sys.locale
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output de-DE
-
-2018-04-07 12:40:30 INFO  MyLogger:56 - added RQ3006UBM6 to device list
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:40:30 INFO  MyLogger:56 - added emulator-5556 to device list
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:40:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-07 12:40:30 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:40:30 INFO  MyLogger:56 - added emulator-5554 to device list
-2018-04-07 12:40:30 INFO  MyLogger:157 - 
-
-Starting Test cases from CalculatorRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=CalculatorRunner test on 
-RQ3006UBM6
-
-
-2018-04-07 12:40:30 INFO  MyLogger:164 - starting thread 57 with device RQ3006UBM6
-2018-04-07 12:40:30 INFO  MyLogger:157 - 
-
-Starting Test cases from TripPlanerRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=TripPlanerRunner test on 
-emulator-5556
-
-
-2018-04-07 12:40:30 INFO  MyLogger:164 - starting thread 58 with device emulator-5556
-2018-04-07 12:40:30 INFO  MyLogger:157 - 
-
-Starting Test cases from CalculatorRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=CalculatorRunner test on 
-emulator-5554
-
-
-2018-04-07 12:40:30 INFO  MyLogger:164 - starting thread 59 with device emulator-5554
-2018-04-07 12:40:30 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:40:30 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:40:30 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:40:40 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:40:40 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:40:40 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:40:40 INFO  MyLogger:57 - found free device RQ3006UBM6
-2018-04-07 12:40:40 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:40:40 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:40:40 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:40:40 INFO  MyLogger:57 - found free device emulator-5556
-2018-04-07 12:40:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:40 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:40:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:40 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:40:40 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device RQ3006UBM6
-2018-04-07 12:40:40 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5556
-2018-04-07 12:40:41 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:40:41 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:40:41 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:40:41 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:40:41 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:41 INFO  MyLogger:285 - checking port 4729 is free.
-2018-04-07 12:40:41 INFO  MyLogger:204 - starting appium server at port 4729 with following url http://127.0.0.1:4729/wd/hub for device emulator-5554
-2018-04-07 12:40:47 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:40:47 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:47 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:40:47 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-07 12:40:47 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:47 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:40:47 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:40:47 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:40:47 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:40:47 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:40:47 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-07 12:40:47 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-07 12:40:47 INFO  MyLogger:212 - creating driver for RQ3006UBM6
-2018-04-07 12:40:47 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:47 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell getprop ro.build.version.release
-2018-04-07 12:40:47 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:40:47 INFO  MyLogger:98 - getting device capabilities for RQ3006UBM6
-2018-04-07 12:40:47 INFO  MyLogger:101 - got device capabilities for RQ3006UBM6
-2018-04-07 12:40:57 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4729/wd/hub
-2018-04-07 12:40:57 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:40:57 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:57 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:40:58 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:40:58 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:40:58 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:40:58 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:58 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:40:58 INFO  MyLogger:103 - server output   mCurrentFocus=Window{50d6718 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:40:58 INFO  MyLogger:226 - created driver for emulator-5556 
-de.hafas.android.dbde.hafas.main.HafasApp 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:40:58 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-07 12:40:58 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:58 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-07 12:40:59 INFO  MyLogger:103 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-07 12:40:59 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
-2018-04-07 12:40:59 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
-2018-04-07 12:40:59 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:40:59 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:40:59 INFO  MyLogger:103 - server output   mCurrentFocus=Window{c3ddb11 u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-07 12:41:00 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:41:00 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:41:03 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:41:03 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:41:03 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:41:03 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:41:03 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:41:03 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:03 INFO  MyLogger:285 - checking port 4729 is free.
-2018-04-07 12:41:03 INFO  MyLogger:204 - starting appium server at port 4729 with following url http://127.0.0.1:4729/wd/hub for device emulator-5554
-2018-04-07 12:41:05 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Mainz Hbf']
-2018-04-07 12:41:08 INFO  MyLogger:226 - created driver for RQ3006UBM6 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4723/wd/hub
-2018-04-07 12:41:08 INFO  MyLogger:77 - starting test of   com.android.calculator2 on RQ3006UBM6  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:41:08 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:08 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:41:09 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:41:09 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:09 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:41:09 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:41:09 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:41:09 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:41:09 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:41:09 INFO  MyLogger:240 - started App com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:41:09 DEBUG MyLogger:83 - opening com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:41:09 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:09 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:41:10 INFO  MyLogger:103 - server output   mCurrentFocus=Window{9d2cf94 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:41:11 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:41:12 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:41:13 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Leipzig Hbf']
-2018-04-07 12:41:17 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from RQ3006UBM6
-2018-04-07 12:41:17 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:41:17 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:41:17 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:41:17 INFO  MyLogger:57 - found free device RQ3006UBM6
-2018-04-07 12:41:17 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:17 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:41:17 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device RQ3006UBM6
-2018-04-07 12:41:18 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4729/wd/hub
-2018-04-07 12:41:18 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:41:18 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:18 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:41:18 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:41:18 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:41:18 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:41:18 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:18 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:41:18 INFO  MyLogger:103 - server output   mCurrentFocus=Window{592a6a7 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:41:20 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:41:20 ERROR MyLogger:189 - null[Ljava.lang.StackTraceElement;@579d011c
-2018-04-07 12:41:21 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:41:24 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:41:24 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:41:24 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:41:24 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:41:24 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:41:24 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:24 INFO  MyLogger:285 - checking port 4729 is free.
-2018-04-07 12:41:24 INFO  MyLogger:204 - starting appium server at port 4729 with following url http://127.0.0.1:4729/wd/hub for device emulator-5554
-2018-04-07 12:41:24 INFO  MyLogger:212 - creating driver for RQ3006UBM6
-2018-04-07 12:41:24 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:24 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell getprop ro.build.version.release
-2018-04-07 12:41:25 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:41:25 INFO  MyLogger:98 - getting device capabilities for RQ3006UBM6
-2018-04-07 12:41:25 INFO  MyLogger:101 - got device capabilities for RQ3006UBM6
-2018-04-07 12:41:30 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:41:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:41:30 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:41:30 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:41:30 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:41:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:30 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:41:30 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:41:30 INFO  MyLogger:81 - Loading de properties file ...
-2018-04-07 12:41:30 INFO  MyLogger:54 - succes loading properties-file /properties_files/de-DE.properties
-2018-04-07 12:41:30 INFO  MyLogger:70 - getting property with following key...single_connection_identificatorkey
-2018-04-07 12:41:30 INFO  MyLogger:74 -  found corresponding property Fahrt mit Abfahrt um
-2018-04-07 12:41:30 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:41:30 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:41:32 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:41:32 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:41:33 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:41:34 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:41:34 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:41:38 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text,'ZURÜCK')]
-2018-04-07 12:41:39 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4729/wd/hub
-2018-04-07 12:41:39 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:41:39 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:39 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:41:40 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:41:40 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:41:40 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:41:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:40 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:41:40 INFO  MyLogger:103 - server output   mCurrentFocus=Window{c7ae102 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:41:41 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:41:41 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:41:42 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:41:42 INFO  MyLogger:226 - created driver for RQ3006UBM6 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4723/wd/hub
-2018-04-07 12:41:42 INFO  MyLogger:77 - starting test of   com.android.calculator2 on RQ3006UBM6  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:41:42 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:42 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:41:43 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:41:43 INFO  MyLogger:240 - started App com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:41:43 DEBUG MyLogger:83 - opening com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:41:43 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:43 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:41:43 INFO  MyLogger:103 - server output   mCurrentFocus=Window{f1a452b u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:41:45 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-07 12:41:45 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:41:45 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:41:45 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:41:45 INFO  MyLogger:57 - found free device emulator-5556
-2018-04-07 12:41:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:45 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-07 12:41:45 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5556
-2018-04-07 12:41:45 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:41:45 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:41:45 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:41:45 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:41:45 INFO  MyLogger:57 - found free device emulator-5554
-2018-04-07 12:41:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:45 INFO  MyLogger:285 - checking port 4729 is free.
-2018-04-07 12:41:45 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:41:45 INFO  MyLogger:204 - starting appium server at port 4729 with following url http://127.0.0.1:4729/wd/hub for device emulator-5554
-2018-04-07 12:41:46 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:41:49 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-07 12:41:49 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:49 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-07 12:41:49 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:41:49 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-07 12:41:49 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-07 12:41:50 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-07 12:41:50 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:50 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-07 12:41:50 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:41:50 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-07 12:41:50 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-07 12:41:51 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from RQ3006UBM6
-2018-04-07 12:41:51 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:41:51 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:41:51 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:41:51 INFO  MyLogger:57 - found free device RQ3006UBM6
-2018-04-07 12:41:51 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:51 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:41:51 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device RQ3006UBM6
-2018-04-07 12:41:56 INFO  MyLogger:212 - creating driver for RQ3006UBM6
-2018-04-07 12:41:56 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:56 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell getprop ro.build.version.release
-2018-04-07 12:41:56 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:41:56 INFO  MyLogger:98 - getting device capabilities for RQ3006UBM6
-2018-04-07 12:41:56 INFO  MyLogger:101 - got device capabilities for RQ3006UBM6
-2018-04-07 12:41:59 INFO  MyLogger:226 - created driver for emulator-5554 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4729/wd/hub
-2018-04-07 12:41:59 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:41:59 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:59 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:41:59 INFO  MyLogger:226 - created driver for emulator-5556 
-de.hafas.android.dbde.hafas.main.HafasApp 
- http://127.0.0.1:4726/wd/hub
-2018-04-07 12:41:59 INFO  MyLogger:119 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-07 12:41:59 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:41:59 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-07 12:42:00 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:42:00 INFO  MyLogger:240 - started App com.android.calculator2 on emulator-5554
-2018-04-07 12:42:00 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5554
-2018-04-07 12:42:00 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:00 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:42:00 INFO  MyLogger:103 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-07 12:42:00 INFO  MyLogger:240 - started App de.hafas.main.HafasApp on emulator-5556
-2018-04-07 12:42:00 DEBUG MyLogger:126 - opening de.hafas.android.db on emulator-5556
-2018-04-07 12:42:00 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:00 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:42:00 INFO  MyLogger:103 - server output   mCurrentFocus=Window{1189299 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:42:00 INFO  MyLogger:103 - server output   mCurrentFocus=Window{7b54e42 u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-07 12:42:01 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:42:02 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-07 12:42:05 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-07 12:42:06 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Hbf']
-2018-04-07 12:42:14 INFO  MyLogger:226 - created driver for RQ3006UBM6 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4723/wd/hub
-2018-04-07 12:42:14 INFO  MyLogger:77 - starting test of   com.android.calculator2 on RQ3006UBM6  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:42:14 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:14 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:42:14 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Flugh']
-2018-04-07 12:42:15 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:42:15 INFO  MyLogger:240 - started App com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:42:15 DEBUG MyLogger:83 - opening com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:42:15 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:15 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:42:15 INFO  MyLogger:103 - server output   mCurrentFocus=Window{f9f0f20 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:42:17 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:42:17 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:42:20 ERROR MyLogger:189 - null[Ljava.lang.StackTraceElement;@345e5a17
-2018-04-07 12:42:22 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from RQ3006UBM6
-2018-04-07 12:42:22 INFO  MyLogger:29 - reading from connected device list 
-2018-04-07 12:42:22 INFO  MyLogger:43 - finding free device 
-2018-04-07 12:42:22 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:42:22 INFO  MyLogger:57 - found free device RQ3006UBM6
-2018-04-07 12:42:22 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:22 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-07 12:42:22 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device RQ3006UBM6
-2018-04-07 12:42:28 INFO  MyLogger:212 - creating driver for RQ3006UBM6
-2018-04-07 12:42:28 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:28 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell getprop ro.build.version.release
-2018-04-07 12:42:28 INFO  MyLogger:103 - server output 7.0
-
-2018-04-07 12:42:28 INFO  MyLogger:98 - getting device capabilities for RQ3006UBM6
-2018-04-07 12:42:28 INFO  MyLogger:101 - got device capabilities for RQ3006UBM6
-2018-04-07 12:42:28 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:28 INFO  MyLogger:88 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-07 12:42:29 INFO  MyLogger:103 - server output de
-
-2018-04-07 12:42:29 INFO  MyLogger:81 - Loading de properties file ...
-2018-04-07 12:42:29 INFO  MyLogger:54 - succes loading properties-file /properties_files/de-DE.properties
-2018-04-07 12:42:29 INFO  MyLogger:70 - getting property with following key...single_connection_identificatorkey
-2018-04-07 12:42:29 INFO  MyLogger:74 -  found corresponding property Fahrt mit Abfahrt um
-2018-04-07 12:42:29 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:42:29 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:42:29 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:42:30 INFO  MyLogger:177 - FINDING ELEMENT BY XPATH:.......... //android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt um')]
-2018-04-07 12:42:31 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:42:32 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:42:32 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Verkehrstage')]
-2018-04-07 12:42:36 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text,'ZURÜCK')]
-2018-04-07 12:42:39 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-07 12:42:41 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-07 12:42:45 INFO  MyLogger:226 - created driver for RQ3006UBM6 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4723/wd/hub
-2018-04-07 12:42:45 INFO  MyLogger:77 - starting test of   com.android.calculator2 on RQ3006UBM6  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-07 12:42:45 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:45 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-07 12:42:46 INFO  MyLogger:103 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-07 12:42:46 INFO  MyLogger:240 - started App com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:42:46 DEBUG MyLogger:83 - opening com.android.calculator2 on RQ3006UBM6
-2018-04-07 12:42:46 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-07 12:42:46 INFO  MyLogger:88 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s RQ3006UBM6 shell dumpsys window windows | grep mCurrentFocus
-2018-04-07 12:42:46 INFO  MyLogger:103 - server output   mCurrentFocus=Window{b1bcb64 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-07 12:42:48 INFO  MyLogger:66 - this is the xpath I received: // android.widget.Button[@resource-id='com.android.calculator2:id/eq']
-2018-04-07 12:42:48 INFO  MyLogger:131 - updating device prop/capas...RQ3006UBM6
-2018-04-07 12:42:53 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from RQ3006UBM6
+2018-04-10 12:20:20 INFO  MyLogger:62 - starting test of   de.hafas.android.db on emulator-5556  plattform version 7.0 de.hafas.main.HafasApp
+2018-04-10 12:20:20 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:20 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
+2018-04-10 12:20:21 INFO  MyLogger:106 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
+
+2018-04-10 12:20:21 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on emulator-5556
+2018-04-10 12:20:21 DEBUG MyLogger:69 - opening de.hafas.android.db on emulator-5556
+2018-04-10 12:20:21 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:21 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
+2018-04-10 12:20:21 INFO  MyLogger:106 - server output   mCurrentFocus=Window{81c127 u0 de.hafas.android.db/de.hafas.main.HafasApp}
+
+2018-04-10 12:20:27 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Hbf']
+2018-04-10 12:20:35 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[@content-desc='Frankfurt(Main)Flugh']
+2018-04-10 12:20:41 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:41 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:41 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:41 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:41 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Connections')]
+2018-04-10 12:20:41 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:41 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:41 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:41 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:41 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:41 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:41 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:41 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Connections')]
+2018-04-10 12:20:50 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:50 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:50 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:50 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:50 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:50 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:50 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:50 INFO  MyLogger:66 - this is the xpath I received: //android.widget.LinearLayout[contains(@content-desc, 'Travel with Departure at')]
+2018-04-10 12:20:52 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:52 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:52 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:52 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:52 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Itinerary')]
+2018-04-10 12:20:52 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:52 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:52 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:52 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:52 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:52 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:52 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:52 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Itinerary')]
+2018-04-10 12:20:53 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:53 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:53 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:53 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:53 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:53 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:53 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:53 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Days of operation')]
+2018-04-10 12:20:54 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:54 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:54 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:54 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:54 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Days of operation')]
+2018-04-10 12:20:54 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:54 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:54 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:54 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:54 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:54 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:54 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:54 INFO  MyLogger:66 - this is the xpath I received: //android.widget.TextView[contains(@text, 'Days of operation')]
+2018-04-10 12:20:58 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-10 12:20:58 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
+2018-04-10 12:20:58 INFO  MyLogger:106 - server output en-US
+
+2018-04-10 12:20:58 INFO  MyLogger:84 - Loading en-US properties file ...
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...single_connection_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property Travel with Departure at
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...drawer_menu_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property Open drawer menu
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...day_of_operation_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property Days of operation
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...pop_up_back_button_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property BACK
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...tripplan_activity_title_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property Itinerary
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...connetion_activity_title_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property Connections
+2018-04-10 12:20:58 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-04-10 12:20:58 INFO  MyLogger:70 - getting property with following key...tripInformation_activity_title_identificator_key
+2018-04-10 12:20:58 INFO  MyLogger:74 -  found corresponding property Planner
+2018-04-10 12:20:58 INFO  MyLogger:66 - this is the xpath I received: //android.widget.Button[contains(@text, 'BACK')]
+2018-04-10 12:21:01 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
+2018-04-10 12:21:03 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556

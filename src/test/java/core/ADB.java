@@ -1,5 +1,7 @@
 package core;
 
+import static core.Constants.SCREEN_SHOT_FILE_TYPE;
+
 //this class provide utilyties for ADB-Operations
 // i.e.: App-installation, providing device informations (plattform-version, device_id etc...)
 
@@ -9,6 +11,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import org.apache.log4j.Level;
 
@@ -283,6 +286,16 @@ public class ADB {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public String setScreenShotFilename(String step_name) {
+		Calendar timestp = Calendar.getInstance();
+
+		// on error save screenshot under following name
+		String filename = deviceID + Long.toString(timestp.getTimeInMillis()) + "_" + step_name + "."
+				+ SCREEN_SHOT_FILE_TYPE;
+		return filename;
+
 	}
 
 	public void rebootDevice(String deviceID) {

@@ -174,10 +174,12 @@ public class UIObjectWrapper {
 	// return a list of specific Webelement i.e.: a list of linear layout object
 	public List<WebElement> getElementsList() {
 		if (isxPath()) {
-			MyLogger.logger.info("FINDING ELEMENT BY XPATH:.......... " + locator);
+			// MyLogger.logger.info("FINDING ELEMENT BY XPATH:.......... " +
+			// locator);
 			return androidDriver.findElementsByXPath(locator);
 		} else {
-			MyLogger.logger.info("FINDING ELEMENT BY UIAutomator:.......... " + locator);
+			// MyLogger.logger.info("FINDING ELEMENT BY UIAutomator:.......... "
+			// + locator);
 			return androidDriver.findElementsByAndroidUIAutomator(locator);
 		}
 	}

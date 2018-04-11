@@ -12,13 +12,16 @@ public class TriplannerIdentificators {
 
 	private PropertiesFilesLoader propertiesFilesLoader;
 	private Device device = null;
+	private static String tripplan_activity_title_identificator;
+	private static String connetion_activity_title_identificator;
 	private static Properties properties;
-	private static String single_connection_identificatorkey;
+	private static String single_connection_identificator_key;
+	private static String drawer_menu_identificator_key;
 
 	static Calendar calendar = Calendar.getInstance();
 	static int today = calendar.get(Calendar.DAY_OF_MONTH);
 
-	public static final String drawer_identificator = "...";
+	public static String drawer_menu_identificator = "";
 
 	public static final String start_station_identificator = "de.hafas.android.db:id/input_start";
 
@@ -42,15 +45,13 @@ public class TriplannerIdentificators {
 
 	public static final String input_location_name_identificator = "de.hafas.android.db:id/input_location_name";
 
-	public static final String button_later_identificator = "de.hafas.android.db:id/button_later"; // "//android.widget.Button[@text=\"Später\"]";
-																									// //
-																									// "de.hafas.android.db:id/button_later";
+	public static final String button_later_identificator = "de.hafas.android.db:id/button_later";
 
 	public static final String button_mfe_secondary_identificator = "de.hafas.android.db:id/button_mfe_secondary";
 
-	public static final String day_of_operation_identificator = "//android.widget.TextView[contains(@text, 'Verkehrstage')]";
+	public static String day_of_operation_identificator = "";
 
-	public static final String pop_up_back_button_identificator = "//android.widget.Button[contains(@text,'ZURÜCK')]";
+	public static String pop_up_back_button_identificator = "";
 
 	public static final String button_earlier_identificator = "de.hafas.android.db:id/button_earlier";
 
@@ -58,16 +59,18 @@ public class TriplannerIdentificators {
 
 	public static final String button_favorite_identificator = "de.hafas.android.db:id/button_favorite";
 
-	public static final String activity_title_identificator = "de.hafas.android.db:id/actionbar_title"; // "xpath(//android.widget.Button[@text=''])";
+	// public static final String activity_title_identificator =
+	// "//android.widget.TextView[contains(@text,' Reise')]";
 
 	public static final String connection_list_identificator = "de.hafas.android.db:id/list_connection";
-	// public static final String single_connection_identificator =
-	// "//android.widget.LinearLayout[contains(@content-desc, 'Fahrt mit Abfahrt
-	// um')]";
 
-	// "//android.widget.LinearLayout[contains(@content-desc, '" +
-	// TriplannerIdentificators.single_connection_identificatorkey + "')]";
 	public static String single_connection_identificator;
+	private static String day_of_operation_identificator_key;
+	private static String pop_up_back_button_identificator_key;
+	private static String tripplan_activity_title_identificator_key;
+	private static String connetion_activity_title_identificator_key;
+	private static String tripInformation_activity_title_identificator;
+	private static String tripInformation_activity_title_identificator_key;
 
 	public TriplannerIdentificators(Device device) {
 		this.device = device;
@@ -79,6 +82,7 @@ public class TriplannerIdentificators {
 	public static void loadPropertiesFile(String deviceLang) {
 		String file_name = "";
 		MyLogger.logger.info("Loading " + deviceLang + " properties file ...");
+
 		// in this case adb ... persist.sys.locale is i.e.: de-DE. For emulator
 		// the return vavule is i.e.: just de
 		if (deviceLang.contains("-")) {
@@ -89,8 +93,26 @@ public class TriplannerIdentificators {
 		}
 		PropertiesFilesLoader propertiesFilesLoader = PropertiesFilesLoader.getInstance(file_name);
 
-		TriplannerIdentificators.single_connection_identificatorkey = propertiesFilesLoader
-				.getPropertyByKey("single_connection_identificatorkey");
+		TriplannerIdentificators.single_connection_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("single_connection_identificator_key");
+
+		TriplannerIdentificators.drawer_menu_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("drawer_menu_identificator_key");
+
+		TriplannerIdentificators.day_of_operation_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("day_of_operation_identificator_key");
+
+		TriplannerIdentificators.pop_up_back_button_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("pop_up_back_button_identificator_key");
+
+		TriplannerIdentificators.tripplan_activity_title_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("tripplan_activity_title_identificator_key");
+
+		TriplannerIdentificators.connetion_activity_title_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("connetion_activity_title_identificator_key");
+
+		TriplannerIdentificators.tripInformation_activity_title_identificator_key = propertiesFilesLoader
+				.getPropertyByKey("tripInformation_activity_title_identificator_key");
 	}
 
 	public static String getSingleConnectionIdentificator(String deviceID) {
@@ -98,16 +120,62 @@ public class TriplannerIdentificators {
 		String deviceLang = adb.getDeviceLang(deviceID);
 		loadPropertiesFile(deviceLang);
 		single_connection_identificator = "//android.widget.LinearLayout[contains(@content-desc, '"
-				+ TriplannerIdentificators.single_connection_identificatorkey + "')]";
+				+ TriplannerIdentificators.single_connection_identificator_key + "')]";
 		return single_connection_identificator;
 	}
 
-	// public static String getProperty(String propertyKey) {
-	// MyLogger.logger.info("getting property with following key..." +
-	// propertyKey);
-	// if (properties == null) {
-	// MyLogger.logger.info("properties is null............");
-	// }
-	// return properties.getProperty(propertyKey);
-	// }
+	public static String getDrawerMenuIdentificator(String deviceID) {
+		ADB adb = new ADB();
+		String deviceLang = adb.getDeviceLang(deviceID);
+		loadPropertiesFile(deviceLang);
+		drawer_menu_identificator = "//android.widget.ImageButton[contains(@content-desc, '"
+				+ TriplannerIdentificators.drawer_menu_identificator_key + "')]";
+		return drawer_menu_identificator;
+	}
+
+	public static String getDayOfOperationsIdentificator(String deviceID) {
+		ADB adb = new ADB();
+		String deviceLang = adb.getDeviceLang(deviceID);
+		loadPropertiesFile(deviceLang); // android.widget.TextView[contains(@resource-id,
+										// 'android:id/text1')]";
+		day_of_operation_identificator = "//android.widget.TextView[contains(@text, '"
+				+ TriplannerIdentificators.day_of_operation_identificator_key + "')]";
+		return day_of_operation_identificator;
+	}
+
+	public static String getPopUpBackButtonIdentificator(String deviceID) {
+		ADB adb = new ADB();
+		String deviceLang = adb.getDeviceLang(deviceID);
+		loadPropertiesFile(deviceLang);
+		pop_up_back_button_identificator = "//android.widget.Button[contains(@text, '"
+				+ TriplannerIdentificators.pop_up_back_button_identificator_key + "')]";
+		return pop_up_back_button_identificator;
+	}
+
+	public static String getTripplanActivityTitleIdentificator(String deviceID) {
+		ADB adb = new ADB();
+		String deviceLang = adb.getDeviceLang(deviceID);
+		loadPropertiesFile(deviceLang);
+		tripplan_activity_title_identificator = "//android.widget.TextView[contains(@text, '"
+				+ TriplannerIdentificators.tripplan_activity_title_identificator_key + "')]";
+		return tripplan_activity_title_identificator;
+	}
+
+	public static String getConnetionActivityTitleIdentificator(String deviceID) {
+		ADB adb = new ADB();
+		String deviceLang = adb.getDeviceLang(deviceID);
+		loadPropertiesFile(deviceLang);
+		connetion_activity_title_identificator = "//android.widget.TextView[contains(@text, '"
+				+ TriplannerIdentificators.connetion_activity_title_identificator_key + "')]";
+		return connetion_activity_title_identificator;
+	}
+
+	public static String getTripInformationActivityTitleIdentificator(String deviceID) {
+		ADB adb = new ADB();
+		String deviceLang = adb.getDeviceLang(deviceID);
+		loadPropertiesFile(deviceLang);
+		tripInformation_activity_title_identificator = "//android.widget.TextView[contains(@text, '"
+				+ TriplannerIdentificators.tripInformation_activity_title_identificator_key + "')]";
+		return tripInformation_activity_title_identificator;
+	}
 }

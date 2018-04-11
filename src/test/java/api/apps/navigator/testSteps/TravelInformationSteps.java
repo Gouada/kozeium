@@ -3,89 +3,37 @@ package api.apps.navigator.testSteps;
 import static core.Constants.SCREEN_SHOTS_FOLDER;
 import static core.Constants.SCREEN_SHOT_FILE_TYPE;
 
-// tripPlaner steps definition
-import java.util.ArrayList;
 import java.util.Calendar;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 import api.android.Android;
-import api.apps.navigator.DBNavigator;
 import api.apps.navigator.tripPlaner.TripConnections;
 import api.apps.navigator.tripPlaner.TripInformation;
 import api.apps.navigator.tripPlaner.TripItinerary;
 import core.CapabilitiesDevice;
 import core.FreeDevicefinder;
-import core.JsonReadWriter;
 import core.MyLogger;
 import core.manager.DriverManager;
 import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import io.appium.java_client.android.AndroidDriver;
+import junit.framework.AssertionFailedError;
 import model.Device;
 import runners.TestStarter;
 
 public class TravelInformationSteps {
 
 	private String deviceID = "";// "emulator-5554";
-	private AndroidDriver<WebElement> androidDreiver;
 	// private TripPlaner tripPlaner; // = new TripPlaner();;
 	private TripInformation tripInformation;
 	private TripConnections tripConections;
 	private TripItinerary tripItinerary;
-	private DriverManager driverManager;
-	private ArrayList<Device> deviceList;
-	private final JsonReadWriter jsonReadWriter = new JsonReadWriter();
-	private final DBNavigator navigator = Android.apps.navigator;
 	private Device device;
 	private Calendar timestp;
 	private String filename;
 	private FreeDevicefinder freeDevicefinder;
-
-	// // read json-deviceList
-	// public synchronized void setDeviceList() {
-	// MyLogger.logger.setLevel(Level.DEBUG);
-	// System.out.println("Setting device list");
-	// MyLogger.logger.info("reading from connected device list ");
-	// this.deviceList = jsonReadWriter.readFromFile();
-	// if (this.deviceList == null) {
-	// MyLogger.logger.info("device is empty");
-	// }
-	// }
-	//
-	// // find a device in device-list and set its status to in-use. this device
-	// // cannot be used then parallely for another test
-	// public synchronized Device findFreeDevice() {
-	// setDeviceList();
-	// Device foundDevice = null;
-	// System.out.println("finding free device ");
-	// MyLogger.logger.info("finding free device ");
-	//
-	// for (Device device : this.deviceList) {
-	// // if free device is found go out of loop
-	// if (!device.isUsed() && device.getStatus() == 1) {
-	// foundDevice = device;
-	// foundDevice.setUsed(true);
-	// foundDevice.setStatus(2L);
-	//
-	// // tripPlaner = new TripPlaner(foundDevice.getDeviceName());
-	// tripInformation = new TripInformation(foundDevice.getDeviceID());
-	// tripConections = new TripConnections(foundDevice.getDeviceID());
-	// tripItinerary = new TripItinerary(foundDevice.getDeviceID());
-	//
-	// jsonReadWriter.updateList(foundDevice);
-	// MyLogger.logger.info("found free device " + foundDevice.getDeviceID());
-	// break;
-	// }
-	// }
-	// if (foundDevice == null) {
-	// MyLogger.logger.info("no free device found");
-	// }
-	// return foundDevice;
-	// }
 
 	public Device getFreeDevice() {
 		freeDevicefinder = FreeDevicefinder.getInstance();
@@ -94,11 +42,6 @@ public class TravelInformationSteps {
 
 	@Given("^navigator is started$")
 	public void navigator_app_is_startted() {
-		timestp = Calendar.getInstance();
-
-		// on error save screenshot under following name
-		filename = deviceID + Long.toString(timestp.getTimeInMillis()) + "." + SCREEN_SHOT_FILE_TYPE;
-
 		// device = findFreeDevice();
 		device = getFreeDevice();
 
@@ -128,6 +71,7 @@ public class TravelInformationSteps {
 				Assert.assertTrue("the app could not be started", Android.adb.getCurrentAppInForeGround(deviceID)
 						.contains(Android.apps.navigator.getPackageID()));
 			} catch (Exception e) {
+				filename = Android.adb.setScreenShotFilename("starting_navigator");
 				MyLogger.logger.error("app: " + Android.apps.navigator.getPackageID() + " could not be started");
 				Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
 				e.printStackTrace();
@@ -166,46 +110,79 @@ public class TravelInformationSteps {
 	@Then("^I click the done button$")
 	public void i_click_the_done_button() throws Throwable {
 		tripInformation.clickDoneButton();
-		Assert.assertTrue(tripInformation.activitUIElementsArePresent());
-		// Assert.assertTrue(tripInformation.iAmOnTripInformationActivity());
+		try {
+			Assert.assertTrue(tripInformation.activitUIElementsArePresent());
+		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("clicking_done_button");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I click the done button\"refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
+		}
 	}
 
 	@And("^I click the search button$")
 	public void i_click_the_search_button() throws Throwable {
-		timestp = Calendar.getInstance();
-		filename = deviceID + Long.toString(timestp.getTimeInMillis()) + "." + SCREEN_SHOT_FILE_TYPE;
-
 		try {
 			tripInformation.clickSearchButton();
 			Assert.assertTrue("you did not land on connections activity", tripConections.iAmOnConnectionsActivity());
 			// Android.adb.saveScreeenShootOnServer(deviceID, filename,
 			// SCREEN_SHOTS_FOLDER);
 		} catch (Exception e) {
-			// //Android.adb.saveScreeenShootOnServer(deviceID, filename,
-			// SCREEN_SHOTS_FOLDER);
-			// MyLogger.logger.error("FAILED STEP: \"I click the search button\"
-			// refer to screenshot for more details "
-			// + SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			filename = Android.adb.setScreenShotFilename("clicking_search_button");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I click the search button\"refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
 			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
 		}
 	}
 
 	@And("^I scroll down to later button$")
 	public void scrollToLaterButton() {
 		tripConections.scrollToLaterButton();
-		Assert.assertTrue(tripConections.laterButtonIsVisible());
+		try {
+			Assert.assertTrue(tripConections.laterButtonIsVisible());
+		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("scrolling_to_later_button");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I scroll down to later button\"refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
+		}
 	}
 
 	@Then("^I scroll up to earlier button$")
 	public void scrollToEarlierButton() {
 		tripConections.scrollToEarlier();
-		Assert.assertTrue(tripConections.earlerButtonIsVisible());
+		try {
+			Assert.assertTrue(tripConections.earlerButtonIsVisible());
+		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("scrolling_to_earlier_button");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I scroll up to earlier button\"refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
+		}
 	}
 
 	@Then("^I scroll back to later button$")
 	public void scrollBackToLaterButton() {
-		tripConections.scrollToLaterButton();
-		Assert.assertTrue(tripConections.laterButtonIsVisible());
+		try {
+			tripConections.scrollToLaterButton();
+			Assert.assertTrue(tripConections.laterButtonIsVisible());
+		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("scrolling_back_to_later_button");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I scroll back to later button\"refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
+		}
+
 	}
 
 	@And("^I click later button$")
@@ -220,13 +197,34 @@ public class TravelInformationSteps {
 	@Then("^I select a trip$")
 	public void selectAtrip() {
 		tripConections.selectConnection(1);
-		// Assert.assertTrue(tripItinerary.iAmOnItineraryActivity());
+
+		timestp = Calendar.getInstance();
+		filename = deviceID + "_" + Long.toString(timestp.getTimeInMillis()) + "." + SCREEN_SHOT_FILE_TYPE;
+		try {
+			Assert.assertTrue(tripItinerary.iAmOnItineraryActivity());
+		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("selecting_a_trip");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I select a trip \" refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
+		}
 	}
 
 	@Then("^I click mfe button$")
 	public void clickMfeButton() {
 		tripItinerary.clickMfeButton();
-		Assert.assertTrue(tripItinerary.popUpWindowIsopen());
+		try {
+			Assert.assertTrue(tripItinerary.popUpWindowIsopen());
+		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("clicking_mfe_button");
+			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
+			MyLogger.logger.error("FAILED STEP: \"I click mfe button\"refer to screenshot for more details "
+					+ SCREEN_SHOTS_FOLDER + "/" + filename + "\n" + e.getMessage());
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			throw new AssertionFailedError();
+		}
 	}
 
 	@Then("^I click operation days$")
@@ -238,11 +236,13 @@ public class TravelInformationSteps {
 			tripItinerary.clickOperationDays();
 			Assert.assertTrue(tripItinerary.popUpWindowIsopen());
 		} catch (Exception e) {
+			filename = Android.adb.setScreenShotFilename("tapping_operation_days");
 			Android.adb.saveScreeenShootOnServer(deviceID, filename, SCREEN_SHOTS_FOLDER);
 			MyLogger.logger.error("FAILED STEP: \"I click operation days\" refer to screenshot for more details "
 					+ SCREEN_SHOTS_FOLDER + "/" + filename);
 			MyLogger.logger.error(e.getMessage());
 			e.printStackTrace();
+			throw new AssertionError();
 		}
 
 	}

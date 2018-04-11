@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="32" failures="0" name="runners.TripPlanerRunner" time="122.698" errors="0" skipped="0">
+<testsuite tests="32" failures="0" name="runners.TripPlanerRunner" time="130.752" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -61,8 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Given navigator is started" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the start station Mainz Hbf" time="0"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Given navigator is started" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the start station Mainz Hbf" time="0.001"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the destination station Leipzig Hbf" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the day picker" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select the travel date" time="0"/>
@@ -70,15 +70,15 @@
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click the search button" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I scroll down to later button" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll up to earlier button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll back to later button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click later button" time="0.001"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll back to later button" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click later button" time="0"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0.001"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click mfe button" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click operation days" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click back button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="3.129"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="2.722"/>
   <testcase classname="Given navigator is started(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Given navigator is started" time="0"/>
-  <testcase classname="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the start station Frankfurt" time="0.001"/>
+  <testcase classname="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the start station Frankfurt" time="0"/>
   <testcase classname="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the destination station Frankfurt" time="0"/>
   <testcase classname="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the day picker" time="0.001"/>
   <testcase classname="Then I select the travel date(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select the travel date" time="0"/>
@@ -91,6 +91,6 @@
   <testcase classname="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select a trip" time="0"/>
   <testcase classname="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click mfe button" time="0"/>
   <testcase classname="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click operation days" time="0"/>
-  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button" time="0.001"/>
-  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="2.265"/>
+  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button" time="0"/>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="2.174"/>
 </testsuite>

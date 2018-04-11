@@ -311,7 +311,7 @@ formatter.match({
   "location": "TravelInformationSteps.navigator_app_is_startted()"
 });
 formatter.result({
-  "duration": 19446715075,
+  "duration": 35882164625,
   "status": "passed"
 });
 formatter.match({
@@ -324,7 +324,7 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_start_station(String)"
 });
 formatter.result({
-  "duration": 7706343892,
+  "duration": 7560522678,
   "status": "passed"
 });
 formatter.match({
@@ -337,95 +337,95 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
 });
 formatter.result({
-  "duration": 8262239417,
+  "duration": 8001034141,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_day_picker()"
 });
 formatter.result({
-  "duration": 2363012088,
+  "duration": 1197935086,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_select_the_travel_date()"
 });
 formatter.result({
-  "duration": 243897072,
+  "duration": 1412781387,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_done_button()"
 });
 formatter.result({
-  "duration": 1856699479,
+  "duration": 1734214371,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_search_button()"
 });
 formatter.result({
-  "duration": 786031014,
+  "duration": 1909312151,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToLaterButton()"
 });
 formatter.result({
-  "duration": 4722002973,
+  "duration": 300993620,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToEarlierButton()"
 });
 formatter.result({
-  "duration": 1467833054,
+  "duration": 409640785,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollBackToLaterButton()"
 });
 formatter.result({
-  "duration": 3896674616,
+  "duration": 248077973,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickLaterButton()"
 });
 formatter.result({
-  "duration": 206072733,
+  "duration": 205407254,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.selectAtrip()"
 });
 formatter.result({
-  "duration": 2028693604,
+  "duration": 3202192756,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickMfeButton()"
 });
 formatter.result({
-  "duration": 1128065525,
+  "duration": 444653773,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickOperationDays()"
 });
 formatter.result({
-  "duration": 4729328170,
+  "duration": 4769020449,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickBackButton()"
 });
 formatter.result({
-  "duration": 3174073081,
+  "duration": 3273746746,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3130059499,
+  "duration": 2726493007,
   "status": "passed"
 });
 formatter.scenario({
@@ -531,7 +531,7 @@ formatter.match({
   "location": "TravelInformationSteps.navigator_app_is_startted()"
 });
 formatter.result({
-  "duration": 15307011259,
+  "duration": 14190132845,
   "status": "passed"
 });
 formatter.match({
@@ -544,7 +544,7 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_start_station(String)"
 });
 formatter.result({
-  "duration": 7548650383,
+  "duration": 7499605269,
   "status": "passed"
 });
 formatter.match({
@@ -557,95 +557,95 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
 });
 formatter.result({
-  "duration": 7899282342,
+  "duration": 8064394650,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_day_picker()"
 });
 formatter.result({
-  "duration": 1043030348,
+  "duration": 812105808,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_select_the_travel_date()"
 });
 formatter.result({
-  "duration": 1253375121,
+  "duration": 1233000210,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_done_button()"
 });
 formatter.result({
-  "duration": 1828943949,
+  "duration": 1821050570,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_search_button()"
 });
 formatter.result({
-  "duration": 490130506,
+  "duration": 1436603158,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToLaterButton()"
 });
 formatter.result({
-  "duration": 3448545244,
+  "duration": 3504307961,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToEarlierButton()"
 });
 formatter.result({
-  "duration": 1393830626,
+  "duration": 1491566561,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollBackToLaterButton()"
 });
 formatter.result({
-  "duration": 3491189278,
+  "duration": 3531333968,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickLaterButton()"
 });
 formatter.result({
-  "duration": 206334655,
+  "duration": 201081434,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.selectAtrip()"
 });
 formatter.result({
-  "duration": 1504361331,
+  "duration": 2276962476,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickMfeButton()"
 });
 formatter.result({
-  "duration": 1147346766,
+  "duration": 485734484,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickOperationDays()"
 });
 formatter.result({
-  "duration": 4686215715,
+  "duration": 4689700757,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickBackButton()"
 });
 formatter.result({
-  "duration": 3151892633,
+  "duration": 3233297029,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2267035711,
+  "duration": 2177383234,
   "status": "passed"
 });
 });
