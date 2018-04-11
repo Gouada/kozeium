@@ -311,7 +311,7 @@ formatter.match({
   "location": "TravelInformationSteps.navigator_app_is_startted()"
 });
 formatter.result({
-  "duration": 31958344538,
+  "duration": 35882164625,
   "status": "passed"
 });
 formatter.match({
@@ -324,9 +324,8 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_start_station(String)"
 });
 formatter.result({
-  "duration": 36896992371,
-  "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.20 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027BK7N00066974\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage\u003dde.hafas.android.db, deviceScreenSize\u003d1080x1920, networkConnectionEnabled\u003dtrue, warnings\u003d{}, databaseEnabled\u003dfalse, deviceName\u003demulator-5554, platform\u003dLINUX, deviceUDID\u003demulator-5554, appActivity\u003dde.hafas.main.HafasApp, desired\u003d{appPackage\u003dde.hafas.android.db, appActivity\u003dde.hafas.main.HafasApp, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, browserName\u003dAndroid, platformName\u003dAndroid, udid\u003demulator-5554, deviceName\u003demulator-5554}, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, webStorageEnabled\u003dfalse, locationContextEnabled\u003dfalse, takesScreenshot\u003dtrue, browserName\u003dAndroid, javascriptEnabled\u003dtrue, deviceModel\u003dAndroid SDK built for x86, platformName\u003dAndroid, udid\u003demulator-5554, deviceManufacturer\u003dGoogle}]\nSession ID: d802d09d-2f11-4433-82ed-9c3e30fdfef2\n*** Element info: {Using\u003dxpath, value\u003d//android.widget.LinearLayout[@content-desc\u003d\u0027Mainz Hbf\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)\r\n\tat io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)\r\n\tat core.UIObjectWrapper.tap(UIObjectWrapper.java:189)\r\n\tat api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:89)\r\n\tat ✽.Then I enter the start station Mainz Hbf(travelinformation.feature:26)\r\n",
-  "status": "failed"
+  "duration": 7560522678,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -338,82 +337,95 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8001034141,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_day_picker()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1197935086,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_select_the_travel_date()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1412781387,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_done_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1734214371,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_search_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1909312151,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToLaterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 300993620,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToEarlierButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 409640785,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollBackToLaterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 248077973,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickLaterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 205407254,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.selectAtrip()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3202192756,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickMfeButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 444653773,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickOperationDays()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4769020449,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickBackButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3273746746,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 7763457273,
+  "duration": 2726493007,
   "status": "passed"
 });
 formatter.scenario({
@@ -519,7 +531,7 @@ formatter.match({
   "location": "TravelInformationSteps.navigator_app_is_startted()"
 });
 formatter.result({
-  "duration": 28189908282,
+  "duration": 14190132845,
   "status": "passed"
 });
 formatter.match({
@@ -532,9 +544,8 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_start_station(String)"
 });
 formatter.result({
-  "duration": 37122726913,
-  "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.81 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027BK7N00066974\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{appPackage\u003dde.hafas.android.db, deviceScreenSize\u003d1080x1920, networkConnectionEnabled\u003dtrue, warnings\u003d{}, databaseEnabled\u003dfalse, deviceName\u003demulator-5554, platform\u003dLINUX, deviceUDID\u003demulator-5554, appActivity\u003dde.hafas.main.HafasApp, desired\u003d{appPackage\u003dde.hafas.android.db, appActivity\u003dde.hafas.main.HafasApp, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, browserName\u003dAndroid, platformName\u003dAndroid, udid\u003demulator-5554, deviceName\u003demulator-5554}, newCommandTimeout\u003d60.0, platformVersion\u003d7.0, webStorageEnabled\u003dfalse, locationContextEnabled\u003dfalse, takesScreenshot\u003dtrue, browserName\u003dAndroid, javascriptEnabled\u003dtrue, deviceModel\u003dAndroid SDK built for x86, platformName\u003dAndroid, udid\u003demulator-5554, deviceManufacturer\u003dGoogle}]\nSession ID: 850e7f64-fe7e-4cd3-947f-b252d1be4472\n*** Element info: {Using\u003dxpath, value\u003d//android.widget.LinearLayout[@content-desc\u003d\u0027Frankfurt(Main)Hbf\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)\r\n\tat io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)\r\n\tat core.UIObjectWrapper.tap(UIObjectWrapper.java:189)\r\n\tat api.apps.navigator.tripPlaner.TripInformation.clickStationNameInList(TripInformation.java:55)\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:89)\r\n\tat ✽.Then I enter the start station Frankfurt(Main)Hbf(travelinformation.feature:26)\r\n",
-  "status": "failed"
+  "duration": 7499605269,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -546,82 +557,95 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8064394650,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_day_picker()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 812105808,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_select_the_travel_date()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1233000210,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_done_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1821050570,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_search_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1436603158,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToLaterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3504307961,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToEarlierButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1491566561,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollBackToLaterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3531333968,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickLaterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 201081434,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.selectAtrip()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2276962476,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickMfeButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 485734484,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickOperationDays()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4689700757,
+  "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickBackButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3233297029,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 4796196711,
+  "duration": 2177383234,
   "status": "passed"
 });
 });
