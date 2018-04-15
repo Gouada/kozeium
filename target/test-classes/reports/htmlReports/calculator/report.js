@@ -235,7 +235,7 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 165201806,
+  "duration": 16888208489,
   "status": "passed"
 });
 formatter.match({
@@ -248,9 +248,8 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 4134510,
-  "error_message": "java.lang.NullPointerException\r\n\tat api.apps.myCalculator.steps.CalculatorSteps.i_click_the_first(CalculatorSteps.java:105)\r\n\tat ✽.When I click the first 7(calculator.feature:26)\r\n",
-  "status": "failed"
+  "duration": 283525876,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -262,7 +261,8 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 689931933,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -274,18 +274,19 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 670272434,
+  "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 843890353,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 150256,
-  "error_message": "java.lang.NullPointerException\r\n\tat api.apps.myCalculator.steps.CalculatorSteps.finishTest(CalculatorSteps.java:161)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\n",
-  "status": "failed"
+  "duration": 3712664319,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 34,
@@ -343,7 +344,7 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 34899853397,
+  "duration": 15603099162,
   "status": "passed"
 });
 formatter.match({
@@ -356,7 +357,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 263710779,
+  "duration": 188022924,
   "status": "passed"
 });
 formatter.match({
@@ -369,7 +370,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "duration": 635147068,
+  "duration": 702957936,
   "status": "passed"
 });
 formatter.match({
@@ -382,18 +383,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "duration": 686046574,
+  "duration": 694474961,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "duration": 747921353,
+  "duration": 770379174,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2927916829,
+  "duration": 3462394184,
   "status": "passed"
 });
 formatter.scenario({
@@ -452,7 +453,7 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 13457715391,
+  "duration": 14367995993,
   "status": "passed"
 });
 formatter.match({
@@ -465,7 +466,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 190458811,
+  "duration": 192637387,
   "status": "passed"
 });
 formatter.match({
@@ -478,7 +479,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "duration": 684762006,
+  "duration": 655736467,
   "status": "passed"
 });
 formatter.match({
@@ -491,18 +492,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "duration": 695510664,
+  "duration": 640415548,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "duration": 766014502,
+  "duration": 748223596,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3170673431,
+  "duration": 2533801349,
   "status": "passed"
 });
 formatter.scenario({
@@ -561,7 +562,7 @@ formatter.match({
   "location": "CalculatorSteps.i_start_the_calculator()"
 });
 formatter.result({
-  "duration": 13807898223,
+  "duration": 13430912383,
   "status": "passed"
 });
 formatter.match({
@@ -574,7 +575,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_first(int)"
 });
 formatter.result({
-  "duration": 181091607,
+  "duration": 178106346,
   "status": "passed"
 });
 formatter.match({
@@ -587,7 +588,7 @@ formatter.match({
   "location": "CalculatorSteps.i_click_an_operator(String)"
 });
 formatter.result({
-  "duration": 661988333,
+  "duration": 668247654,
   "status": "passed"
 });
 formatter.match({
@@ -600,18 +601,18 @@ formatter.match({
   "location": "CalculatorSteps.i_click_the_second(int)"
 });
 formatter.result({
-  "duration": 650372213,
+  "duration": 660654318,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculatorSteps.i_click_equal()"
 });
 formatter.result({
-  "duration": 762653854,
+  "duration": 748984736,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2426296647,
+  "duration": 2825574960,
   "status": "passed"
 });
 });

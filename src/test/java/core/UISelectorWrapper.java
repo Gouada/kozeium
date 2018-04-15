@@ -63,7 +63,7 @@ public class UISelectorWrapper {
 	}
 
 	public UISelectorWrapper xPath(String xPath) {
-		MyLogger.logger.info("this is the xpath I received: " + xPath);
+		// MyLogger.logger.info("this is the xpath I received: " + xPath);
 		locator = xPath;
 		return this;
 	}

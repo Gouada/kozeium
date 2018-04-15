@@ -1,0 +1,329 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: gouada1@yahoo.fr"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 25,
+        "name": "navigation through navigator",
+        "description": "",
+        "id": "navigator-navigation;navigation-through-navigator",
+        "after": [
+          {
+            "result": {
+              "duration": 5111168723,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NavigationSteps.finishTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29417439302,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "navigator is started",
+            "match": {
+              "location": "NavigationSteps.navigator_app_is_startted()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2009441995,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 27,
+                "value": "#Then I click information and booking"
+              }
+            ],
+            "line": 28,
+            "name": "I click favorite and history",
+            "match": {
+              "location": "NavigationSteps.clickFavoriteHistory()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3186852066,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click trip planer",
+            "match": {
+              "location": "NavigationSteps.clickTripPlaner()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3638819782,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click save fares",
+            "match": {
+              "location": "NavigationSteps.clickSaveFares()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3059374667,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click verbundtickets",
+            "match": {
+              "location": "NavigationSteps.clickVerbundTickets()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2625515843,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click regional offers",
+            "match": {
+              "location": "NavigationSteps.clickRegionalOffers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2689924542,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click my tickets",
+            "match": {
+              "location": "NavigationSteps.clickMyTickets()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2881503560,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click add ticket",
+            "match": {
+              "location": "NavigationSteps.clickAddTicket()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2583132990,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click search order",
+            "match": {
+              "location": "NavigationSteps.clickSearchOrder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2571908433,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click departure arrival",
+            "match": {
+              "location": "NavigationSteps.clickdepartureArrival()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35945229122,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I scroll to imprint",
+            "match": {
+              "location": "NavigationSteps.scrollToImprint()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 378599404,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click bahnCard",
+            "match": {
+              "location": "NavigationSteps.clickBahnCard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36509685444,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I scroll to regional offers",
+            "match": {
+              "location": "NavigationSteps.scrollToRegionalOffers()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30585305564,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click Karte",
+            "match": {
+              "location": "NavigationSteps.clickKarte()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30497857805,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I scroll to favorite and history",
+            "match": {
+              "location": "NavigationSteps.scrollToFavofiteHistory()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 346402033,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click real time information agin",
+            "match": {
+              "location": "NavigationSteps.clickRealTimeInfosAgain()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 63664978118,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I Scroll to delay alarm",
+            "match": {
+              "location": "NavigationSteps.scrollToDelayAlarm()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@navigation"
+          }
+        ]
+      }
+    ],
+    "name": "Navigator navigation",
+    "description": "I want to use this template for my feature file",
+    "id": "navigator-navigation",
+    "keyword": "Feature",
+    "uri": "navigatornavigation.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="257.703139">
+<testcase classname="Navigator navigation" name="navigation through navigator" time="257.703139">
+<system-out><![CDATA[Given navigator is started..................................................passed
+Then I click favorite and history...........................................passed
+Then I click trip planer....................................................passed
+Then I click save fares.....................................................passed
+Then I click verbundtickets.................................................passed
+And I click regional offers.................................................passed
+And I click my tickets......................................................passed
+Then I click add ticket.....................................................passed
+Then I click search order...................................................passed
+Then I click departure arrival..............................................passed
+Then I scroll to imprint....................................................passed
+Then I click bahnCard.......................................................passed
+Then I scroll to regional offers............................................passed
+Then I click Karte..........................................................passed
+Then I scroll to favorite and history.......................................passed
+Then I click real time information agin.....................................passed
+Then I Scroll to delay alarm................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

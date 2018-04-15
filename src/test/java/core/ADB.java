@@ -274,7 +274,7 @@ public class ADB {
 	}
 
 	public void removeFile(String deviceID, String filename) throws InterruptedException {
-		executeADBComannd("adb  -s " + deviceID + " rm -f" + SCREEENSHOTS_FOLDER + filename);
+		executeADBComannd("adb  -s " + deviceID + " rm -f " + SCREEENSHOTS_FOLDER + filename);
 	}
 
 	public void saveScreeenShootOnServer(String deviceID, String filename, String server_path) {

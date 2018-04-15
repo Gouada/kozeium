@@ -23,11 +23,11 @@ public class TestStarter {
 	private static ArrayList<Device> devices;
 	private final static ADB adb = new ADB();
 	private static JsonReadWriter jsonRW = new JsonReadWriter();
-	private static List<String> testClassNames = Arrays.asList("CalculatorRunner", "TripPlanerRunner");
+	private static List<String> testClassNames = Arrays.asList("TripPlanerRunner", "CalculatorRunner"); // "NavigationRunner"
 
 	public static void main(String[] args) throws Throwable {
 		try {
-			// startSameTestOnMultipleDevices("CalculatorRunner");
+			// startSameTestOnMultipleDevices("TripPlanerRunner");
 			startDifferentsTestOnDifferentDevices(testClassNames);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -161,6 +161,9 @@ public class TestStarter {
 						testStarterThread.setName(device.getDeviceID() + "-" + testClassNames.get(i));
 						testStarterThread.start();
 
+						// sleeping may held jenkings for transferring json
+						// report files
+						// Thread.sleep(5000);
 						MyLogger.logger.info("starting thread " + testStarterThread.getId() + " with device "
 								+ device.getDeviceID());
 					}

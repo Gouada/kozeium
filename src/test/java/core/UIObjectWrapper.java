@@ -64,6 +64,22 @@ public class UIObjectWrapper {
 		}
 	}
 
+	public boolean isElementEmpty() {
+
+		try {
+			boolean element;
+			if (isxPath()) {
+				element = androidDriver.findElementsByXPath(locator).isEmpty();
+			} else {
+				element = androidDriver.findElementsByAndroidUIAutomator(locator).isEmpty();
+			}
+			return element;
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
 	public boolean isSelected() {
 		WebElement element;
 		if (isxPath()) {
@@ -216,32 +232,46 @@ public class UIObjectWrapper {
 
 	public void scrollToElement() {
 		String text = ".";
-		if (!locator.contains("text") && !locator.contains("resourceId")) {
-			MyLogger.logger.error("locator " + locator + " does not contains text. Element is not identified by text.");
-			throw new AssertionError(
-					"locator " + locator + " does not contains text. Element is not identified by text.");
-		} else if (locator.contains("resourceId")) {
-			androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()."
-					+ "scrollable(true).instance(0)).scrollIntoView( " + locator + ".instance(0));");
-		} else {
-			if (locator.contains("textcontains")) {
-				text = locator.substring(locator.indexOf("[@textcontains=\""), locator.indexOf("\""))
-						.replace("[@textcontains=\"", "");
-			} else if (locator.contains("text")) {
-				text = locator.substring(locator.indexOf("[@text=\""), locator.indexOf("\"]"));
-				text = text.replace("[@text=\"", "");
-				text = text.replace("\"]", "");
+		try {
+			if (!locator.contains("text") && !locator.contains("resourceId")) {
+				MyLogger.logger
+						.error("locator " + locator + " does not contains text. Element is not identified by text.");
+				throw new AssertionError(
+						"locator " + locator + " does not contains text. Element is not identified by text.");
+			} else if (locator.contains("resourceId")) {
+				androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()."
+						+ "scrollable(true).instance(0)).scrollIntoView( " + locator + ".instance(0));");
+			} else {
+				if (locator.contains("textcontains")) {
+					text = locator.substring(locator.indexOf("[@textcontains=\""), locator.indexOf("\""))
+							.replace("[@textcontains=\"", " ");
+				} else if (locator.contains("text")) {
+					// replacing all special char by whitespace
+					// String locatorText = locator.replaceAll("\\W", " ");
+					String locatorText = locator.replaceAll("[^a-zA-Z0-9&/-_]", " ");
 
-				System.out.println("scrolling to........... " + text);
-				MyLogger.logger.info("scrolling to " + text);
+					text = locatorText.substring(locatorText.indexOf("text"), locatorText.lastIndexOf(" "))
+							.replace("text", "").trim();
+					// text = text.replace("text", "").trim();
+					// String[] textArray = text.split(" ");
+					// text = textArray[textArray.length - 2].trim();
+					// text = text + " " + textArray[textArray.length -
+					// 1].trim();
+				}
+				androidDriver.findElementByAndroidUIAutomator(
+						"new UiScrollable(new UiSelector()." + "scrollable(true).instance(0)).scrollIntoView( new "
+								+ "UiSelector().textContains(\"" + text + "\").instance(0));");
+				//
+				// + ".getChildByText(new
+				// UiSelector().className(\"android.widget.TextView\"), " + "\""
+				// + text + "\");");
+				//
+				MyLogger.logger.info("Successffuly scrolled to ............" + text);
 			}
-			androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()."
-					+ "scrollable(true).instance(0)).scrollIntoView(new UiSelector.text(\"" + text
-					+ "\").instance(0));");
-			// androidDriver.findElementByAndroidUIAutomator("new
-			// UiScrollable(new UiSelector()."
-			// +"scrollable(true).instance(0)).scrollIntoView(new
-			// UiSelector().textMatches("" + selector + "").instance(0))"));
+		} catch (Exception e) {
+			MyLogger.logger.info("scrolling to.." + text + "failed");
+			MyLogger.logger.error(e.getMessage() + e.getStackTrace().toString());
+			e.printStackTrace();
 		}
 	}
 
@@ -250,8 +280,10 @@ public class UIObjectWrapper {
 		timer.start();
 		while (!timer.isExpired(seconds)) {
 			if (isVisible()) {
+				// MyLogger.logger.info("element is now displayed" + locator);
 				break;
 			}
+			MyLogger.logger.info("element still not displayed");
 		}
 		if (timer.isExpired(seconds) && !isVisible()) {
 			throw new AssertionError("Element " + locator + " failed to appaer within " + seconds);

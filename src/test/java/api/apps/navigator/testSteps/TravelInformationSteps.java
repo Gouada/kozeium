@@ -41,7 +41,7 @@ public class TravelInformationSteps {
 	}
 
 	@Given("^navigator is started$")
-	public void navigator_app_is_startted() {
+	public void navigator_app_is_started() {
 		// device = findFreeDevice();
 		device = getFreeDevice();
 
@@ -229,8 +229,9 @@ public class TravelInformationSteps {
 
 	@Then("^I click operation days$")
 	public void clickOperationDays() {
-		timestp = Calendar.getInstance();
-		filename = deviceID + Long.toString(timestp.getTimeInMillis()) + "." + SCREEN_SHOT_FILE_TYPE;
+		// timestp = Calendar.getInstance();
+		// filename = deviceID + Long.toString(timestp.getTimeInMillis()) + "."
+		// + SCREEN_SHOT_FILE_TYPE;
 
 		try {
 			tripItinerary.clickOperationDays();
