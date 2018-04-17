@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runners.CalculatorRunner
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.281 sec
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 119.414 sec

@@ -195,127 +195,127 @@ formatter.match({
   "location": "NavigationSteps.navigator_app_is_started_for_navigation()"
 });
 formatter.result({
-  "duration": 16199081624,
+  "duration": 27373306730,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickFavoriteHistory()"
 });
 formatter.result({
-  "duration": 2110612443,
+  "duration": 2358849176,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickTripPlaner()"
 });
 formatter.result({
-  "duration": 3565212536,
+  "duration": 3388786118,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickSaveFares()"
 });
 formatter.result({
-  "duration": 2969650057,
+  "duration": 4070666962,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickVerbundTickets()"
 });
 formatter.result({
-  "duration": 2883550509,
+  "duration": 3731682144,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickRegionalOffers()"
 });
 formatter.result({
-  "duration": 2629514086,
+  "duration": 3211797259,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickMyTickets()"
 });
 formatter.result({
-  "duration": 2746920544,
+  "duration": 2974432019,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickAddTicket()"
 });
 formatter.result({
-  "duration": 2951753824,
+  "duration": 3389717631,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickSearchOrder()"
 });
 formatter.result({
-  "duration": 2678159716,
+  "duration": 2973152367,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickdepartureArrival()"
 });
 formatter.result({
-  "duration": 2678507443,
+  "duration": 2919700552,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.scrollToImprint()"
 });
 formatter.result({
-  "duration": 2712211083,
+  "duration": 3892072074,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickBahnCard()"
 });
 formatter.result({
-  "duration": 270950645,
+  "duration": 333393683,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.scrollToRegionalOffers()"
 });
 formatter.result({
-  "duration": 3407421320,
+  "duration": 4854439984,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickKarte()"
 });
 formatter.result({
-  "duration": 277439630,
+  "duration": 512234894,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.scrollToFavofiteHistory()"
 });
 formatter.result({
-  "duration": 33918259970,
+  "duration": 34721993826,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.clickRealTimeInfosAgain()"
 });
 formatter.result({
-  "duration": 237966681,
+  "duration": 377799263,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.scrollToDelayAlarm()"
 });
 formatter.result({
-  "duration": 2641622534,
+  "duration": 2703416509,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2329266120,
+  "duration": 5439013556,
   "status": "passed"
 });
 formatter.after({
-  "duration": 174890,
+  "duration": 164215,
   "error_message": "java.lang.NullPointerException\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:258)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\n",
   "status": "failed"
 });
@@ -632,7 +632,7 @@ formatter.match({
   "location": "TravelInformationSteps.navigator_app_is_started()"
 });
 formatter.result({
-  "duration": 13123250076,
+  "duration": 18277582087,
   "status": "passed"
 });
 formatter.match({
@@ -645,7 +645,7 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_start_station(String)"
 });
 formatter.result({
-  "duration": 7769207495,
+  "duration": 7385110558,
   "status": "passed"
 });
 formatter.match({
@@ -658,100 +658,98 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
 });
 formatter.result({
-  "duration": 8139022588,
+  "duration": 8721002373,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_day_picker()"
 });
 formatter.result({
-  "duration": 820862379,
+  "duration": 831568835,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_select_the_travel_date()"
 });
 formatter.result({
-  "duration": 1237706399,
+  "duration": 1199371464,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_done_button()"
 });
 formatter.result({
-  "duration": 1698074570,
+  "duration": 1851654474,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_search_button()"
 });
 formatter.result({
-  "duration": 1577077945,
+  "duration": 1612607254,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToLaterButton()"
 });
 formatter.result({
-  "duration": 112261169,
+  "duration": 175773250,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToEarlierButton()"
 });
 formatter.result({
-  "duration": 97918155,
+  "duration": 184028376,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollBackToLaterButton()"
 });
 formatter.result({
-  "duration": 81483443,
+  "duration": 274023532,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickLaterButton()"
 });
 formatter.result({
-  "duration": 180357744,
+  "duration": 268090006,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.selectAtrip()"
 });
 formatter.result({
-  "duration": 2899690043,
-  "status": "passed"
+  "duration": 3423156884,
+  "error_message": "junit.framework.AssertionFailedError\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)\r\n\tat ✽.Then I select a trip(travelinformation.feature:36)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickMfeButton()"
 });
 formatter.result({
-  "duration": 375808147,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickOperationDays()"
 });
 formatter.result({
-  "duration": 4755612894,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickBackButton()"
 });
 formatter.result({
-  "duration": 3232866550,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 246324,
+  "duration": 113720,
   "error_message": "java.lang.NullPointerException\r\n\tat api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 2110239673,
+  "duration": 4341945628,
   "status": "passed"
 });
 formatter.scenario({
@@ -857,7 +855,7 @@ formatter.match({
   "location": "TravelInformationSteps.navigator_app_is_started()"
 });
 formatter.result({
-  "duration": 13283691324,
+  "duration": 16359076204,
   "status": "passed"
 });
 formatter.match({
@@ -870,7 +868,7 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_start_station(String)"
 });
 formatter.result({
-  "duration": 7584094884,
+  "duration": 7670896044,
   "status": "passed"
 });
 formatter.match({
@@ -883,100 +881,98 @@ formatter.match({
   "location": "TravelInformationSteps.i_enter_the_destination_station(String)"
 });
 formatter.result({
-  "duration": 8009990065,
+  "duration": 8256702055,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_day_picker()"
 });
 formatter.result({
-  "duration": 1088610817,
+  "duration": 1535917268,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_select_the_travel_date()"
 });
 formatter.result({
-  "duration": 1132871066,
+  "duration": 682491317,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_done_button()"
 });
 formatter.result({
-  "duration": 1696022284,
+  "duration": 1880426714,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.i_click_the_search_button()"
 });
 formatter.result({
-  "duration": 1597910354,
+  "duration": 1486148402,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToLaterButton()"
 });
 formatter.result({
-  "duration": 15035602384,
+  "duration": 4972170768,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollToEarlierButton()"
 });
 formatter.result({
-  "duration": 1310744225,
+  "duration": 1460335329,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.scrollBackToLaterButton()"
 });
 formatter.result({
-  "duration": 3504938378,
+  "duration": 3514744111,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickLaterButton()"
 });
 formatter.result({
-  "duration": 200816152,
+  "duration": 207379035,
   "status": "passed"
 });
 formatter.match({
   "location": "TravelInformationSteps.selectAtrip()"
 });
 formatter.result({
-  "duration": 2434326018,
-  "status": "passed"
+  "duration": 2814729332,
+  "error_message": "junit.framework.AssertionFailedError\r\n\tat api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)\r\n\tat ✽.Then I select a trip(travelinformation.feature:36)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickMfeButton()"
 });
 formatter.result({
-  "duration": 393433423,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickOperationDays()"
 });
 formatter.result({
-  "duration": 4731315532,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TravelInformationSteps.clickBackButton()"
 });
 formatter.result({
-  "duration": 3238021693,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 128088,
+  "duration": 121930,
   "error_message": "java.lang.NullPointerException\r\n\tat api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 2102909493,
+  "duration": 4136774474,
   "status": "passed"
 });
 });

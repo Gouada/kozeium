@@ -40,27 +40,30 @@ public class FreeDevicefinder {
 	public synchronized Device findReadyDevice() {
 		setDeviceList();
 		Device foundDevice = null;
-		MyLogger.logger.info("finding free device ");
+		MyLogger.logger.info("finding ready device ");
 		jsonReadWriter = new JsonReadWriter();
 
 		// for (Device device : this.deviceList) {
 		int i = 0;
+		// MyLogger.logger.info("finding ready device this.deviceList.size() " +
+		// this.deviceList.size());
 		while (foundDevice == null && this.deviceList.size() > i) {
 			Device device = this.deviceList.get(i);
 			// if free device is found go out of loop
-			if (!device.isUsed() && device.getStatus() == 1) {
+			if (device.getStatus() == 1) { // !device.isUsed() &&
 				foundDevice = device;
 				foundDevice.setUsed(true);
 				foundDevice.setStatus(2L);
 
 				jsonReadWriter.updateList(foundDevice);
-				MyLogger.logger.info("found free device " + foundDevice.getDeviceID());
+				MyLogger.logger.info("found ready device " + foundDevice.getDeviceID());
 				// break;
 			}
+			// MyLogger.logger.info("finding ready device iteration" + i);
 			i++;
 		}
 		if (foundDevice == null) {
-			MyLogger.logger.info("no free device found .... FreeDevicefinder");
+			MyLogger.logger.info("no ready device found .... FreeDevicefinder");
 		}
 		return foundDevice;
 	}
@@ -114,4 +117,16 @@ public class FreeDevicefinder {
 		return freeDevice;
 	}
 
+	public Device waitForReadyDevice(int seconds) throws InterruptedException {
+		Device freeDevice = null;
+		Timer timer = new Timer();
+		timer.start();
+		while (!timer.isExpired(seconds) && freeDevice == null) {
+			freeDevice = findReadyDevice();
+			// if () {
+			// break;
+			Thread.sleep(20000);
+		}
+		return freeDevice;
+	}
 }

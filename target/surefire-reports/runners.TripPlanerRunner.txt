@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runners.TripPlanerRunner
 -------------------------------------------------------------------------------
-Tests run: 50, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 203.592 sec <<< FAILURE!
-Scenario: navigation through navigator  Time elapsed: 2.367 sec  <<< ERROR!
+Tests run: 52, Failures: 4, Errors: 3, Skipped: 6, Time elapsed: 213.687 sec <<< FAILURE!
+Scenario: navigation through navigator  Time elapsed: 5.443 sec  <<< ERROR!
 java.lang.NullPointerException
 	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:258)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -48,7 +48,15 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-| Mainz Hbf | Leipzig Hbf |  Time elapsed: 0.003 sec  <<< ERROR!
+Then I select a trip(| Mainz Hbf | Leipzig Hbf |)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ?.Then I select a trip(travelinformation.feature:36)
+| Mainz Hbf | Leipzig Hbf |  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ?.Then I select a trip(travelinformation.feature:36)
+| Mainz Hbf | Leipzig Hbf |  Time elapsed: 0.004 sec  <<< ERROR!
 java.lang.NullPointerException
 	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -112,7 +120,15 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |  Time elapsed: 0.003 sec  <<< ERROR!
+Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ?.Then I select a trip(travelinformation.feature:36)
+| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ?.Then I select a trip(travelinformation.feature:36)
+| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |  Time elapsed: 0.004 sec  <<< ERROR!
 java.lang.NullPointerException
 	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

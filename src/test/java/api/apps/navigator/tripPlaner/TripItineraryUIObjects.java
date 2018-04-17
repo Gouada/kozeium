@@ -11,39 +11,39 @@ import core.UISelectorWrapper;
 public class TripItineraryUIObjects extends TripPlanerUIObject {
 
 	private final String drawer_identificator = "...";
+	private TriplannerIdentificators triplannerIdentificators;
 
 	// deviceId is required for parallel testting
-	public String deviceId;
+	public String device_ID;
 
 	public TripItineraryUIObjects() {
 	}
 
-	public TripItineraryUIObjects(String deviceId) {
-		this.deviceId = deviceId;
+	public TripItineraryUIObjects(String device_ID) {
+		this.device_ID = deviceId;
+		triplannerIdentificators = new TriplannerIdentificators(device_ID);
 		MyLogger.logger.setLevel(Level.DEBUG);
 	}
 
-	UISelectorWrapper uiSelector = new UISelectorWrapper(this.deviceId);
+	UISelectorWrapper uiSelector = new UISelectorWrapper(this.device_ID);
 
 	public UIObjectWrapper getMfeSecondary() {
-		return new UISelectorWrapper(this.deviceId).resourceId(button_mfe_secondary_identificator).makeIUObject();
+		return new UISelectorWrapper(this.device_ID).resourceId(button_mfe_secondary_identificator).makeIUObject();
 	}
 
 	public UIObjectWrapper getDaysOfOperation() {
-		String day_of_operation_identificator = TriplannerIdentificators.getDayOfOperationsIdentificator(this.deviceId);
-		return new UISelectorWrapper(this.deviceId).xPath(day_of_operation_identificator).makeIUObject();
+		String day_of_operation_identificator = triplannerIdentificators.getDayOfOperationsIdentificator();
+		return new UISelectorWrapper(this.device_ID).xPath(day_of_operation_identificator).makeIUObject();
 	}
 
 	public UIObjectWrapper getPopUpBackButton() {
-		String pop_up_back_button_identificator = TriplannerIdentificators
-				.getPopUpBackButtonIdentificator(this.deviceId);
-		return new UISelectorWrapper(this.deviceId).xPath(pop_up_back_button_identificator).makeIUObject();
+		String pop_up_back_button_identificator = triplannerIdentificators.getPopUpBackButtonIdentificator();
+		return new UISelectorWrapper(this.device_ID).xPath(pop_up_back_button_identificator).makeIUObject();
 	}
 
 	public UIObjectWrapper getActivityTitle() {
-		String activity_title_identificator = TriplannerIdentificators
-				.getTripplanActivityTitleIdentificator(this.deviceId);
-		return new UISelectorWrapper(this.deviceId).xPath(activity_title_identificator).makeIUObject();
+		String activity_title_identificator = triplannerIdentificators.getTripplanActivityTitleIdentificator();
+		return new UISelectorWrapper(this.device_ID).xPath(activity_title_identificator).makeIUObject();
 	}
 
 }

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="82.161111">
-<testcase classname="calculator" name="addition" time="23.088493">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="124.744244">
+<testcase classname="calculator" name="addition" time="34.252183">
 <system-out><![CDATA[Given I start the calculator................................................passed
 When I click the first 7....................................................passed
 Then I click an operator op_add.............................................passed
@@ -7,7 +7,7 @@ And I click the second 8....................................................pass
 And I click equal...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="calculator" name="addition_2" time="21.421328">
+<testcase classname="calculator" name="addition_2" time="30.215607">
 <system-out><![CDATA[Given I start the calculator................................................passed
 When I click the first 3....................................................passed
 Then I click an operator op_mul.............................................passed
@@ -15,7 +15,7 @@ And I click the second 7....................................................pass
 And I click equal...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="calculator" name="addition_3" time="19.13881">
+<testcase classname="calculator" name="addition_3" time="28.278843">
 <system-out><![CDATA[Given I start the calculator................................................passed
 When I click the first 3....................................................passed
 Then I click an operator op_sub.............................................passed
@@ -23,7 +23,7 @@ And I click the second 3....................................................pass
 And I click equal...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="calculator" name="addition_4" time="18.51248">
+<testcase classname="calculator" name="addition_4" time="31.997611">
 <system-out><![CDATA[Given I start the calculator................................................passed
 When I click the first 3....................................................passed
 Then I click an operator op_div.............................................passed

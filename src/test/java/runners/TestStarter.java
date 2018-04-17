@@ -181,7 +181,7 @@ public class TestStarter {
 					// planned t be started
 					Device device = FreeDevicefinder.getInstance().findFreeDevice();
 					if (device == null) {
-						device = FreeDevicefinder.getInstance().waitForFreeDevice(300);
+						device = FreeDevicefinder.getInstance().waitForReadyDevice(300);
 						if (device == null) {
 							throw new Exception("Waited too long for Free device ");
 						}

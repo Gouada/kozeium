@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="24" failures="0" name="runners.CalculatorRunner" time="79.268" errors="0" skipped="0">
+<testsuite tests="24" failures="0" name="runners.CalculatorRunner" time="119.403" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -39,7 +39,7 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="GouadaDopavogui"/>
+    <property name="user.name" value="gouadadopavogui"/>
     <property name="java.class.path" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\boot\plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -61,28 +61,28 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="| 7 | 8 | op_add |" name="Given I start the calculator" time="0"/>
-  <testcase classname="| 7 | 8 | op_add |" name="When I click the first 7" time="0"/>
-  <testcase classname="| 7 | 8 | op_add |" name="Then I click an operator op_add" time="0.001"/>
+  <testcase classname="| 7 | 8 | op_add |" name="Given I start the calculator" time="0.004"/>
+  <testcase classname="| 7 | 8 | op_add |" name="When I click the first 7" time="0.002"/>
+  <testcase classname="| 7 | 8 | op_add |" name="Then I click an operator op_add" time="0"/>
   <testcase classname="| 7 | 8 | op_add |" name="And I click the second 8" time="0"/>
   <testcase classname="| 7 | 8 | op_add |" name="And I click equal" time="0"/>
-  <testcase classname="| 7 | 8 | op_add |" name="| 7 | 8 | op_add |" time="3.542"/>
+  <testcase classname="| 7 | 8 | op_add |" name="| 7 | 8 | op_add |" time="6.148"/>
   <testcase classname="| 3 | 7 | op_mul |" name="Given I start the calculator" time="0"/>
   <testcase classname="| 3 | 7 | op_mul |" name="When I click the first 3" time="0"/>
-  <testcase classname="| 3 | 7 | op_mul |" name="Then I click an operator op_mul" time="0.001"/>
+  <testcase classname="| 3 | 7 | op_mul |" name="Then I click an operator op_mul" time="0"/>
   <testcase classname="| 3 | 7 | op_mul |" name="And I click the second 7" time="0"/>
   <testcase classname="| 3 | 7 | op_mul |" name="And I click equal" time="0"/>
-  <testcase classname="| 3 | 7 | op_mul |" name="| 3 | 7 | op_mul |" time="3.151"/>
+  <testcase classname="| 3 | 7 | op_mul |" name="| 3 | 7 | op_mul |" time="6.346"/>
   <testcase classname="| 3 | 3 | op_sub |" name="Given I start the calculator" time="0"/>
   <testcase classname="| 3 | 3 | op_sub |" name="When I click the first 3" time="0"/>
-  <testcase classname="| 3 | 3 | op_sub |" name="Then I click an operator op_sub" time="0.001"/>
+  <testcase classname="| 3 | 3 | op_sub |" name="Then I click an operator op_sub" time="0"/>
   <testcase classname="| 3 | 3 | op_sub |" name="And I click the second 3" time="0"/>
-  <testcase classname="| 3 | 3 | op_sub |" name="And I click equal" time="0.002"/>
-  <testcase classname="| 3 | 3 | op_sub |" name="| 3 | 3 | op_sub |" time="2.307"/>
+  <testcase classname="| 3 | 3 | op_sub |" name="And I click equal" time="0"/>
+  <testcase classname="| 3 | 3 | op_sub |" name="| 3 | 3 | op_sub |" time="4.809"/>
   <testcase classname="| 3 | 3 | op_div |" name="Given I start the calculator" time="0"/>
   <testcase classname="| 3 | 3 | op_div |" name="When I click the first 3" time="0"/>
   <testcase classname="| 3 | 3 | op_div |" name="Then I click an operator op_div" time="0"/>
   <testcase classname="| 3 | 3 | op_div |" name="And I click the second 3" time="0"/>
-  <testcase classname="| 3 | 3 | op_div |" name="And I click equal" time="0"/>
-  <testcase classname="| 3 | 3 | op_div |" name="| 3 | 3 | op_div |" time="2.466"/>
+  <testcase classname="| 3 | 3 | op_div |" name="And I click equal" time="0.001"/>
+  <testcase classname="| 3 | 3 | op_div |" name="| 3 | 3 | op_div |" time="4.78"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="50" failures="0" name="runners.TripPlanerRunner" time="203.59" errors="3" skipped="0">
+<testsuite tests="52" failures="4" name="runners.TripPlanerRunner" time="213.681" errors="3" skipped="6">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -39,7 +39,7 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="GouadaDopavogui"/>
+    <property name="user.name" value="gouadadopavogui"/>
     <property name="java.class.path" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\boot\plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -67,7 +67,7 @@
   <testcase classname="Scenario: navigation through navigator" name="Then I click save fares" time="0"/>
   <testcase classname="Scenario: navigation through navigator" name="Then I click verbundtickets" time="0"/>
   <testcase classname="Scenario: navigation through navigator" name="And I click regional offers" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="And I click my tickets" time="0"/>
+  <testcase classname="Scenario: navigation through navigator" name="And I click my tickets" time="0.001"/>
   <testcase classname="Scenario: navigation through navigator" name="Then I click add ticket" time="0"/>
   <testcase classname="Scenario: navigation through navigator" name="Then I click search order" time="0"/>
   <testcase classname="Scenario: navigation through navigator" name="Then I click departure arrival" time="0"/>
@@ -78,7 +78,7 @@
   <testcase classname="Scenario: navigation through navigator" name="Then I scroll to favorite and history" time="0"/>
   <testcase classname="Scenario: navigation through navigator" name="Then I click real time information agin" time="0"/>
   <testcase classname="Scenario: navigation through navigator" name="Then I Scroll to delay alarm" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Scenario: navigation through navigator" time="2.367">
+  <testcase classname="Scenario: navigation through navigator" name="Scenario: navigation through navigator" time="5.443">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:258)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -125,26 +125,26 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
 </error>
-    <system-out>2018-04-15 15:29:55 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-[HTTP] --&gt; POST /wd/hub/session/50b8d899-204c-4a87-adee-809711663286/appium/app/close {}
-[debug] [MJSONWP] Calling AppiumDriver.closeApp() with args: [&quot;50b8d899-204c-4a87-adee-809711663286&quot;]
+    <system-out>2018-04-17 13:06:30 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+[HTTP] --&gt; POST /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7/appium/app/close {}
+[debug] [MJSONWP] Calling AppiumDriver.closeApp() with args: [&quot;ac92b73e-236d-478d-b1cb-6e6eacdf42f7&quot;]
 [debug] [ADB] Getting connected devices...
 [debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
 [debug] [MJSONWP] Responding to client with driver.closeApp() result: null
-[HTTP] &lt;-- POST /wd/hub/session/50b8d899-204c-4a87-adee-809711663286/appium/app/close 200 401 ms - 76 
-[HTTP] --&gt; DELETE /wd/hub/session/50b8d899-204c-4a87-adee-809711663286 {}
-[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: [&quot;50b8d899-204c-4a87-adee-809711663286&quot;]
-[debug] [BaseDriver] Event &apos;quitSessionRequested&apos; logged at 1523798996085 (15:29:56 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
-[Appium] Removing session 50b8d899-204c-4a87-adee-809711663286 from our master session list
+[HTTP] &lt;-- POST /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7/appium/app/close 200 628 ms - 76 
+[HTTP] --&gt; DELETE /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: [&quot;ac92b73e-236d-478d-b1cb-6e6eacdf42f7&quot;]
+[debug] [BaseDriver] Event &apos;quitSessionRequested&apos; logged at 1523963191608 (13:06:31 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
+[Appium] Removing session ac92b73e-236d-478d-b1cb-6e6eacdf42f7 from our master session list
 [debug] [AndroidDriver] Shutting down Android driver
 [debug] [ADB] Getting connected devices...
 [debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
 [debug] [ADB] Pressing the HOME button
 [debug] [ADB] Getting connected devices...
 [debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;input&quot;,&quot;keyevent&quot;,3]
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;input&quot;,&quot;keyevent&quot;,3]
 [debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;shutdown&quot;}
 [debug] [AndroidBootstrap] Received command result from bootstrap
 [debug] [UiAutomator] Shutting down UiAutomator
@@ -155,45 +155,174 @@
 [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
 [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
 [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 83.242
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
 [debug] [UiAutomator] UiAutomator shut down normally
 [debug] [UiAutomator] Moving to state &apos;stopped&apos;
 [debug] [ADB] Attempting to kill all uiautomator processes
 [debug] [ADB] Getting all processes with uiautomator
 [debug] [ADB] Getting connected devices...
 [debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;ps&quot;]
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;ps&quot;]
 [ADB] No uiautomator process found to kill, continuing...
 [debug] [UiAutomator] Moving to state &apos;stopped&apos;
 [debug] [Logcat] Stopping logcat capture
 [debug] [ADB] Getting connected devices...
 [debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5556&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;io.appium.unlock&quot;]
+[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;io.appium.unlock&quot;]
 [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
-[debug] [BaseDriver] Event &apos;quitSessionFinished&apos; logged at 1523798997521 (15:29:57 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
+[debug] [BaseDriver] Event &apos;quitSessionFinished&apos; logged at 1523963194061 (13:06:34 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
 [debug] [MJSONWP] Received response: null
 [debug] [MJSONWP] But deleting session, so not returning
 [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
-[HTTP] &lt;-- DELETE /wd/hub/session/50b8d899-204c-4a87-adee-809711663286 200 1437 ms - 76 
-2018-04-15 15:29:58 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
+[HTTP] &lt;-- DELETE /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7 200 2455 ms - 76 
+2018-04-17 13:06:36 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
 </system-out>
   </testcase>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Given navigator is started" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the start station Mainz Hbf" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the destination station Leipzig Hbf" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the destination station Leipzig Hbf" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the day picker" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select the travel date" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the done button" time="0.001"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click the search button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I scroll down to later button" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select the travel date" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the done button" time="0"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click the search button" time="0.001"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I scroll down to later button" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll up to earlier button" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll back to later button" time="0"/>
   <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click later button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click mfe button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click operation days" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click back button" time="0.003"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.003">
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0.004">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ✽.Then I select a trip(travelinformation.feature:36)
+</failure>
+    <system-out>P LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements 200 1430 ms - 124 
+[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;26&quot;},{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements 200 236 ms - 141 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;26&quot;},{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;}]}
+[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;30&quot;},{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements 200 376 ms - 141 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;30&quot;},{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;}]}
+[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/element/31/click {&quot;id&quot;:&quot;31&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;31&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;31&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;31&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/element/31/click 200 281 ms - 76 
+2018-04-17 13:07:19 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-17 13:07:19 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell screencap /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+2018-04-17 13:07:20 INFO  MyLogger:106 - server output 
+2018-04-17 13:07:20 INFO  MyLogger:273 - took screenshot and saved in /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
+2018-04-17 13:07:20 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-17 13:07:20 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 pull /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png screenshots
+2018-04-17 13:07:20 INFO  MyLogger:106 - server output [100%] /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
+/sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png: 1 file pulled. 2.6 MB/s (32730 bytes in 0.012s)
+
+2018-04-17 13:07:20 INFO  MyLogger:268 - pulled from /sdcard/screenshots/ to screenshots
+2018-04-17 13:07:20 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-17 13:07:20 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb  -s emulator-5554 rm -f /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
+2018-04-17 13:07:20 INFO  MyLogger:106 - server output 
+2018-04-17 13:07:20 ERROR MyLogger:208 - FAILED STEP: &quot;I select a trip &quot; refer to screenshot for more details screenshots/emulator-55541523963239562_selecting_a_trip.png
+null
+2018-04-17 13:07:20 ERROR MyLogger:210 - null[Ljava.lang.StackTraceElement;@1edb61b1
+</system-out>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.004">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ✽.Then I select a trip(travelinformation.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click mfe button" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click operation days" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click back button" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.004">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -261,20 +390,144 @@
   </testcase>
   <testcase classname="Given navigator is started(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Given navigator is started" time="0"/>
   <testcase classname="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the start station Frankfurt" time="0"/>
-  <testcase classname="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the destination station Frankfurt" time="0"/>
-  <testcase classname="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the day picker" time="0"/>
+  <testcase classname="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the destination station Frankfurt" time="0.002"/>
+  <testcase classname="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the day picker" time="0.001"/>
   <testcase classname="Then I select the travel date(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select the travel date" time="0"/>
-  <testcase classname="Then I click the done button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the done button" time="0"/>
+  <testcase classname="Then I click the done button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the done button" time="0.001"/>
   <testcase classname="And I click the search button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click the search button" time="0"/>
   <testcase classname="And I scroll down to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I scroll down to later button" time="0"/>
-  <testcase classname="Then I scroll up to earlier button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll up to earlier button" time="0.003"/>
+  <testcase classname="Then I scroll up to earlier button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll up to earlier button" time="0"/>
   <testcase classname="Then I scroll back to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll back to later button" time="0"/>
   <testcase classname="And I click later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click later button" time="0"/>
-  <testcase classname="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select a trip" time="0"/>
-  <testcase classname="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click mfe button" time="0"/>
-  <testcase classname="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click operation days" time="0.002"/>
-  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button" time="0"/>
-  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.003">
+  <testcase classname="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select a trip" time="0.004">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ✽.Then I select a trip(travelinformation.feature:36)
+</failure>
+    <system-out>[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;},{&quot;ELEMENT&quot;:&quot;26&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements 200 1012 ms - 141 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;},{&quot;ELEMENT&quot;:&quot;26&quot;}]}
+[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;},{&quot;ELEMENT&quot;:&quot;30&quot;}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;},{&quot;ELEMENT&quot;:&quot;30&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements 200 179 ms - 141 
+[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;},{&quot;ELEMENT&quot;:&quot;34&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements 200 185 ms - 141 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;},{&quot;ELEMENT&quot;:&quot;34&quot;}]}
+[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/element/32/click {&quot;id&quot;:&quot;32&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;32&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;32&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;32&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/element/32/click 200 204 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+2018-04-17 13:08:14 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-17 13:08:14 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell screencap /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
+2018-04-17 13:08:15 INFO  MyLogger:106 - server output 
+2018-04-17 13:08:15 INFO  MyLogger:273 - took screenshot and saved in /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
+2018-04-17 13:08:15 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-17 13:08:15 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 pull /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png screenshots
+2018-04-17 13:08:15 INFO  MyLogger:106 - server output [100%] /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
+/sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png: 1 file pulled. 3.5 MB/s (43657 bytes in 0.012s)
+
+2018-04-17 13:08:15 INFO  MyLogger:268 - pulled from /sdcard/screenshots/ to screenshots
+2018-04-17 13:08:15 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-04-17 13:08:15 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb  -s emulator-5554 rm -f /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
+2018-04-17 13:08:15 INFO  MyLogger:106 - server output 
+2018-04-17 13:08:15 ERROR MyLogger:208 - FAILED STEP: &quot;I select a trip &quot; refer to screenshot for more details screenshots/emulator-55541523963294649_selecting_a_trip.png
+null
+2018-04-17 13:08:15 ERROR MyLogger:210 - null[Ljava.lang.StackTraceElement;@344561e0
+</system-out>
+  </testcase>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.004">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
+	at ✽.Then I select a trip(travelinformation.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click mfe button" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click operation days" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.004">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -339,7 +592,5 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
 </error>
-    <system-out>[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
-</system-out>
   </testcase>
 </testsuite>
