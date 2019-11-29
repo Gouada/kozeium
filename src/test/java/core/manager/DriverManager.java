@@ -1,24 +1,5 @@
 package core.manager;
 
-import static core.constants.Constants.LOCAL_HOST;
-import static core.constants.Constants.PORTS;
-import static core.constants.Constants.URL_SUFFIX;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
-
-import javax.management.RuntimeErrorException;
-
-import org.apache.log4j.Level;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.service.DriverService;
-
 import api.android.Android;
 import core.ADB;
 import core.CapabilitiesDevice;
@@ -27,6 +8,21 @@ import core.constants.Args;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
+import org.apache.log4j.Level;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.service.DriverService;
+
+import javax.management.RuntimeErrorException;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
+import static core.constants.Constants.*;
 
 public class DriverManager {
 
@@ -34,18 +30,13 @@ public class DriverManager {
 	private static CapabilitiesDevice capas = null;
 	private static ArrayList<String> connectedDevices = new ArrayList<>();
 	private static ArrayList<String> availableDevices = new ArrayList<>();
-	private String appName = "";
+    private String appName;
 	private static String urlString = "";
-	private static AndroidDriver<WebElement> driver;
 	private WebDriver remoteDriver;
 
 	public final static String node_js = ServerManager.getNodeJSPath()+"//node.exe";// "D:/NonBKU/nodejs/node.exe";
-	
 
-	// appium.js used to be appium-server starter this function is assumed in
-	// newer appium-versions with
-	// /resources/app/node_modules/appium/build/lib/main.js
-	private static String appiumjs = "C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
+
 	//private static String appiumjs = ServerManager.getAppiumJSPath()+"//main.js";
 
 	// "D:/Users/GouadaDopavogui2/AppData/Local/Programs/appium-desktop/resources/app/node_modules/appium/build/lib/main.js";
@@ -54,9 +45,10 @@ public class DriverManager {
 
 	public DriverManager() {
 		MyLogger.logger.setLevel(Level.DEBUG);
-	};
+        appName = "";
+    }
 
-	public DriverManager(String packageID, String activity, String appApkName) {
+    public DriverManager(String packageID, String activity, String appApkName) {
 		try {
 			capas = new CapabilitiesDevice();
 			capas.setActivity(activity);
@@ -68,6 +60,7 @@ public class DriverManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+        appName = "";
 	}
 
 	// public DriverManager(String deviceID, String packageID, String activity)
@@ -82,6 +75,7 @@ public class DriverManager {
 	// }
 
 	public DriverManager(String deviceID, String packageID, String activity, String path, String appName) {
+        this.appName = "";
 		try {
 			getCapabilities(deviceID, packageID, activity, path);
 			this.appName = appName;
@@ -103,7 +97,7 @@ public class DriverManager {
 		return capas.getDeviceCapabilities();
 	}
 
-	public static void getAvailableDevices() {
+    private static void getAvailableDevices() {
 		// String[] connectedDevices;
 		// String[] avalaiblesDevices = {};
 		DriverManager.connectedDevices = adb.getConnectedDevices();
@@ -156,7 +150,7 @@ public class DriverManager {
 					MyLogger.logger.info("starting appium server at port " + port + " with following url " + urlString
 							+ " for device " + currentDeviceName);
 					createService(port).start();
-					driver = new AndroidDriver<WebElement>(new URL(urlString),
+                    AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(new URL(urlString),
 							getCapabilities(currentDeviceName, capas.getAPP_PACKAGE(), capas.getActivity(), null));
 					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					Android.adb = new ADB(currentDeviceName);
@@ -180,7 +174,7 @@ public class DriverManager {
 		String port = "";
 		String foundPort = "";
 		String currentDeviceName = deviveCapas.getDEVICEID();
-		String plattform = deviveCapas.getPLATFORM_VERSION();
+        //String plattform = deviveCapas.getPLATFORM_VERSION();
 		AndroidDriver<WebElement> currentDriver;
 
 		try {
@@ -322,6 +316,10 @@ public class DriverManager {
 		// LOCAL_HOST.split(":")[1].replace("//", "") + "\n\n\n");
 		int bootStrapPort = Integer.valueOf(port) + 1;
 		String bootStrapPortStr = Integer.toString(bootStrapPort);
+        // appium.js used to be appium-server starter this function is assumed in
+        // newer appium-versions with
+        // /resources/app/node_modules/appium/build/lib/main.js
+        String appiumjs = "C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
 		driverService = new AppiumServiceBuilder().usingDriverExecutable(new File(node_js))
 				.withAppiumJS(new File(appiumjs)).withIPAddress(LOCAL_HOST.split(":")[1].replace("//", ""))
 				.usingPort(Integer.parseInt(port)).withArgument(Args.BOOTSTRAP_PORT, bootStrapPortStr).build(); // .withArgument(Args.LOG_LEVEL,
