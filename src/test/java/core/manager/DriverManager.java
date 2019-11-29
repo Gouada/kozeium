@@ -129,7 +129,6 @@ public class DriverManager {
 		String foundPort;
 		getAvailableDevices();
 		try {
-
 			for (String currentDeviceName : DriverManager.availableDevices) {
 				if (capas != null) {
 					if ((capas.getDEVICEID() == "" || capas.getDEVICEID() == null)) {
