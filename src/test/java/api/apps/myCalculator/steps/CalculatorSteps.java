@@ -46,7 +46,7 @@ public class CalculatorSteps {
 	private String filename = "calculator_";
 	private CalculatorKeyBoard calculator;
 
-	public Device getFreeDevice() {
+	public Device getReadyDevice() {
 		freeDevicefinder = FreeDevicefinder.getInstance();
 		return freeDevicefinder.findReadyDevice();
 	}
@@ -58,7 +58,7 @@ public class CalculatorSteps {
 		timestp = Calendar.getInstance();
 
 		// device = findFreeDevice();
-		device = getFreeDevice();
+		device = getReadyDevice();
 		if (device != null) {
 			try {
 				// on error save screenshot under following name
@@ -72,6 +72,8 @@ public class CalculatorSteps {
 						Android.apps.calculator.getLuncherActivityID());
 
 				deviceID = capas.getDEVICEID();
+				
+				MyLogger.logger.warn("PORT......."+ device.getPort());
 				DriverManager.createAndroidDriver(capas, device.getPort());
 
 				MyLogger.logger.info("starting test of " + "  " + Android.apps.calculator.getPackageID() + " on "

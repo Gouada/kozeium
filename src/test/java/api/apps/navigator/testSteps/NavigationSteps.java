@@ -16,6 +16,10 @@ import static api.apps.navigator.navigation.NavigationUIelementsIdentificators.S
 import static api.apps.navigator.navigation.NavigationUIelementsIdentificators.TIME_TABLE_LINK_IDENTIFICATOR;
 import static api.apps.navigator.navigation.NavigationUIelementsIdentificators.TRIP_INFORMATION_LINK_IDENTIFICATOR;
 import static api.apps.navigator.navigation.NavigationUIelementsIdentificators.VERBUND_TICKETS_LINK_IDENTIFICATOR;
+import static api.apps.navigator.navigation.NavigationUIelementsIdentificators.IS_MY_TRAIN_ON_TIME_LINK_IDENTIFICATOR;
+import static core.Constants.ACCESS_COARSE_LOCATION;
+import static core.Constants.ACCESS_FINE_LOCATION;
+import static core.Constants.READ_CONTACTS;
 import static core.Constants.SCREEN_SHOTS_FOLDER;
 
 import org.junit.Assert;
@@ -34,7 +38,7 @@ import model.Device;
 import runners.TestStarter;
 
 public class NavigationSteps {
-	private String deviceID = "";
+	private String deviceID = ""; 
 
 	private Device device;
 	private String filename;
@@ -44,6 +48,7 @@ public class NavigationSteps {
 	public Device getFreeDevice() {
 		freeDevicefinder = FreeDevicefinder.getInstance();
 		return freeDevicefinder.findReadyDevice();
+//		return freeDevicefinder.findFreeDevice();
 	}
 
 	public void clickdrawerMenu() {
@@ -82,13 +87,18 @@ public class NavigationSteps {
 						+ capas.getDEVICEID() + "  plattform version " + capas.getPLATFORM_VERSION() + " "
 						+ Android.apps.navigator.getLuncherActivityID());
 
+				//Android.adb.grantPermission(READ_CONTACTS, Android.apps.navigator.getPackageID());
+				
+				//Android.adb.grantPermission(ACCESS_FINE_LOCATION, Android.apps.navigator.getPackageID());
+				//Android.adb.grantPermission(ACCESS_COARSE_LOCATION, Android.apps.navigator.getPackageID());
+				
 				Android.apps.navigator.open(Android.adb.getDeviceID());
 
 				MyLogger.logger
 						.debug("opening " + Android.apps.navigator.getPackageID() + " on " + Android.adb.getDeviceID());
 
-				Assert.assertTrue("the app could not be started", Android.adb.getCurrentAppInForeGround(deviceID)
-						.contains(Android.apps.navigator.getPackageID()));
+//				Assert.assertTrue("the app could not be started", Android.adb.getCurrentAppInForeGround(deviceID)
+//						.contains(Android.apps.navigator.getPackageID()));
 			} catch (Exception e) {
 				filename = Android.adb.setScreenShotFilename("starting_navigator");
 				MyLogger.logger.error("app: " + Android.apps.navigator.getPackageID() + " could not be started");
@@ -216,16 +226,22 @@ public class NavigationSteps {
 	}
 
 	@Then("^I click real time information agin$")
-	public void clickRealTimeInfosAgain() {
+	public void clickRealTimeInfosAgain() throws Throwable{
 		navigation.clickUIObject(REAL_TIME_INFORMATION_LINK_IDENTIFICATOR);
 	}
 
 	@Then("^I Scroll to delay alarm$")
-	public void scrollToDelayAlarm() {
+	public void scrollToDelayAlarm() throws Throwable{
 		clickdrawerMenu();
 		navigation.scrollToElement(DELAY_NOTIFICATION_LINK_IDENTIFICATOR);
 	}
 
+	@Then("^I scroll to is my train on time$")
+	public void scrollToIsMyTrainOnTime() throws Throwable{
+		//clickdrawerMenu();
+		navigation.scrollToElement(IS_MY_TRAIN_ON_TIME_LINK_IDENTIFICATOR);
+	}
+	
 	@After
 	public void finishTest() {
 		device.setUsed(false);

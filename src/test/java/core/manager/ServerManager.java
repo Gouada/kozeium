@@ -9,7 +9,6 @@ import core.MyLogger;
 /* This  class provide information about Test-Server ie.: OS, Class Path, maven path*/
 public class ServerManager {
 
-	private static String server_os;
 	private static String android_home = "";
 	private static String maven_bin_folder = "";
 	private static String node_js_path = "";
@@ -21,7 +20,7 @@ public class ServerManager {
 
 	public static String getServerOS() {
 		// server_os = System.getenv("os_name");
-		server_os = System.getProperty("os.name");
+		String server_os = System.getProperty("os.name");
 		return server_os;
 	}
 
@@ -63,7 +62,7 @@ public class ServerManager {
 
 	public static String getMavenBinFolder() {
 		try {
-			if (maven_bin_folder == null || maven_bin_folder == "") {
+			if ((maven_bin_folder == null) || (maven_bin_folder == "")) {
 				maven_bin_folder = System.getenv("M2_HOME");
 				maven_bin_folder = maven_bin_folder.replace("\\", "//") + "//bin";
 				if (maven_bin_folder == null) {
@@ -86,6 +85,7 @@ public class ServerManager {
 			if (node_js_path == null || node_js_path == "") {
 				node_js_path = System.getenv("NODE_JS");
 				node_js_path = node_js_path.replace("\\", "//");
+				//MyLogger.logger.info("node_js_path:  "+ node_js_path);
 				if (node_js_path == null || node_js_path == "") {
 					MyLogger.logger.error("Node_JS PATH is not set or could not befound, please set node_js path");
 					throw new Exception("Node_JS PATH is not set or could not befound, please set node_js path");
@@ -104,6 +104,7 @@ public class ServerManager {
 		try {
 			if (appium_js_path == null || appium_js_path == "") {
 				appium_js_path = System.getenv("APPIUM_JS").replace("\\", "//");
+				//MyLogger.logger.info("appium_js_path:  "+ appium_js_path);
 				if (appium_js_path == null || appium_js_path == "") {
 					MyLogger.logger.error("APPIUM_JS PATH is not set or could not befound, please set node_js path");
 					throw new Exception("APPIUM_JS PATH is not set or could not befound, please set node_js path");

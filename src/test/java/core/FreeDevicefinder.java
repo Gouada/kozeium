@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import org.apache.log4j.Level;
 
 import model.Device;
+import runners.TestStarter;
 
 public class FreeDevicefinder {
 
@@ -20,11 +21,14 @@ public class FreeDevicefinder {
 	public static synchronized FreeDevicefinder getInstance() {
 		if (singleFreeDevicefinder == null) {
 			singleFreeDevicefinder = new FreeDevicefinder();
+			//TestStarter.getDeviceList();  // to delete
 		}
 		return singleFreeDevicefinder;
 	}
 
 	public synchronized void setDeviceList() {
+		
+		//TestStarter.getDeviceList();  // to delete
 		MyLogger.logger.setLevel(Level.DEBUG);
 		MyLogger.logger.info("reading from connected device list ");
 		jsonReadWriter = new JsonReadWriter();
@@ -85,7 +89,7 @@ public class FreeDevicefinder {
 			if (!device.isUsed() && device.getStatus() == 0) {
 				foundDevice = device;
 				foundDevice.setUsed(true);
-				foundDevice.setStatus(2L);
+				foundDevice.setStatus(1L);
 
 				jsonReadWriter.updateList(foundDevice);
 				MyLogger.logger.info("found free device " + foundDevice.getDeviceID());

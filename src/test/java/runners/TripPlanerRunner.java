@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(plugin = { "pretty", "html:" + HTML_RESULT_FOLDER,
 		"json:" + JSON_RESULT_FOLDER + "/db_navogator_tripPlaner.json",
 		"junit:" + XML_RESULT_FOLDER + "/db_navogator_tripPlaner.xml" }, features = { DB_NAVIGATOR_FEATURES }, glue = {
-				DB_NAVIGATOR_TRIPPLANER_STEPS }, tags = { "@tripPlaner, @navigation" })
+				DB_NAVIGATOR_TRIPPLANER_STEPS }, tags = { "@tripPlaner" })
 public class TripPlanerRunner {
 
 }

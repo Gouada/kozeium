@@ -239,7 +239,7 @@ public class ADB {
 
 	public void startApp(String packageId, String launcherActivity, String deviceID) throws InterruptedException {
 		executeADBComannd(
-				" adb -s " + deviceID + " shell am start -n " + packageId + "/" + packageId + "." + launcherActivity);
+				" adb -s " + deviceID + " shell am start -n " + packageId + "/" + launcherActivity); //
 		MyLogger.logger.info("started App " + launcherActivity + " on " + deviceID);
 	}
 
@@ -304,11 +304,11 @@ public class ADB {
 	}
 
 	public String getDeviceModel(String deviceID) {
-		return executeADBComannd(" adb -s " + deviceID + " shell getProp ro.product.model");
+		return executeADBComannd(" adb -s " + deviceID + " shell getprop ro.product.model");
 	}
 
 	public String getSerialNumber(String deviceID) {
-		return executeADBComannd("adb -s" + deviceID + " shell getProp ro.serialno");
+		return executeADBComannd("adb -s" + deviceID + " shell getprop ro.serialno");
 	}
 
 	public void unlockDevice(String deviceID) {
@@ -339,5 +339,10 @@ public class ADB {
 
 	public String getDeviceLang(String deviceID) {
 		return executeADBComannd("adb -s " + deviceID + " shell getprop persist.sys.locale").replace("\n", "").trim();
+	}
+	
+	public String grantPermission(String givenPermission, String packageID)
+	{
+		return executeADBComannd("adb -s " + deviceID + " shell pm grant "+ packageID +" "+ givenPermission);
 	}
 }

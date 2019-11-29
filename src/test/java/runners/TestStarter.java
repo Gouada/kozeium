@@ -23,12 +23,14 @@ public class TestStarter {
 	private static ArrayList<Device> devices;
 	private final static ADB adb = new ADB();
 	private static JsonReadWriter jsonRW = new JsonReadWriter();
-	private static List<String> testClassNames = Arrays.asList("TripPlanerRunner", "CalculatorRunner"); // "NavigationRunner"
+	private static List<String> testClassNames = 
+			Arrays.asList("TripPlanerRunner", "NavigationRunner", "XingRunner", "CalculatorRunner"); //
+	//, "NavigationRunner" 
 
 	public static void main(String[] args) throws Throwable {
 		try {
-			// startSameTestOnMultipleDevices("TripPlanerRunner");
-			startDifferentsTestOnDifferentDevices(testClassNames);
+			startSameTestOnMultipleDevices("NavigationRunner");
+			//startDifferentsTestOnDifferentDevices(testClassNames);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -76,11 +78,11 @@ public class TestStarter {
 		int i = 0;
 		MyLogger.logger.info("Starting Test cases from " + testClassName);
 		getDeviceList();
-
+		
 		// maven command for starting testClass. here we need to provide
 		// absolute-path to maven
 		command = ServerManager.getMavenBinFolder();
-		command = command + "//mvn.bat -Dtest=" + testClassName + " test";
+		command = command + "//mvn.cmd -Dtest=" + testClassName + " test";
 		finalCommand = command;
 
 		// TO DO UPDATE DEVICE LIST ONLY FROM
@@ -98,8 +100,9 @@ public class TestStarter {
 						public void run() {
 							// process =
 							try {
-								Runtime.getRuntime().exec(finalCommand);
 								device.setStatus(1L);
+								MyLogger.logger.info("finalCommand"+finalCommand);
+								Runtime.getRuntime().exec(finalCommand);
 
 								// TO DO UPDATE DEVICE LIST ONLY FROM
 								// FREEDEVICEFINDER SINGLETON-CLASS
@@ -147,7 +150,7 @@ public class TestStarter {
 						i = 0;
 					}
 					// maven command for starting cucumber test-class-runner
-					command = mvnBinFolder + "//mvn.bat -Dtest=" + testClassNames.get(i) + " test";
+					command = mvnBinFolder + "//mvn.cmd -Dtest=" + testClassNames.get(i) + " test";
 					final String finalCommand;
 					finalCommand = command;
 
@@ -163,7 +166,7 @@ public class TestStarter {
 
 						// sleeping may held jenkings for transferring json
 						// report files
-						// Thread.sleep(5000);
+						//Thread.sleep(2000);
 						MyLogger.logger.info("starting thread " + testStarterThread.getId() + " with device "
 								+ device.getDeviceID());
 					}
@@ -172,16 +175,16 @@ public class TestStarter {
 			} else if (deviceList.size() < testClassNames.size()) {
 				for (String testClassName : testClassNames) {
 					// maven command for starting cucumber test-class-runner
-					command = mvnBinFolder + "//mvn.bat -Dtest=" + testClassNames.get(i) + " test";
+					command = mvnBinFolder + "//mvn.cmd -Dtest=" + testClassNames.get(i) + " test";
 					final String finalCommand;
 					finalCommand = command;
 
-					// check wether a test is already running on the device or
-					// is
+					// check wether a test is already running on the device or is
 					// planned t be started
 					Device device = FreeDevicefinder.getInstance().findFreeDevice();
+					
 					if (device == null) {
-						device = FreeDevicefinder.getInstance().waitForReadyDevice(300);
+						device = FreeDevicefinder.getInstance().waitForReadyDevice(100);
 						if (device == null) {
 							throw new Exception("Waited too long for Free device ");
 						}

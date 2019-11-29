@@ -3,21 +3,20 @@ package core;
 //this is an utility class for writing reading and updating a json-file
 // methods of this class are synchronised to avoid parallel access to file
 
-import static core.constants.Constants.PORTS;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-
-// be sure to import the correct classes of json.simple and notgoogle gson i.e.
+import model.Device;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import model.Device;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import static core.constants.Constants.PORTS;
+
+// be sure to import the correct classes of json.simple and notgoogle gson i.e.
 
 public class JsonReadWriter {
 
@@ -28,7 +27,7 @@ public class JsonReadWriter {
 	// serverManager.getCurrentWorkingDirectory();
 
 	/* devicesList.json is in src\main\resources */
-	public String deviceListFileName = "/devicesList.json";
+	private String deviceListFileName = "/devicesList.json";
 
 	// this method save connected devices into a json-file
 	@SuppressWarnings("unchecked")
@@ -52,7 +51,7 @@ public class JsonReadWriter {
 
 				// if a test was already started at this port with this device
 				// then nothing to change
-				if (!device.getPort().equals("") && device.getPort() != "") {
+				if (!device.getPort().equals("")) { //device.getPort() != "" &&
 					deviceProp.put("port", device.getPort());
 				} else { // starting test for first time at this port
 					deviceProp.put("port", PORTS[i]);
@@ -86,7 +85,7 @@ public class JsonReadWriter {
 
 			// saving into JSONOBJECT
 			JSONObject jsonObject = (JSONObject) obj;
-			JSONArray devicesJList = new JSONArray();
+			JSONArray devicesJList;
 
 			// get json-list
 			devicesJList = (JSONArray) jsonObject.get("deviceList");
@@ -109,11 +108,7 @@ public class JsonReadWriter {
 					readDeviceList.add(device);
 				}
 			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ParseException e) {
+		} catch (ParseException | IOException e) {
 			e.printStackTrace();
 		}
 		return readDeviceList;
@@ -136,6 +131,5 @@ public class JsonReadWriter {
 		} catch (Exception e) {
 			MyLogger.logger.error("unexpected error while updating device list");
 		}
-		;
 	}
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="52" failures="4" name="runners.TripPlanerRunner" time="213.681" errors="3" skipped="6">
+<testsuite tests="34" failures="0" name="runners.TripPlanerRunner" time="0.249" errors="6" skipped="26">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin"/>
+    <property name="java.vm.version" value="25.172-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\MyWorkspace\kozeium"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,47 +14,49 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="DE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="test" value="TripPlanerRunner"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\myApps\myWorkspace\kozeium"/>
-    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="user.dir" value="C:\MyWorkspace\kozeium"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="D:\Users\GOUADA~1\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\bin\m2.conf"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.5.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft Application Virtualization Client;C:\Program Files (x86)\IBM\Lotus\Notes\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\bin;D:\NonBKU\IEDriver\IEDriverServer.exe;D:\NonBKU\FFDriver\wires-0.6.2-win.exe;D:\jmeter;C:\Program Files\Git\cmd\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\bin;C:\Program Files\CenterTools\DriveLock\;C:\Python27;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files (x86)\Plantronics\Spokes3G\;D:\VuGen\strawberry-perl\perl\bin;D:\NonBKU\PuTTY\;D:\NonBKU\nodejs\;D:\NonBKU\Android-sdk-windows\platform-tools;D:\NonBKU\Android-sdk-windows\tools;D:\NonBKU\Android-sdk-windows\tools\bin;C:\Program Files (x86)\SDE\Putty\;D:\NonBKU\Docker Toolbox;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft Application Virtualization Client;C:\Program Files (x86)\IBM\Lotus\Notes\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\bin;D:\NonBKU\IEDriver\IEDriverServer.exe;D:\NonBKU\FFDriver\wires-0.6.2-win.exe;D:\jmeter;C:\Program Files\Git\cmd\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\bin;C:\Program Files\CenterTools\DriveLock\;C:\Python27;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files (x86)\Plantronics\Spokes3G\;D:\VuGen\strawberry-perl\perl\bin;D:\NonBKU\PuTTY\;D:\NonBKU\nodejs\;D:\NonBKU\Android-sdk-windows\platform-tools;D:\NonBKU\Android-sdk-windows\tools;D:\NonBKU\Android-sdk-windows\tools\bin;C:\Program Files (x86)\SDE\Putty\;D:\NonBKU\Docker Toolbox;D:\Users\GouadaDopavogui\Ap;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_172/bin/server;C:/Program Files/Java/jre1.8.0_172/bin;C:/Program Files/Java/jre1.8.0_172/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_172;C:\apache-maven-3.5.3;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\Lenovo\AppData\Local\Android\Sdk;C:\Users\Lenovo\AppData\Local\Android\Sdk\tools;C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools;;C:\WINDOWS\System32\OpenSSH\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Roaming\npm;C:\Users\Lenovo\AppData\Roaming\Dashlane\5.12.0.19744\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Lenovo\AppData\Roaming\Dashlane\5.12.0.19744\ucrt;;C:\WINDOWS\System32;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.5.3\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.1"/>
-    <property name="user.home" value="D:\Users\GouadaDopavogui"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.5.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Lenovo"/>
     <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="gouadadopavogui"/>
-    <property name="java.class.path" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4\boot\plexus-classworlds-2.4.jar"/>
+    <property name="user.name" value="Lenovo"/>
+    <property name="java.class.path" value="C:\apache-maven-3.5.3\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_172\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=TripPlanerRunner test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="de"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_144"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_172\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\SDE\SDC\LunaRiM\binary\org.apache.maven.3.0.4.win_3.0.4"/>
+    <property name="maven.home" value="C:\apache-maven-3.5.3\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,270 +64,219 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: navigation through navigator" name="Given navigator is started for navigation" time="0.001"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click favorite and history" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click trip planer" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click save fares" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click verbundtickets" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="And I click regional offers" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="And I click my tickets" time="0.001"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click add ticket" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click search order" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click departure arrival" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I scroll to imprint" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click bahnCard" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I scroll to regional offers" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click Karte" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I scroll to favorite and history" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I click real time information agin" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Then I Scroll to delay alarm" time="0"/>
-  <testcase classname="Scenario: navigation through navigator" name="Scenario: navigation through navigator" time="5.443">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at api.apps.navigator.testSteps.TravelInformationSteps.finishTest(TravelInformationSteps.java:258)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Given navigator is started" time="0.003"/>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the start station Mainz Hbf" time="0.002">
+    <error message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36.63 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: e31266fa-fa2e-46bb-9893-091c4c49a381
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36.63 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: e31266fa-fa2e-46bb-9893-091c4c49a381
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:207)
+	at api.apps.navigator.tripPlaner.TripInformation.clickStartStion(TripInformation.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:99)
+	at ✽.Then I enter the start station Mainz Hbf(travelinformation.feature:26)
 </error>
-    <system-out>2018-04-17 13:06:30 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-[HTTP] --&gt; POST /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7/appium/app/close {}
-[debug] [MJSONWP] Calling AppiumDriver.closeApp() with args: [&quot;ac92b73e-236d-478d-b1cb-6e6eacdf42f7&quot;]
-[debug] [ADB] Getting connected devices...
-[debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
-[debug] [MJSONWP] Responding to client with driver.closeApp() result: null
-[HTTP] &lt;-- POST /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7/appium/app/close 200 628 ms - 76 
-[HTTP] --&gt; DELETE /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7 {}
-[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: [&quot;ac92b73e-236d-478d-b1cb-6e6eacdf42f7&quot;]
-[debug] [BaseDriver] Event &apos;quitSessionRequested&apos; logged at 1523963191608 (13:06:31 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
-[Appium] Removing session ac92b73e-236d-478d-b1cb-6e6eacdf42f7 from our master session list
-[debug] [AndroidDriver] Shutting down Android driver
-[debug] [ADB] Getting connected devices...
-[debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;de.hafas.android.db&quot;]
-[debug] [ADB] Pressing the HOME button
-[debug] [ADB] Getting connected devices...
-[debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;input&quot;,&quot;keyevent&quot;,3]
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;shutdown&quot;}
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [UiAutomator] Shutting down UiAutomator
-[debug] [UiAutomator] Moving to state &apos;stopping&apos;
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;shutdown&quot;}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:&quot;OK, shutting down&quot;}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 83.242
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
-[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
-[debug] [UiAutomator] UiAutomator shut down normally
-[debug] [UiAutomator] Moving to state &apos;stopped&apos;
-[debug] [ADB] Attempting to kill all uiautomator processes
-[debug] [ADB] Getting all processes with uiautomator
-[debug] [ADB] Getting connected devices...
-[debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;ps&quot;]
-[ADB] No uiautomator process found to kill, continuing...
-[debug] [UiAutomator] Moving to state &apos;stopped&apos;
-[debug] [Logcat] Stopping logcat capture
-[debug] [ADB] Getting connected devices...
-[debug] [ADB] 2 device(s) connected
-[debug] [ADB] Running &apos;D:\NonBKU\Android-sdk-windows\platform-tools\adb.exe&apos; with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;io.appium.unlock&quot;]
-[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
-[debug] [BaseDriver] Event &apos;quitSessionFinished&apos; logged at 1523963194061 (13:06:34 GMT+0200 (MitteleuropÃ¤ische Sommerzeit))
-[debug] [MJSONWP] Received response: null
-[debug] [MJSONWP] But deleting session, so not returning
-[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
-[HTTP] &lt;-- DELETE /wd/hub/session/ac92b73e-236d-478d-b1cb-6e6eacdf42f7 200 2455 ms - 76 
-2018-04-17 13:06:36 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+    <system-out>[HTTP] --&gt; POST /wd/hub/session/e31266fa-fa2e-46bb-9893-091c4c49a381/element {&quot;using&quot;:&quot;-android uiautomator&quot;,&quot;value&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;-android uiautomator&quot;,&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;e31266fa-fa2e-46bb-9893-091c4c49a381&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 7778 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 11852 ms so far
+[debug] [BaseDriver] Waited for 12055 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 12374 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 12569 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 12897 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 13083 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 13416 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 13594 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 13937 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 14106 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 14452 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 14618 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 14968 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 15132 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 15482 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 15642 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 15998 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 16156 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 16514 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 16667 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 17030 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 17178 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 17546 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 17688 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 18065 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 18199 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 18582 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 18718 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 19100 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 19232 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 19617 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 19744 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 20139 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ImageButton[contains(@content-desc, &apos;Open drawer menu&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 28345 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/00804c85-6887-4680-85eb-de653c2ba283/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[MJSONWP] Encountered internal error running command:  {&quot;w3cStatus&quot;:400,&quot;jsonwp&quot;:{&quot;sessionId&quot;:&quot;5693d28b-9422-4da1-968d-6a4fafe5a35c&quot;,&quot;status&quot;:13,&quot;value&quot;:&quot;io.appium.uiautomator2.common.exceptions.UiAutomator2Exception: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo\n\tat io.appium.uiautomator2.model.XPathFinder.getRootAccessibilityNode(XPathFinder.java:246)\n\tat io.appium.uiautomator2.model.XPathFinder.refreshUiElementTree(XPathFinder.java:224)\n\tat io.appium.uiautomator2.model.XPathFinder.getNodesList(XPathFinder.java:116)\n\tat io.appium.uiautomator2.handler.FindElement.getXPathUiObject(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:153)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:102)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:56)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:208)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:199)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:761)\n&quot;}} ProxyRequestError: Could not proxy command to remote server. Original error: 500 - {&quot;sessionId&quot;:&quot;5693d28b-9422-4da1-968d-6a4fafe5a35c&quot;,&quot;status&quot;:13,&quot;value&quot;:&quot;io.appium.uiautomator2.common.exceptions.UiAutomator2Exception: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo\n\tat io.appium.uiautomator2.model.XPathFinder.getRootAccessibilityNode(XPathFinder.java:246)\n\tat io.appium.uiautomator2.model.XPathFinder.refreshUiElementTree(XPathFinder.java:224)\n\tat io.appium.uiautomator2.model.XPathFinder.getNodesList(XPathFinder.java:116)\n\tat io.appium.uiautomator2.handler.FindElement.getXPathUiObject(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:153)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:102)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:56)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:208)\n\tat [HTTP] &lt;-- POST /wd/hub/session/2fadd928-724d-425c-io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:199)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)\n\tat io.netty.channel.AbstractChannelb234-7c609b7ab463/element 500 36460 ms - 3816 
+HandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:761)\n&quot;}
+    at JWProxy.proxy$ (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:152:13)
+    at tryCatch (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototyp[HTTP] --&gt; POST /wd/hub/se.iession/2fadd928-724d-425c-b234-7c609b7ab463/element {&quot;using&quot;:&quot;xpath&quot;nvoke [as _invoke] (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFu,&quot;value&quot;:n&quot;//android.widget.CheckedTextView[contains(@textctionPro, &apos;Favorites &amp; History&apos;)]&quot;}
+totype.prototype.(anonymous funct[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.CheckedTextView[contains(@text, &apos;Favorites &amp; History&apos;)]ion)&quot;,&quot;2fadd928-724d-425c-b234-7c609b7ab463&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name [as , accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 30000 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/5693d28b-9422-4da1-968d-6a4fafe5a35c/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;throw] (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_mod,&quot;selector&quot;:&quot;//android.widget.CheckedTextView[contains(@textules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+, &apos;Favorites &amp; History&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[HTTP] &lt;-- POST /wd/hub/session/e31266fa-fa2e-46bb-9893-091c4c49a381/element 500 36617 ms - 164 
 </system-out>
   </testcase>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Given navigator is started" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the start station Mainz Hbf" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the destination station Leipzig Hbf" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the day picker" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select the travel date" time="0.001"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the done button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click the search button" time="0.001"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I scroll down to later button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll up to earlier button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll back to later button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click later button" time="0"/>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0.004">
-    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
-	at ✽.Then I select a trip(travelinformation.feature:36)
-</failure>
-    <system-out>P LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
-[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Waiting up to 30000 ms for condition
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;}]}
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;}]
-[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements 200 1430 ms - 124 
-[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Waiting up to 30000 ms for condition
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;26&quot;},{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;}]
-[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements 200 236 ms - 141 
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;26&quot;},{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;}]}
-[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Waiting up to 30000 ms for condition
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=13]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=15]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=17]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=19]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;30&quot;},{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;}]
-[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/elements 200 376 ms - 141 
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;30&quot;},{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;}]}
-[HTTP] --&gt; POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/element/31/click {&quot;id&quot;:&quot;31&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;31&quot;,&quot;03a64d19-028b-4fd4-91b5-f76413de62f0&quot;]
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;31&quot;}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;31&quot;}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.click() result: true
-[HTTP] &lt;-- POST /wd/hub/session/03a64d19-028b-4fd4-91b5-f76413de62f0/element/31/click 200 281 ms - 76 
-2018-04-17 13:07:19 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:19 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell screencap /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
-2018-04-17 13:07:20 INFO  MyLogger:106 - server output 
-2018-04-17 13:07:20 INFO  MyLogger:273 - took screenshot and saved in /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-2018-04-17 13:07:20 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:20 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 pull /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png screenshots
-2018-04-17 13:07:20 INFO  MyLogger:106 - server output [100%] /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-/sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png: 1 file pulled. 2.6 MB/s (32730 bytes in 0.012s)
-
-2018-04-17 13:07:20 INFO  MyLogger:268 - pulled from /sdcard/screenshots/ to screenshots
-2018-04-17 13:07:20 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:20 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb  -s emulator-5554 rm -f /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-2018-04-17 13:07:20 INFO  MyLogger:106 - server output 
-2018-04-17 13:07:20 ERROR MyLogger:208 - FAILED STEP: &quot;I select a trip &quot; refer to screenshot for more details screenshots/emulator-55541523963239562_selecting_a_trip.png
-null
-2018-04-17 13:07:20 ERROR MyLogger:210 - null[Ljava.lang.StackTraceElement;@1edb61b1
-</system-out>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.006">
+    <error message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36.63 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: e31266fa-fa2e-46bb-9893-091c4c49a381
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36.63 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: e31266fa-fa2e-46bb-9893-091c4c49a381
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:207)
+	at api.apps.navigator.tripPlaner.TripInformation.clickStartStion(TripInformation.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:99)
+	at ✽.Then I enter the start station Mainz Hbf(travelinformation.feature:26)
+</error>
   </testcase>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.004">
-    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
-	at ✽.Then I select a trip(travelinformation.feature:36)
-</failure>
-  </testcase>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click mfe button" time="0.004">
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I enter the destination station Leipzig Hbf" time="0.006">
     <skipped/>
   </testcase>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click operation days" time="0.004">
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the day picker" time="0.006">
     <skipped/>
   </testcase>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click back button" time="0.004">
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select the travel date" time="0.006">
     <skipped/>
   </testcase>
-  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.004">
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click the done button" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click the search button" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I scroll down to later button" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll up to earlier button" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I scroll back to later button" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="And I click later button" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I select a trip" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click mfe button" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click operation days" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="Then I click back button" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Mainz Hbf | Leipzig Hbf |" name="| Mainz Hbf | Leipzig Hbf |" time="0.007">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)
+	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:247)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -374,162 +326,221 @@ null
 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase classname="Given navigator is started(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Given navigator is started" time="0"/>
-  <testcase classname="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the start station Frankfurt" time="0"/>
-  <testcase classname="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the destination station Frankfurt" time="0.002"/>
-  <testcase classname="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the day picker" time="0.001"/>
-  <testcase classname="Then I select the travel date(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select the travel date" time="0"/>
-  <testcase classname="Then I click the done button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the done button" time="0.001"/>
-  <testcase classname="And I click the search button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click the search button" time="0"/>
-  <testcase classname="And I scroll down to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I scroll down to later button" time="0"/>
-  <testcase classname="Then I scroll up to earlier button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll up to earlier button" time="0"/>
-  <testcase classname="Then I scroll back to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll back to later button" time="0"/>
-  <testcase classname="And I click later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click later button" time="0"/>
-  <testcase classname="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select a trip" time="0.004">
-    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
-	at ✽.Then I select a trip(travelinformation.feature:36)
-</failure>
-    <system-out>[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
+  <testcase classname="Given navigator is started(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Given navigator is started(| Frankfurt(Main)Hbf | Frankfurt" time="0"/>
+  <testcase classname="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the start station Frankfurt(Main)Hbf(| Frankfurt(Main)Hbf | Frankfurt" time="0">
+    <error message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 996cf3eb-c99d-4716-a777-073eb22f8177
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 996cf3eb-c99d-4716-a777-073eb22f8177
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:207)
+	at api.apps.navigator.tripPlaner.TripInformation.clickStartStion(TripInformation.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:99)
+	at ✽.Then I enter the start station Frankfurt(Main)Hbf(travelinformation.feature:26)
+</error>
+    <system-out>[HTTP] --&gt; POST /wd/hub/session/996cf3eb-c99d-4716-a777-073eb22f8177/element {&quot;using&quot;:&quot;-android uiautomator&quot;,&quot;value&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;-android uiautomator&quot;,&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;996cf3eb-c99d-4716-a777-073eb22f8177&quot;]
 [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [BaseDriver] Waiting up to 30000 ms for condition
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;},{&quot;ELEMENT&quot;:&quot;26&quot;}]
-[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements 200 1012 ms - 141 
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;23&quot;},{&quot;ELEMENT&quot;:&quot;24&quot;},{&quot;ELEMENT&quot;:&quot;25&quot;},{&quot;ELEMENT&quot;:&quot;26&quot;}]}
-[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Waiting up to 30000 ms for condition
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;},{&quot;ELEMENT&quot;:&quot;30&quot;}]}
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;27&quot;},{&quot;ELEMENT&quot;:&quot;28&quot;},{&quot;ELEMENT&quot;:&quot;29&quot;},{&quot;ELEMENT&quot;:&quot;30&quot;}]
-[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements 200 179 ms - 141 
-[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;xpath&quot;,&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-[debug] [BaseDriver] Waiting up to 30000 ms for condition
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding &apos;//android.widget.LinearLayout[contains(@content-desc, &apos;Travel with Departure at&apos;)]&apos; using &apos;XPATH&apos; with the contextId: &apos;&apos; multiple: true
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=12]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=14]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=16]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.LinearLayout, INSTANCE=18]
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;},{&quot;ELEMENT&quot;:&quot;34&quot;}]
-[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/elements 200 185 ms - 141 
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;31&quot;},{&quot;ELEMENT&quot;:&quot;32&quot;},{&quot;ELEMENT&quot;:&quot;33&quot;},{&quot;ELEMENT&quot;:&quot;34&quot;}]}
-[HTTP] --&gt; POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/element/32/click {&quot;id&quot;:&quot;32&quot;}
-[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;32&quot;,&quot;bf345ae7-0c64-4387-a337-9ecf74016594&quot;]
-[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;32&quot;}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;32&quot;}}
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
-[debug] [AndroidBootstrap] Received command result from bootstrap
-[debug] [MJSONWP] Responding to client with driver.click() result: true
-[HTTP] &lt;-- POST /wd/hub/session/bf345ae7-0c64-4387-a337-9ecf74016594/element/32/click 200 204 ms - 76 
-[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
-2018-04-17 13:08:14 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:08:14 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell screencap /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-2018-04-17 13:08:15 INFO  MyLogger:106 - server output 
-2018-04-17 13:08:15 INFO  MyLogger:273 - took screenshot and saved in /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-2018-04-17 13:08:15 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:08:15 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 pull /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png screenshots
-2018-04-17 13:08:15 INFO  MyLogger:106 - server output [100%] /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-/sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png: 1 file pulled. 3.5 MB/s (43657 bytes in 0.012s)
-
-2018-04-17 13:08:15 INFO  MyLogger:268 - pulled from /sdcard/screenshots/ to screenshots
-2018-04-17 13:08:15 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:08:15 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb  -s emulator-5554 rm -f /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-2018-04-17 13:08:15 INFO  MyLogger:106 - server output 
-2018-04-17 13:08:15 ERROR MyLogger:208 - FAILED STEP: &quot;I select a trip &quot; refer to screenshot for more details screenshots/emulator-55541523963294649_selecting_a_trip.png
-null
-2018-04-17 13:08:15 ERROR MyLogger:210 - null[Ljava.lang.StackTraceElement;@344561e0
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 7785 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 12066 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 12581 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 13095 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 13610 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 14126 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 14639 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 15154 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 15667 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 16179 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 16996 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 17582 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 18094 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 18610 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 19126 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 19642 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 20155 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 20665 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 21178 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 21689 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 22199 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 22711 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 23223 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 23733 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 24244 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 24756 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 25268 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 25779 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 26290 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 26807 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 27321 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 27835 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 28360 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 28897 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 29417 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] [BaseDriver] Waited for 29935 ms so far
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/95e8a3ab-2c67-4fcc-8a78-bacf01747ad0/element] with body: {&quot;strategy&quot;:&quot;-android uiautomator&quot;,&quot;selector&quot;:&quot; new UiSelector().resourceId(\&quot;de.hafas.android.db:id/input_start\&quot;)&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[HTTP] &lt;-- POST /wd/hub/session/996cf3eb-c99d-4716-a777-073eb22f8177/element 500 30462 ms - 164 
 </system-out>
   </testcase>
-  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.004">
-    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at api.apps.navigator.testSteps.TravelInformationSteps.selectAtrip(TravelInformationSteps.java:211)
-	at ✽.Then I select a trip(travelinformation.feature:36)
-</failure>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt(Main)Hbf | Frankfurt" time="0.002">
+    <error message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 996cf3eb-c99d-4716-a777-073eb22f8177
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-RN5VIIS5&apos;, ip: &apos;192.168.142.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 996cf3eb-c99d-4716-a777-073eb22f8177
+*** Element info: {Using=-android uiautomator, value= new UiSelector().resourceId(&quot;de.hafas.android.db:id/input_start&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at core.UIObjectWrapper.tap(UIObjectWrapper.java:207)
+	at api.apps.navigator.tripPlaner.TripInformation.clickStartStion(TripInformation.java:41)
+	at api.apps.navigator.testSteps.TravelInformationSteps.i_enter_the_start_station(TravelInformationSteps.java:99)
+	at ✽.Then I enter the start station Frankfurt(Main)Hbf(travelinformation.feature:26)
+</error>
   </testcase>
-  <testcase classname="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click mfe button" time="0.004">
+  <testcase classname="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I enter the destination station Frankfurt(Main)Flugh(| Frankfurt(Main)Hbf | Frankfurt" time="0.002">
     <skipped/>
   </testcase>
-  <testcase classname="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click operation days" time="0.004">
+  <testcase classname="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the day picker(| Frankfurt(Main)Hbf | Frankfurt" time="0.002">
     <skipped/>
   </testcase>
-  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button" time="0.004">
+  <testcase classname="Then I select the travel date(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select the travel date(| Frankfurt(Main)Hbf | Frankfurt" time="0.004">
     <skipped/>
   </testcase>
-  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt" time="0.004">
+  <testcase classname="Then I click the done button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click the done button(| Frankfurt(Main)Hbf | Frankfurt" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="And I click the search button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click the search button(| Frankfurt(Main)Hbf | Frankfurt" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="And I scroll down to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I scroll down to later button(| Frankfurt(Main)Hbf | Frankfurt" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I scroll up to earlier button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll up to earlier button(| Frankfurt(Main)Hbf | Frankfurt" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I scroll back to later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I scroll back to later button(| Frankfurt(Main)Hbf | Frankfurt" time="0.011">
+    <skipped/>
+  </testcase>
+  <testcase classname="And I click later button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="And I click later button(| Frankfurt(Main)Hbf | Frankfurt" time="0.011">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I select a trip(| Frankfurt(Main)Hbf | Frankfurt" time="0.017">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click mfe button(| Frankfurt(Main)Hbf | Frankfurt" time="0.017">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click operation days(| Frankfurt(Main)Hbf | Frankfurt" time="0.017">
+    <skipped/>
+  </testcase>
+  <testcase classname="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |)" name="Then I click back button(| Frankfurt(Main)Hbf | Frankfurt" time="0.017">
+    <skipped/>
+  </testcase>
+  <testcase classname="| Frankfurt(Main)Hbf | Frankfurt(Main)Flugh |" name="| Frankfurt(Main)Hbf | Frankfurt" time="0.017">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:231)
+	at api.apps.navigator.testSteps.NavigationSteps.finishTest(NavigationSteps.java:247)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -579,18 +590,18 @@ null
 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
 </testsuite>

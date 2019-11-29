@@ -61,7 +61,7 @@ public class CapabilitiesDevice {
 	public DesiredCapabilities getDeviceCapabilities() throws InterruptedException {
 		DesiredCapabilities desiredCapas = new DesiredCapabilities();
 
-		desiredCapas.setBrowserName(getBROWSER_NAME());
+		//desiredCapas.setBrowserName(getBROWSER_NAME());
 		// desiredCapas.setCapability("unicodeKeyboard", true);
 
 		// desiredCapas.setCapability("resetKeyboard", true);
@@ -75,7 +75,7 @@ public class CapabilitiesDevice {
 		desiredCapas.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getAPP_PACKAGE());
 		desiredCapas.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getActivity());
 		desiredCapas.setCapability("newCommandTimeout", 60);
-		// desiredCapas.setCapability("automationName", "UiAutomator2");
+		desiredCapas.setCapability("automationName", "UiAutomator2");
 
 		// if(getAppApkPath() == null || getAppApkPath().equal("") )
 		// if (adb.isAppInstalled(getDEVICE_NAME(), getAPP_PACKAGE())) {

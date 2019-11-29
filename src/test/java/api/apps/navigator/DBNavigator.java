@@ -49,7 +49,7 @@ public class DBNavigator implements Application {
 
 	@Override
 	public String getApkPath() {
-		return "D:\\myApps\\apks\\db-navigator-16-06-p09-00.apk";
+		return "C:\\Apks\\db-navigator-16-06-p09-00.apk";
 	}
 
 }

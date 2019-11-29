@@ -32,20 +32,21 @@ public class DriverManager {
 
 	private final static ADB adb = new ADB();
 	private static CapabilitiesDevice capas = null;
-	public static ArrayList<String> connectedDevices = new ArrayList<>();
-	public static ArrayList<String> availableDevices = new ArrayList<>();
+	private static ArrayList<String> connectedDevices = new ArrayList<>();
+	private static ArrayList<String> availableDevices = new ArrayList<>();
 	private String appName = "";
 	private static String urlString = "";
 	private static AndroidDriver<WebElement> driver;
 	private WebDriver remoteDriver;
 
-	public final static String node_js = ServerManager.getNodeJSPath();// "D:/NonBKU/nodejs/node.exe";
+	public final static String node_js = ServerManager.getNodeJSPath()+"//node.exe";// "D:/NonBKU/nodejs/node.exe";
+	
 
 	// appium.js used to be appium-server starter this function is assumed in
 	// newer appium-versions with
 	// /resources/app/node_modules/appium/build/lib/main.js
-	// private static String appiumjs = "D:/NonBKU/node_modules/.bin/appium.js";
-	private static String appiumjs = ServerManager.getAppiumJSPath();
+	private static String appiumjs = "C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
+	//private static String appiumjs = ServerManager.getAppiumJSPath()+"//main.js";
 
 	// "D:/Users/GouadaDopavogui2/AppData/Local/Programs/appium-desktop/resources/app/node_modules/appium/build/lib/main.js";
 	// D:\NonBKU\Appium\node_modules\appium\bin\appium.js
@@ -125,7 +126,7 @@ public class DriverManager {
 	public static synchronized void createAndroidDriver() throws AppiumServerHasNotBeenStartedLocallyException {
 		int j = 0;
 		String port = "";
-		String foundPort = "";
+		String foundPort;
 		getAvailableDevices();
 		try {
 
@@ -193,7 +194,9 @@ public class DriverManager {
 			if ((isThisPortFree(appiumPort))) {
 				urlString = LOCAL_HOST + ":" + appiumPort + URL_SUFFIX;
 				port = appiumPort;
+				MyLogger.logger.info("PORT ... "+ appiumPort + " is free");
 			} else {
+				MyLogger.logger.info("PORT ... "+ appiumPort + " wasn't free hoo!");
 				foundPort = findFreePort(appiumPort);
 				if (!foundPort.equals("")) {
 					urlString = LOCAL_HOST + ":" + foundPort + URL_SUFFIX;

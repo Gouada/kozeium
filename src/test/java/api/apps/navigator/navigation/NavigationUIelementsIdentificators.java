@@ -44,7 +44,7 @@ public class NavigationUIelementsIdentificators {
 
 	public String getElementIdentificatorByText(String key) {
 		try {
-			return "//android.widget.TextView[contains(@text, '" + properties.getProperty(key) + "')]";
+			return "//android.widget.CheckedTextView[contains(@text, '" + properties.getProperty(key) + "')]";
 		} catch (NullPointerException e) {
 			throw new NullArgumentException("properties variable in NavigationUIelementsIdentificators is null");
 		}

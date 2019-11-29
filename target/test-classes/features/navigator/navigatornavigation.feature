@@ -31,13 +31,13 @@ I want to use this template for my feature file
     Then I click verbundtickets
     And I click regional offers
     And I click my tickets
-    Then I click add ticket
-    Then I click search order
+    #Then I click add ticket
+    #Then I click search order
     Then I click departure arrival
     Then I scroll to imprint
     Then I click bahnCard
     Then I scroll to regional offers
     Then I click Karte
     Then I scroll to favorite and history
-    Then I click real time information agin
-    Then I Scroll to delay alarm
+    #Then I click real time information agin
+    Then I scroll to is my train on time

@@ -2,6 +2,7 @@ package api.apps.navigator.testSteps;
 
 import static core.Constants.SCREEN_SHOTS_FOLDER;
 import static core.Constants.SCREEN_SHOT_FILE_TYPE;
+import static core.Constants.ACCESS_COARSE_LOCATION;
 
 import java.util.Calendar;
 
@@ -11,6 +12,7 @@ import api.android.Android;
 import api.apps.navigator.tripPlaner.TripConnections;
 import api.apps.navigator.tripPlaner.TripInformation;
 import api.apps.navigator.tripPlaner.TripItinerary;
+import core.ADB;
 import core.CapabilitiesDevice;
 import core.FreeDevicefinder;
 import core.MyLogger;
@@ -22,6 +24,8 @@ import cucumber.api.java.en.Then;
 import junit.framework.AssertionFailedError;
 import model.Device;
 import runners.TestStarter;
+import static core.Constants.READ_CONTACTS;
+import static core.Constants.ACCESS_FINE_LOCATION;
 
 public class TravelInformationSteps {
 
@@ -35,16 +39,20 @@ public class TravelInformationSteps {
 	private String filename;
 	private FreeDevicefinder freeDevicefinder;
 
-	public Device getFreeDevice() {
+	public Device getReadyDevice() {
 		freeDevicefinder = FreeDevicefinder.getInstance();
 		return freeDevicefinder.findReadyDevice();
+//		return freeDevicefinder.findFreeDevice();
+
 	}
 
 	@Given("^navigator is started$")
 	public void navigator_app_is_started() {
 		// device = findFreeDevice();
-		device = getFreeDevice();
-
+		
+		device = getReadyDevice();
+		
+		MyLogger.logger.info("getting devie for test"+ device.getDeviceID());
 		if (device != null) {
 			try {
 
@@ -62,14 +70,19 @@ public class TravelInformationSteps {
 				MyLogger.logger.info("starting test of " + "  " + Android.apps.navigator.getPackageID() + " on "
 						+ capas.getDEVICEID() + "  plattform version " + capas.getPLATFORM_VERSION() + " "
 						+ Android.apps.navigator.getLuncherActivityID());
-
+				//MyLogger.logger.info("granting Permissions $$$$$$$$$$$$$$$$$$$$$$$$$S");
+				//Android.adb.grantPermission(READ_CONTACTS, Android.apps.navigator.getPackageID());
+				
+				//Android.adb.grantPermission(ACCESS_FINE_LOCATION, Android.apps.navigator.getPackageID());
+				//Android.adb.grantPermission(ACCESS_COARSE_LOCATION, Android.apps.navigator.getPackageID());
+				
 				Android.apps.navigator.open(Android.adb.getDeviceID());
 
 				MyLogger.logger
 						.debug("opening " + Android.apps.navigator.getPackageID() + " on " + Android.adb.getDeviceID());
-
-				Assert.assertTrue("the app could not be started", Android.adb.getCurrentAppInForeGround(deviceID)
-						.contains(Android.apps.navigator.getPackageID()));
+//
+//				Assert.assertTrue("the app could not be started", Android.adb.getCurrentAppInForeGround(deviceID)
+//						.contains(Android.apps.navigator.getPackageID()));
 			} catch (Exception e) {
 				filename = Android.adb.setScreenShotFilename("starting_navigator");
 				MyLogger.logger.error("app: " + Android.apps.navigator.getPackageID() + " could not be started");
@@ -257,6 +270,7 @@ public class TravelInformationSteps {
 	public void finishTest() {
 		device.setUsed(false);
 		device.setStatus(1L);
+//		device.setStatus(0L);
 		freeDevicefinder.updateDeviceInDeviceListFile(device);
 		// jsonReadWriter.updateList(device);
 		DriverManager.killDriver(deviceID, Android.apps.navigator.getPackageID());

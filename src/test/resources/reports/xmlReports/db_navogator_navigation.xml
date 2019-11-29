@@ -1,22 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="257.703139">
-<testcase classname="Navigator navigation" name="navigation through navigator" time="257.703139">
-<system-out><![CDATA[Given navigator is started..................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.96027">
+<testcase classname="Navigator navigation" name="navigation through navigator" time="16.96027">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at core.UIObjectWrapper.isElementEmpty(UIObjectWrapper.java:72)&#13;&#10;&#9;at api.apps.navigator.navigation.Navigation.scrollToElement(Navigation.java:30)&#13;&#10;&#9;at api.apps.navigator.testSteps.NavigationSteps.scrollToImprint(NavigationSteps.java:201)&#13;&#10;&#9;at ✽.Then I scroll to imprint(navigatornavigation.feature:37)&#13;&#10;"><![CDATA[Given navigator is started for navigation...................................passed
 Then I click favorite and history...........................................passed
 Then I click trip planer....................................................passed
 Then I click save fares.....................................................passed
 Then I click verbundtickets.................................................passed
 And I click regional offers.................................................passed
 And I click my tickets......................................................passed
-Then I click add ticket.....................................................passed
-Then I click search order...................................................passed
 Then I click departure arrival..............................................passed
-Then I scroll to imprint....................................................passed
-Then I click bahnCard.......................................................passed
-Then I scroll to regional offers............................................passed
-Then I click Karte..........................................................passed
-Then I scroll to favorite and history.......................................passed
-Then I click real time information agin.....................................passed
-Then I Scroll to delay alarm................................................passed
-]]></system-out>
+Then I scroll to imprint....................................................failed
+Then I click bahnCard.......................................................skipped
+Then I scroll to regional offers............................................skipped
+Then I click Karte..........................................................skipped
+Then I scroll to favorite and history.......................................skipped
+Then I scroll to is my train on time........................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at core.UIObjectWrapper.isElementEmpty(UIObjectWrapper.java:72)
+	at api.apps.navigator.navigation.Navigation.scrollToElement(Navigation.java:30)
+	at api.apps.navigator.testSteps.NavigationSteps.scrollToImprint(NavigationSteps.java:201)
+	at ✽.Then I scroll to imprint(navigatornavigation.feature:37)
+]]></failure>
+</testcase>
+</testsuite>
+java:1)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:48)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:195)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:138)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:227)&#13;&#10;&#9;at core.UIObjectWrapper.isElementEmpty(UIObjectWrapper.java:72)&#13;&#10;&#9;at api.apps.navigator.navigation.Navigation.scrollToElement(Navigation.java:30)&#13;&#10;&#9;at api.apps.navigator.testSteps.NavigationSteps.scrollToImprint(NavigationSteps.java:201)&#13;&#10;&#9;at ✽.Then I scroll to imprint(navigatornavigation.feature:37)&#13;&#10;"><![CDATA[Given navigator is started for navigation...................................passed
+Then I click favorite and history...........................................passed
+Then I click trip planer....................................................passed
+Then I click save fares.....................................................passed
+Then I click verbundtickets.................................................passed
+And I click regional offers.................................................passed
+And I click my tickets......................................................passed
+Then I click departure arrival..............................................passed
+Then I scroll to imprint....................................................failed
+Then I click bahnCard.......................................................skipped
+Then I scroll to regional offers............................................skipped
+Then I click Karte..........................................................skipped
+Then I scroll to favorite and history.......................................skipped
+Then I scroll to is my train on time........................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Imprint')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:48)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:195)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:138)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:227)
+	at core.UIObjectWrapper.isElementEmpty(UIObjectWrapper.java:72)
+	at api.apps.navigator.navigation.Navigation.scrollToElement(Navigation.java:30)
+	at api.apps.navigator.testSteps.NavigationSteps.scrollToImprint(NavigationSteps.java:201)
+	at ✽.Then I scroll to imprint(navigatornavigation.feature:37)
+]]></failure>
 </testcase>
 </testsuite>

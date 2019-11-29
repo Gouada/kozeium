@@ -1,352 +1,483 @@
-2018-04-17 13:04:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:37 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb devices
-2018-04-17 13:04:37 INFO  MyLogger:106 - server output List of devices attached
+2018-09-21 16:08:53 INFO  MyLogger:79 - Starting Test cases from CalculatorRunner
+2018-09-21 16:08:53 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:08:53 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb devices
+2018-09-21 16:08:54 INFO  MyLogger:106 - server output List of devices attached
 emulator-5554	device
-emulator-5556	device
 
 
-2018-04-17 13:04:37 INFO  MyLogger:47 - Connected devices found. Starting creating list of connected devices
-2018-04-17 13:04:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:37 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-17 13:04:37 INFO  MyLogger:106 - server output 7.0
-
-2018-04-17 13:04:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:37 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:04:37 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:04:37 INFO  MyLogger:56 - added emulator-5554 to device list
-2018-04-17 13:04:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:37 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-17 13:04:37 INFO  MyLogger:106 - server output 7.0
-
-2018-04-17 13:04:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:37 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop persist.sys.locale
-2018-04-17 13:04:37 INFO  MyLogger:106 - server output de
-
-2018-04-17 13:04:37 INFO  MyLogger:56 - added emulator-5556 to device list
-2018-04-17 13:04:37 INFO  MyLogger:157 - 
-
-Starting Test cases from TripPlanerRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=TripPlanerRunner test on 
-emulator-5554
+created new branch
 
 
-2018-04-17 13:04:37 INFO  MyLogger:167 - starting thread 50 with device emulator-5554
-2018-04-17 13:04:37 INFO  MyLogger:157 - 
+2018-09-21 16:08:54 INFO  MyLogger:49 - Connected devices found. Starting creating list of connected devices
+2018-09-21 16:08:54 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:08:54 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:08:55 INFO  MyLogger:106 - server output 7.1.1
 
-Starting Test cases from CalculatorRunner with 
-D://SDE//SDC//LunaRiM//binary//org.apache.maven.3.0.4.win_3.0.4//bin//mvn.bat -Dtest=CalculatorRunner test on 
-emulator-5556
+2018-09-21 16:08:55 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:08:55 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-09-21 16:08:55 INFO  MyLogger:106 - server output en
+
+2018-09-21 16:08:55 INFO  MyLogger:58 - added emulator-5554 to device list
+2018-09-21 16:08:55 INFO  MyLogger:117 - starting thread 11 with device emulator-5554
+2018-09-21 16:08:55 INFO  MyLogger:104 - finalCommandC://apache-maven-3.5.3//bin//mvn.cmd -Dtest=CalculatorRunner test
+2018-09-21 16:08:55 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:08:59 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:08:59 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:08:59 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:08:59 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:08:59 WARN  MyLogger:76 - PORT.......4723
+2018-09-21 16:08:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:08:59 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:08:59 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:08:59 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:09:03 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:09:03 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:03 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:09:03 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:09:03 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:09:03 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:09:41 INFO  MyLogger:79 - Starting Test cases from CalculatorRunner
+2018-09-21 16:09:41 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:41 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb devices
+2018-09-21 16:09:42 INFO  MyLogger:106 - server output List of devices attached
+emulator-5554	device
 
 
-2018-04-17 13:04:37 INFO  MyLogger:167 - starting thread 51 with device emulator-5556
-2018-04-17 13:04:37 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:04:38 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:04:47 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:04:47 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:04:47 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:04:47 INFO  MyLogger:59 - found ready device emulator-5554
-2018-04-17 13:04:47 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:47 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:04:47 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:04:47 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:04:47 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:04:47 INFO  MyLogger:59 - found ready device emulator-5556
-2018-04-17 13:04:47 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:47 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-17 13:04:47 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5556
-2018-04-17 13:04:48 INFO  MyLogger:106 - server output en-US
+2018-09-21 16:09:42 INFO  MyLogger:49 - Connected devices found. Starting creating list of connected devices
+2018-09-21 16:09:42 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:42 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:09:42 INFO  MyLogger:106 - server output 7.1.1
 
-2018-04-17 13:04:48 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:04:48 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:48 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-17 13:04:48 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
-2018-04-17 13:04:57 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-17 13:04:57 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:57 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-17 13:04:57 INFO  MyLogger:106 - server output 7.0
+2018-09-21 16:09:42 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:42 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-09-21 16:09:43 INFO  MyLogger:106 - server output en
 
-2018-04-17 13:04:57 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-17 13:04:57 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-17 13:04:57 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-17 13:04:57 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:04:57 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-17 13:04:58 INFO  MyLogger:106 - server output 7.0
-
-2018-04-17 13:04:58 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-17 13:04:58 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-17 13:05:11 INFO  MyLogger:226 - created driver for emulator-5556 
+2018-09-21 16:09:43 INFO  MyLogger:58 - added emulator-5554 to device list
+2018-09-21 16:09:43 INFO  MyLogger:117 - starting thread 11 with device emulator-5554
+2018-09-21 16:09:43 INFO  MyLogger:104 - finalCommandC://apache-maven-3.5.3//bin//mvn.cmd -Dtest=CalculatorRunner test
+2018-09-21 16:09:43 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:09:48 INFO  MyLogger:229 - created driver for emulator-5554 
 com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-17 13:05:11 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5556  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-17 13:05:11 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:11 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-17 13:05:12 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
+ http://127.0.0.1:4723/wd/hub
+2018-09-21 16:09:48 INFO  MyLogger:79 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.1.1 com.android.calculator2.Calculator
+2018-09-21 16:09:48 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:48 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2
+2018-09-21 16:09:49 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/com.android.calculator2 }
 
-2018-04-17 13:05:12 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5556
-2018-04-17 13:05:12 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5556
-2018-04-17 13:05:12 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:12 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:05:12 INFO  MyLogger:106 - server output   mCurrentFocus=Window{bf1fabf u0 com.android.calculator2/com.android.calculator2.Calculator}
+2018-09-21 16:09:49 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-09-21 16:09:49 DEBUG MyLogger:85 - opening com.android.calculator2 on emulator-5554
+2018-09-21 16:09:49 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:49 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-09-21 16:09:50 INFO  MyLogger:106 - server output   mCurrentFocus=Window{5a5049c u0 com.android.calculator2/com.android.calculator2.Calculator}
 
-2018-04-17 13:05:13 INFO  MyLogger:226 - created driver for emulator-5554 
+2018-09-21 16:09:51 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:09:51 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:09:51 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:09:51 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:09:51 WARN  MyLogger:76 - PORT.......4723
+2018-09-21 16:09:51 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:51 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:09:51 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:09:51 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:09:51 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:09:51 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:09:51 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:09:52 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:09:52 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:09:52 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:09:53 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:10:00 ERROR MyLogger:233 - Driver creation failled for emulator-5554 on port4723[Ljava.lang.StackTraceElement;@76a82f33 Message. java.net.SocketException: Connection reset
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: AndroidDriver Cause: java.net.SocketException: Connection reset
+2018-09-21 16:10:00 INFO  MyLogger:79 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.1.1 com.android.calculator2.Calculator
+2018-09-21 16:10:00 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:00 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s  shell am start -n com.android.calculator2/com.android.calculator2
+2018-09-21 16:10:00 INFO  MyLogger:270 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-09-21 16:10:00 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:10:00 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:10:00 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:10:00 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:10:00 WARN  MyLogger:76 - PORT.......4723
+2018-09-21 16:10:00 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:00 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:10:00 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:10:00 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:10:00 INFO  MyLogger:106 - server output 
+2018-09-21 16:10:00 INFO  MyLogger:243 - started App com.android.calculator2 on 
+2018-09-21 16:10:00 DEBUG MyLogger:85 - opening com.android.calculator2 on 
+2018-09-21 16:10:00 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:00 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-09-21 16:10:01 INFO  MyLogger:106 - server output   mCurrentFocus=Window{b06c559 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}
+
+2018-09-21 16:10:01 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:10:01 DEBUG MyLogger:272 - No driver to kill for this device emulator-5554
+2018-09-21 16:10:01 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:10:01 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:10:01 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:10:01 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:10:01 WARN  MyLogger:76 - PORT.......4723
+2018-09-21 16:10:01 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:01 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:10:01 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:10:01 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:10:06 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:10:06 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:06 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:10:06 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:10:06 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:06 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:10:07 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:10:07 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:10:07 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:10:07 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:10:07 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:10:07 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:10:58 INFO  MyLogger:229 - created driver for emulator-5554 
+com.android.calculator2com.android.calculator2.Calculator 
+ http://127.0.0.1:4723/wd/hub
+2018-09-21 16:10:58 INFO  MyLogger:79 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.1.1 com.android.calculator2.Calculator
+2018-09-21 16:10:58 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:58 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2
+2018-09-21 16:10:58 INFO  MyLogger:229 - created driver for emulator-5554 
+com.android.calculator2com.android.calculator2.Calculator 
+ http://127.0.0.1:4723/wd/hub
+2018-09-21 16:10:58 INFO  MyLogger:79 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.1.1 com.android.calculator2.Calculator
+2018-09-21 16:10:58 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:58 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2
+2018-09-21 16:10:59 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/com.android.calculator2 }
+
+2018-09-21 16:10:59 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-09-21 16:10:59 DEBUG MyLogger:85 - opening com.android.calculator2 on emulator-5554
+2018-09-21 16:10:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:59 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/com.android.calculator2 }
+
+2018-09-21 16:10:59 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-09-21 16:10:59 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-09-21 16:10:59 DEBUG MyLogger:85 - opening com.android.calculator2 on emulator-5554
+2018-09-21 16:10:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:10:59 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-09-21 16:10:59 INFO  MyLogger:106 - server output   mCurrentFocus=Window{eb4f535 u0 com.android.calculator2/com.android.calculator2.Calculator}
+
+2018-09-21 16:11:00 INFO  MyLogger:106 - server output   mCurrentFocus=Window{eb4f535 u0 com.android.calculator2/com.android.calculator2.Calculator}
+
+2018-09-21 16:11:05 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:11:07 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:11:10 INFO  MyLogger:270 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-09-21 16:11:10 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:11:10 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:11:10 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:11:10 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:11:10 WARN  MyLogger:76 - PORT.......4723
+2018-09-21 16:11:10 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:10 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:11:10 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:11:10 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:11:11 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:11:11 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:11 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:11:11 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:11:11 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:11:11 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:11:12 ERROR MyLogger:233 - Driver creation failled for emulator-5554 on port4723[Ljava.lang.StackTraceElement;@452e26d0 Message. java.net.SocketException: Connection reset
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: AndroidDriver Cause: java.net.SocketException: Connection reset
+2018-09-21 16:11:12 INFO  MyLogger:79 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.1.1 com.android.calculator2.Calculator
+2018-09-21 16:11:12 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:12 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2
+2018-09-21 16:11:12 INFO  MyLogger:270 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-09-21 16:11:12 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:11:12 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:11:12 INFO  MyLogger:70 - no ready device found .... FreeDevicefinder
+2018-09-21 16:11:12 ERROR MyLogger:96 - no free device found
+2018-09-21 16:11:12 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:11:12 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:11:12 INFO  MyLogger:70 - no ready device found .... FreeDevicefinder
+2018-09-21 16:11:12 ERROR MyLogger:96 - no free device found
+2018-09-21 16:11:13 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/com.android.calculator2 }
+
+2018-09-21 16:11:13 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-09-21 16:11:13 DEBUG MyLogger:85 - opening com.android.calculator2 on emulator-5554
+2018-09-21 16:11:13 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:13 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-09-21 16:11:13 INFO  MyLogger:106 - server output   mCurrentFocus=Window{b06c559 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}
+
+2018-09-21 16:11:13 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:11:13 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:11:13 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:11:13 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:11:13 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:11:13 WARN  MyLogger:76 - PORT.......4723
+2018-09-21 16:11:13 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:13 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:11:13 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:11:13 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:11:18 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:11:18 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:18 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:11:18 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:11:18 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:11:18 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:11:59 INFO  MyLogger:229 - created driver for emulator-5554 
+com.android.calculator2com.android.calculator2.Calculator 
+ http://127.0.0.1:4723/wd/hub
+2018-09-21 16:11:59 INFO  MyLogger:79 - starting test of   com.android.calculator2 on emulator-5554  plattform version 7.1.1 com.android.calculator2.Calculator
+2018-09-21 16:11:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:11:59 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell am start -n com.android.calculator2/com.android.calculator2
+2018-09-21 16:12:00 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/com.android.calculator2 }
+
+2018-09-21 16:12:00 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5554
+2018-09-21 16:12:00 DEBUG MyLogger:85 - opening com.android.calculator2 on emulator-5554
+2018-09-21 16:12:00 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:12:00 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
+2018-09-21 16:12:00 INFO  MyLogger:106 - server output   mCurrentFocus=Window{2f873e1 u0 com.android.calculator2/com.android.calculator2.Calculator}
+
+2018-09-21 16:12:08 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:12:11 INFO  MyLogger:270 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-09-21 16:14:18 INFO  MyLogger:79 - Starting Test cases from NavigationRunner
+2018-09-21 16:14:18 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:14:18 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb devices
+2018-09-21 16:14:18 INFO  MyLogger:106 - server output List of devices attached
+emulator-5554	device
+
+
+2018-09-21 16:14:18 INFO  MyLogger:49 - Connected devices found. Starting creating list of connected devices
+2018-09-21 16:14:18 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:14:18 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:14:18 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:14:18 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:14:18 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-09-21 16:14:19 INFO  MyLogger:106 - server output en
+
+2018-09-21 16:14:19 INFO  MyLogger:58 - added emulator-5554 to device list
+2018-09-21 16:14:19 INFO  MyLogger:117 - starting thread 11 with device emulator-5554
+2018-09-21 16:14:19 INFO  MyLogger:104 - finalCommandC://apache-maven-3.5.3//bin//mvn.cmd -Dtest=NavigationRunner test
+2018-09-21 16:14:19 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:14:26 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:14:26 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:14:26 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:14:26 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:14:26 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:14:26 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-09-21 16:14:26 INFO  MyLogger:106 - server output en
+
+2018-09-21 16:14:27 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-09-21 16:14:27 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:14:27 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:14:27 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:14:27 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:14:31 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:14:31 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:14:31 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:14:31 INFO  MyLogger:106 - server output 7.1.1
+
+2018-09-21 16:14:31 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:14:31 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:15:23 INFO  MyLogger:229 - created driver for emulator-5554 
 de.hafas.android.dbde.hafas.main.HafasApp 
  http://127.0.0.1:4723/wd/hub
-2018-04-17 13:05:13 INFO  MyLogger:81 - starting test of   de.hafas.android.db on emulator-5554  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-17 13:05:13 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:13 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-17 13:05:14 INFO  MyLogger:106 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
+2018-09-21 16:15:23 INFO  MyLogger:86 - starting test of   de.hafas.android.db on emulator-5554  plattform version 7.1.1 de.hafas.main.HafasApp
+2018-09-21 16:15:23 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:23 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell am start -n de.hafas.android.db/de.hafas.main.HafasApp
+2018-09-21 16:15:23 INFO  MyLogger:106 - server output Starting: Intent { cmp=de.hafas.android.db/de.hafas.main.HafasApp }
 
-2018-04-17 13:05:14 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on emulator-5554
-2018-04-17 13:05:14 DEBUG MyLogger:88 - opening de.hafas.android.db on emulator-5554
-2018-04-17 13:05:14 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:14 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:05:14 INFO  MyLogger:106 - server output   mCurrentFocus=Window{4cc8dce u0 de.hafas.android.db/de.hafas.main.HafasApp}
+2018-09-21 16:15:23 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on emulator-5554
+2018-09-21 16:15:23 DEBUG MyLogger:98 - opening de.hafas.android.db on emulator-5554
+2018-09-21 16:15:52 INFO  MyLogger:79 - Starting Test cases from NavigationRunner
+2018-09-21 16:15:52 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:52 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb devices
+2018-09-21 16:15:52 INFO  MyLogger:106 - server output List of devices attached
+emulator-5554	device
 
-2018-04-17 13:05:14 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:05:15 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:16 INFO  MyLogger:21 - clicked favorite_history_key
-2018-04-17 13:05:19 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:20 INFO  MyLogger:21 - clicked trip_information_key
-2018-04-17 13:05:20 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-17 13:05:20 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:05:20 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:05:20 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:05:20 INFO  MyLogger:59 - found ready device emulator-5556
-2018-04-17 13:05:20 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:20 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-17 13:05:21 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5556
-2018-04-17 13:05:23 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:24 INFO  MyLogger:21 - clicked saves_fares_key
-2018-04-17 13:05:26 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:28 INFO  MyLogger:21 - clicked verbund_tickets_key
-2018-04-17 13:05:29 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-17 13:05:29 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:29 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-17 13:05:29 INFO  MyLogger:106 - server output 7.0
 
-2018-04-17 13:05:29 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-17 13:05:29 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-17 13:05:29 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:31 INFO  MyLogger:21 - clicked regional_offers_key
-2018-04-17 13:05:33 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:34 INFO  MyLogger:21 - clicked my_tickets_key
-2018-04-17 13:05:36 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:37 INFO  MyLogger:21 - clicked add_ticket_key
-2018-04-17 13:05:39 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:40 INFO  MyLogger:21 - clicked find_order_key
-2018-04-17 13:05:41 INFO  MyLogger:226 - created driver for emulator-5556 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-17 13:05:41 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5556  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-17 13:05:41 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:41 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-17 13:05:42 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:42 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
+2018-09-21 16:15:52 INFO  MyLogger:49 - Connected devices found. Starting creating list of connected devices
+2018-09-21 16:15:52 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:52 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:15:53 INFO  MyLogger:106 - server output 7.1.1
 
-2018-04-17 13:05:42 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5556
-2018-04-17 13:05:42 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5556
-2018-04-17 13:05:42 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:42 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:05:42 INFO  MyLogger:106 - server output   mCurrentFocus=Window{1d2fffa u0 com.android.calculator2/com.android.calculator2.Calculator}
+2018-09-21 16:15:53 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:53 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-09-21 16:15:53 INFO  MyLogger:106 - server output en
 
-2018-04-17 13:05:43 INFO  MyLogger:21 - clicked time_table_key
-2018-04-17 13:05:45 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:05:46 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:47 INFO  MyLogger:31 - Object was already visible no need to scroll
-2018-04-17 13:05:47 INFO  MyLogger:21 - clicked bahn_card_key
-2018-04-17 13:05:51 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:51 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-17 13:05:51 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:05:51 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:05:51 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:05:51 INFO  MyLogger:59 - found ready device emulator-5556
-2018-04-17 13:05:51 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:51 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-17 13:05:51 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5556
-2018-04-17 13:05:52 INFO  MyLogger:31 - Object was already visible no need to scroll
-2018-04-17 13:05:53 INFO  MyLogger:21 - clicked map_key
-2018-04-17 13:05:56 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:05:59 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-17 13:05:59 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:05:59 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-17 13:05:59 INFO  MyLogger:106 - server output 7.0
+2018-09-21 16:15:53 INFO  MyLogger:58 - added emulator-5554 to device list
+2018-09-21 16:15:53 INFO  MyLogger:117 - starting thread 11 with device emulator-5554
+2018-09-21 16:15:53 INFO  MyLogger:104 - finalCommandC://apache-maven-3.5.3//bin//mvn.cmd -Dtest=NavigationRunner test
+2018-09-21 16:15:53 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:15:53 ERROR MyLogger:54 - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@78461bc4
+2018-09-21 16:15:59 INFO  MyLogger:33 - reading from connected device list 
+2018-09-21 16:15:59 INFO  MyLogger:47 - finding ready device 
+2018-09-21 16:15:59 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:15:59 INFO  MyLogger:63 - found ready device emulator-5554
+2018-09-21 16:15:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:59 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
+2018-09-21 16:15:59 INFO  MyLogger:106 - server output en
 
-2018-04-17 13:05:59 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-17 13:05:59 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-17 13:06:10 INFO  MyLogger:226 - created driver for emulator-5556 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-17 13:06:10 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5556  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-17 13:06:10 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:10 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-17 13:06:10 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
+2018-09-21 16:15:59 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
+2018-09-21 16:15:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:59 INFO  MyLogger:288 - checking port 4723 is free.
+2018-09-21 16:15:59 INFO  MyLogger:197 - PORT ... 4723 is free
+2018-09-21 16:15:59 INFO  MyLogger:207 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
+2018-09-21 16:15:59 INFO  MyLogger:215 - creating driver for emulator-5554
+2018-09-21 16:15:59 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:15:59 INFO  MyLogger:91 - executing command... C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
+2018-09-21 16:16:00 INFO  MyLogger:106 - server output 7.1.1
 
-2018-04-17 13:06:10 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5556
-2018-04-17 13:06:10 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5556
-2018-04-17 13:06:10 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:10 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:06:11 INFO  MyLogger:106 - server output   mCurrentFocus=Window{68d29f1 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-17 13:06:13 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:06:18 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-17 13:06:18 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:06:18 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:06:18 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:06:18 INFO  MyLogger:59 - found ready device emulator-5556
-2018-04-17 13:06:18 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:18 INFO  MyLogger:285 - checking port 4726 is free.
-2018-04-17 13:06:18 INFO  MyLogger:204 - starting appium server at port 4726 with following url http://127.0.0.1:4726/wd/hub for device emulator-5556
-2018-04-17 13:06:25 INFO  MyLogger:212 - creating driver for emulator-5556
-2018-04-17 13:06:25 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:25 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell getprop ro.build.version.release
-2018-04-17 13:06:25 INFO  MyLogger:106 - server output 7.0
-
-2018-04-17 13:06:25 INFO  MyLogger:98 - getting device capabilities for emulator-5556
-2018-04-17 13:06:25 INFO  MyLogger:101 - got device capabilities for emulator-5556
-2018-04-17 13:06:26 INFO  MyLogger:33 - scrolling to  favorite_history_key
-2018-04-17 13:06:27 INFO  MyLogger:269 - Successffuly scrolled to ............Favorites & History
-2018-04-17 13:06:27 INFO  MyLogger:36 - scrolled to  favorite_history_key
-2018-04-17 13:06:28 INFO  MyLogger:21 - clicked real_time_information_key
-2018-04-17 13:06:29 INFO  MyLogger:52 - clicked drawer_menu_identificator_key
-2018-04-17 13:06:30 INFO  MyLogger:31 - Object was already visible no need to scroll
-2018-04-17 13:06:30 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:06:36 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-17 13:06:36 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:06:36 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:06:36 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:06:36 INFO  MyLogger:59 - found ready device emulator-5554
-2018-04-17 13:06:36 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:36 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:06:36 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:06:36 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:06:36 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:36 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:06:36 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:06:36 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:06:36 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:36 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:06:37 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:06:37 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:06:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:37 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-17 13:06:37 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
-2018-04-17 13:06:37 INFO  MyLogger:226 - created driver for emulator-5556 
-com.android.calculator2com.android.calculator2.Calculator 
- http://127.0.0.1:4726/wd/hub
-2018-04-17 13:06:37 INFO  MyLogger:77 - starting test of   com.android.calculator2 on emulator-5556  plattform version 7.0 com.android.calculator2.Calculator
-2018-04-17 13:06:37 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:37 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell am start -n com.android.calculator2/com.android.calculator2.com.android.calculator2
-2018-04-17 13:06:38 INFO  MyLogger:106 - server output Starting: Intent { cmp=com.android.calculator2/.com.android.calculator2 }
-
-2018-04-17 13:06:38 INFO  MyLogger:243 - started App com.android.calculator2 on emulator-5556
-2018-04-17 13:06:38 DEBUG MyLogger:83 - opening com.android.calculator2 on emulator-5556
-2018-04-17 13:06:38 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:38 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5556 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:06:38 INFO  MyLogger:106 - server output   mCurrentFocus=Window{fd9ef28 u0 com.android.calculator2/com.android.calculator2.Calculator}
-
-2018-04-17 13:06:40 INFO  MyLogger:131 - updating device prop/capas...emulator-5556
-2018-04-17 13:06:43 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-17 13:06:43 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:43 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-17 13:06:43 INFO  MyLogger:106 - server output 7.0
-
-2018-04-17 13:06:43 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-17 13:06:43 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-17 13:06:45 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5556
-2018-04-17 13:06:54 INFO  MyLogger:226 - created driver for emulator-5554 
-de.hafas.android.dbde.hafas.main.HafasApp 
- http://127.0.0.1:4723/wd/hub
-2018-04-17 13:06:54 INFO  MyLogger:62 - starting test of   de.hafas.android.db on emulator-5554  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-17 13:06:54 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:54 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-17 13:06:54 INFO  MyLogger:106 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-17 13:06:54 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on emulator-5554
-2018-04-17 13:06:54 DEBUG MyLogger:69 - opening de.hafas.android.db on emulator-5554
-2018-04-17 13:06:54 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:06:54 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:06:54 INFO  MyLogger:106 - server output   mCurrentFocus=Window{90086d u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-17 13:07:19 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:19 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell screencap /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-2018-04-17 13:07:20 INFO  MyLogger:106 - server output 
-2018-04-17 13:07:20 INFO  MyLogger:273 - took screenshot and saved in /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-2018-04-17 13:07:20 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:20 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 pull /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png screenshots
-2018-04-17 13:07:20 INFO  MyLogger:106 - server output [100%] /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-/sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png: 1 file pulled. 2.6 MB/s (32730 bytes in 0.012s)
-
-2018-04-17 13:07:20 INFO  MyLogger:268 - pulled from /sdcard/screenshots/ to screenshots
-2018-04-17 13:07:20 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:20 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb  -s emulator-5554 rm -f /sdcard/screenshots/emulator-55541523963239562_selecting_a_trip.png
-2018-04-17 13:07:20 INFO  MyLogger:106 - server output 
-2018-04-17 13:07:20 ERROR MyLogger:208 - FAILED STEP: "I select a trip " refer to screenshot for more details screenshots/emulator-55541523963239562_selecting_a_trip.png
-null
-2018-04-17 13:07:20 ERROR MyLogger:210 - null[Ljava.lang.StackTraceElement;@1edb61b1
-2018-04-17 13:07:20 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:07:25 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
-2018-04-17 13:07:25 INFO  MyLogger:29 - reading from connected device list 
-2018-04-17 13:07:25 INFO  MyLogger:43 - finding ready device 
-2018-04-17 13:07:25 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:07:25 INFO  MyLogger:59 - found ready device emulator-5554
-2018-04-17 13:07:25 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:25 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:07:25 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:07:25 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:07:25 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:25 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:07:25 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:07:25 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:07:25 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:25 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop persist.sys.locale
-2018-04-17 13:07:25 INFO  MyLogger:106 - server output en-US
-
-2018-04-17 13:07:25 INFO  MyLogger:54 - succes loading properties-file /properties_files/en-US.properties
-2018-04-17 13:07:25 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:25 INFO  MyLogger:285 - checking port 4723 is free.
-2018-04-17 13:07:25 INFO  MyLogger:204 - starting appium server at port 4723 with following url http://127.0.0.1:4723/wd/hub for device emulator-5554
-2018-04-17 13:07:30 INFO  MyLogger:212 - creating driver for emulator-5554
-2018-04-17 13:07:30 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:30 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell getprop ro.build.version.release
-2018-04-17 13:07:30 INFO  MyLogger:106 - server output 7.0
-
-2018-04-17 13:07:30 INFO  MyLogger:98 - getting device capabilities for emulator-5554
-2018-04-17 13:07:30 INFO  MyLogger:101 - got device capabilities for emulator-5554
-2018-04-17 13:07:40 INFO  MyLogger:226 - created driver for emulator-5554 
-de.hafas.android.dbde.hafas.main.HafasApp 
- http://127.0.0.1:4723/wd/hub
-2018-04-17 13:07:40 INFO  MyLogger:62 - starting test of   de.hafas.android.db on emulator-5554  plattform version 7.0 de.hafas.main.HafasApp
-2018-04-17 13:07:40 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:40 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell am start -n de.hafas.android.db/de.hafas.android.db.de.hafas.main.HafasApp
-2018-04-17 13:07:41 INFO  MyLogger:106 - server output Starting: Intent { cmp=de.hafas.android.db/.de.hafas.main.HafasApp }
-
-2018-04-17 13:07:41 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on emulator-5554
-2018-04-17 13:07:41 DEBUG MyLogger:69 - opening de.hafas.android.db on emulator-5554
-2018-04-17 13:07:41 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:07:41 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell dumpsys window windows | grep mCurrentFocus
-2018-04-17 13:07:41 INFO  MyLogger:106 - server output   mCurrentFocus=Window{327deb6 u0 de.hafas.android.db/de.hafas.main.HafasApp}
-
-2018-04-17 13:08:14 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:08:14 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 shell screencap /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-2018-04-17 13:08:15 INFO  MyLogger:106 - server output 
-2018-04-17 13:08:15 INFO  MyLogger:273 - took screenshot and saved in /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-2018-04-17 13:08:15 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:08:15 INFO  MyLogger:91 - executing command...  D:\NonBKU\Android-sdk-windows\platform-tools\adb -s emulator-5554 pull /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png screenshots
-2018-04-17 13:08:15 INFO  MyLogger:106 - server output [100%] /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-/sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png: 1 file pulled. 3.5 MB/s (43657 bytes in 0.012s)
-
-2018-04-17 13:08:15 INFO  MyLogger:268 - pulled from /sdcard/screenshots/ to screenshots
-2018-04-17 13:08:15 INFO  MyLogger:30 - Execution Server was WINDOWS
-2018-04-17 13:08:15 INFO  MyLogger:91 - executing command... D:\NonBKU\Android-sdk-windows\platform-tools\adb  -s emulator-5554 rm -f /sdcard/screenshots/emulator-55541523963294649_selecting_a_trip.png
-2018-04-17 13:08:15 INFO  MyLogger:106 - server output 
-2018-04-17 13:08:15 ERROR MyLogger:208 - FAILED STEP: "I select a trip " refer to screenshot for more details screenshots/emulator-55541523963294649_selecting_a_trip.png
-null
-2018-04-17 13:08:15 ERROR MyLogger:210 - null[Ljava.lang.StackTraceElement;@344561e0
-2018-04-17 13:08:15 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
-2018-04-17 13:08:20 INFO  MyLogger:267 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-09-21 16:16:00 INFO  MyLogger:99 - getting device capabilities for emulator-5554
+2018-09-21 16:16:00 INFO  MyLogger:102 - got device capabilities for emulator-5554
+2018-09-21 16:16:08 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14.39 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Favorites & History')]}[Ljava.lang.StackTraceElement;@1095f122
+2018-09-21 16:16:08 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 199 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@3d6300e8
+2018-09-21 16:16:08 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 259 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Trip planner')]}[Ljava.lang.StackTraceElement;@24a1c17f
+2018-09-21 16:16:08 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@7927bd9f
+2018-09-21 16:16:09 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 251 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Saver fares')]}[Ljava.lang.StackTraceElement;@410954b
+2018-09-21 16:16:09 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@51f49060
+2018-09-21 16:16:09 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Verbundtickets')]}[Ljava.lang.StackTraceElement;@617fe9e1
+2018-09-21 16:16:09 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@1cf2fed4
+2018-09-21 16:16:09 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Regional offers')]}[Ljava.lang.StackTraceElement;@245a26e1
+2018-09-21 16:16:09 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@466cf502
+2018-09-21 16:16:09 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'My tickets')]}[Ljava.lang.StackTraceElement;@2e185cd7
+2018-09-21 16:16:09 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@5f7f2382
+2018-09-21 16:16:09 ERROR MyLogger:23 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.CheckedTextView[contains(@text, 'Timetable')]}[Ljava.lang.StackTraceElement;@6815c5f2
+2018-09-21 16:16:09 ERROR MyLogger:54 - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=de.hafas.android.db, appActivity=de.hafas.main.HafasApp, newCommandTimeout=60.0, platformVersion=7.1.1, automationName=UiAutomator2, javascriptEnabled=true, platformName=Android, udid=emulator-5554, deviceName=emulator-5554, platform=ANY}]
+Session ID: 3992d763-f6ed-48f1-92b6-92a4dbd17805
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[contains(@content-desc, 'Open drawer menu')]}[Ljava.lang.StackTraceElement;@60094a13
+2018-09-21 16:16:09 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:16:15 ERROR MyLogger:233 - Driver creation failled for emulator-5554 on port4723[Ljava.lang.StackTraceElement;@644c78d4 Message. java.net.SocketException: Connection reset
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-RN5VIIS5', ip: '192.168.142.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: AndroidDriver Cause: java.net.SocketException: Connection reset
+2018-09-21 16:16:15 INFO  MyLogger:86 - starting test of   de.hafas.android.db on emulator-5554  plattform version 7.1.1 de.hafas.main.HafasApp
+2018-09-21 16:16:15 INFO  MyLogger:30 - Execution Server was WINDOWS
+2018-09-21 16:16:15 INFO  MyLogger:91 - executing command...  C:\Users\Lenovo\AppData\Local\Android\Sdk\platform-tools\adb -s  shell am start -n de.hafas.android.db/de.hafas.main.HafasApp
+2018-09-21 16:16:15 INFO  MyLogger:270 - killed driver and succesfully uninstalled de.hafas.android.db from emulator-5554
+2018-09-21 16:16:15 INFO  MyLogger:106 - server output 
+2018-09-21 16:16:15 INFO  MyLogger:243 - started App de.hafas.main.HafasApp on 
+2018-09-21 16:16:15 DEBUG MyLogger:98 - opening de.hafas.android.db on 
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@3bde62ff
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@2baa8d82
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@791cbf87
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@754777cd
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@4cc76301
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@3f19b8b3
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@cdc3aae
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@5dcbb60
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@21526f6c
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@299266e2
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@66ea1466
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@3bffddff
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@50687efb
+2018-09-21 16:16:15 ERROR MyLogger:23 - null[Ljava.lang.StackTraceElement;@142eef62
+2018-09-21 16:16:15 ERROR MyLogger:54 - null[Ljava.lang.StackTraceElement;@5990e6c5
+2018-09-21 16:16:15 INFO  MyLogger:131 - updating device prop/capas...emulator-5554
+2018-09-21 16:16:15 DEBUG MyLogger:272 - No driver to kill for this device emulator-5554

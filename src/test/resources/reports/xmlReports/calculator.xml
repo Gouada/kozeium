@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="118.384562">
-<testcase classname="calculator" name="addition" time="34.002425">
-<system-out><![CDATA[Given I start the calculator................................................passed
-When I click the first 7....................................................passed
-Then I click an operator op_add.............................................passed
-And I click the second 8....................................................passed
-And I click equal...........................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="140.667327">
+<testcase classname="calculator" name="addition" time="10.447656">
+<failure message="java.lang.AssertionError: the app could not be started&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at api.apps.myCalculator.steps.CalculatorSteps.i_start_the_calculator(CalculatorSteps.java:88)&#13;&#10;&#9;at ✽.Given I start the calculator(calculator.feature:25)&#13;&#10;"><![CDATA[Given I start the calculator................................................failed
+When I click the first 7....................................................skipped
+Then I click an operator op_add.............................................skipped
+And I click the second 8....................................................skipped
+And I click equal...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: the app could not be started
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at api.apps.myCalculator.steps.CalculatorSteps.i_start_the_calculator(CalculatorSteps.java:88)
+	at ✽.Given I start the calculator(calculator.feature:25)
+]]></failure>
 </testcase>
-<testcase classname="calculator" name="addition_2" time="30.855608">
+<testcase classname="calculator" name="addition_2" time="69.658887">
 <system-out><![CDATA[Given I start the calculator................................................passed
 When I click the first 3....................................................passed
 Then I click an operator op_mul.............................................passed
@@ -15,15 +22,22 @@ And I click the second 7....................................................pass
 And I click equal...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="calculator" name="addition_3" time="26.386413">
-<system-out><![CDATA[Given I start the calculator................................................passed
-When I click the first 3....................................................passed
-Then I click an operator op_sub.............................................passed
-And I click the second 3....................................................passed
-And I click equal...........................................................passed
-]]></system-out>
+<testcase classname="calculator" name="addition_3" time="2.643442">
+<failure message="java.lang.AssertionError: the app could not be started&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at api.apps.myCalculator.steps.CalculatorSteps.i_start_the_calculator(CalculatorSteps.java:88)&#13;&#10;&#9;at ✽.Given I start the calculator(calculator.feature:25)&#13;&#10;"><![CDATA[Given I start the calculator................................................failed
+When I click the first 3....................................................skipped
+Then I click an operator op_sub.............................................skipped
+And I click the second 3....................................................skipped
+And I click equal...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: the app could not be started
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at api.apps.myCalculator.steps.CalculatorSteps.i_start_the_calculator(CalculatorSteps.java:88)
+	at ✽.Given I start the calculator(calculator.feature:25)
+]]></failure>
 </testcase>
-<testcase classname="calculator" name="addition_4" time="27.140116">
+<testcase classname="calculator" name="addition_4" time="57.917342">
 <system-out><![CDATA[Given I start the calculator................................................passed
 When I click the first 3....................................................passed
 Then I click an operator op_div.............................................passed
